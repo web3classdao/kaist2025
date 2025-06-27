@@ -1,6 +1,62 @@
-site_name: MkLorum
+site_name: Blockchain meets AI: The Trust Engine - Web3@KAIST 2025
+site_url: https://web3classdao.github.io/kaist2025/
+theme:
+  name: material
+
+  # ✅ 색상 및 테마 설정
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  # ✅ 폰트 설정
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  # ✅ 아이콘/로고
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+
 nav:
   - Home: index.md
   - About: about.md
   - Test: test.md
-theme: material
+
+# ✅ 마크다운 확장 기능
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.arithmatex
+
+# ✅ 수식 및 다이어그램 지원 (선택)
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js
+
+# ✅ 정적 파일
+extra_css:
+  - stylesheets/extra.css  # 선택
+
+# ✅ 정적 파일 위치
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/web3classdao/kaist2025
+
+# 기본 docs 폴더
+docs_dir: docs
