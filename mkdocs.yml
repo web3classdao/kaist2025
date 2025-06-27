@@ -24,8 +24,8 @@ theme:
     code: Roboto Mono
 
   # ✅ 아이콘/로고
-  logo: assets/logo.png
-  favicon: assets/favicon.ico
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.ico
 
 nav:
   - Home: index.md
