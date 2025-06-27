@@ -4,6 +4,8 @@ theme:
   name: material
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
 
   # ✅ 색상 및 테마 설정
   palette:
