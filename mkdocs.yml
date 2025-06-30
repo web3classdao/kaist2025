@@ -33,6 +33,21 @@ theme:
 
 nav:
   - Home: index.md
+  - Reports: 
+    - Overview: reports/index.md
+    - Crypto SDK & Chain support for AI: reports/00_crypto_sdk.md
+      - GOAT SDK: reports/goat.md
+      - Coinbase AgentKit: reports/coinbase_agentkit.md
+      - Solana Agent Kit: reports/solana_agentkit.md
+      - GOAT Gaming: reports/goat_gaming.md
+    - Decentralized AI infra: reports/00_decentralized_ai_infra.md
+      - Sahara AI: reports/saharaai.md
+      - Grass: reports/grass.md
+    - Stablecoins & Payment: reports/00_payment.md
+      - Halliday: reports/halliday.md
+      - Nevermined: reports/nevermined.md
+  - Projects: project.md
+  - Course: course.md
   - About: about.md
   - Test: test.md
 
