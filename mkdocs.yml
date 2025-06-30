@@ -36,12 +36,12 @@ nav:
   - Home: index.md
   - Reports: 
     - Overview: reports/index.md
-    - Crypto SDK & Chain support for AI:
+    - 🔧 Crypto SDK & Chain Support for AI:
       - GOAT SDK: reports/goat.md
       - Coinbase AgentKit: reports/coinbase_agentkit.md
       - Solana Agent Kit: reports/solana_agentkit.md
       - GOAT Gaming: reports/goat_gaming.md
-    - Decentralized AI infra: 
+    - 🧠 Decentralized AI Infra:
       - Sahara AI: reports/saharaai.md
       - Grass: reports/grass.md
       - Bittensor: reports/bittensor.md
@@ -49,21 +49,21 @@ nav:
       - Render Network: reports/render.md
       - Yupp: reports/yupp.md
       - AIOZ: reports/aioz.md
-    - Stablecoins & Payment: 
+    - 💸 Stablecoins & Payment: 
       - Halliday: reports/halliday.md
       - Nevermined: reports/nevermined.md
       - Agent Commerce Kit: reports/ack_catena.md
       - Skyfire: reports/skyfire.md
       - 0xSplits: reports/0xsplits.md
       - Coinbase x402: reports/x402.md
-    - Proof of Personhood & Identity:
+    - 🛂 Proof of Personhood & Identity:
       - World ID: reports/worldid.md
       - Solana Attestation Service: reports/solana_attestation.md
       - Human Passport: reports/human_passport.md
       - Humanity Protocol: reports/humanity_protocol.md
       - BrightID: reports/brightid.md
       - Civic: reports/civic.md
-    - Decentralized AI & Agent Co-ownership:
+    - 🤖 Decentralized AI & Agent Co-ownership:
       - Virtuals Protocol: reports/virtuals.md
       - ElizaOS: reports/elizaos.md
       - Kaito: reports/kaito.md
