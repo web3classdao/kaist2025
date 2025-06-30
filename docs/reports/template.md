@@ -1,6 +1,8 @@
 # Template for reports
 
-All reports will be written in the form of the template below. 
+> **All reports should start with the template below. The template serves as a guide to frame your report. However, feel free to make changes as needed.**
+
+---
 
 # 📄 [Project Title]  
 ### 👤 Author: [Your Student ID / Name]  
@@ -145,13 +147,6 @@ You can also include:
 ### ❓ Discussion Questions
 - [Thought-provoking question to ask during class]  
 - [Optional: comparison to other projects in this space]
-
----
-
-## 10. References
-
-- [Articles, blog posts, or academic papers]  
-- [Related projects or comparisons]
 
 ---
 
