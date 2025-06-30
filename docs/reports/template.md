@@ -24,7 +24,6 @@
 ### 📌 Summary  
 Briefly describe what problem this project is solving and how it is using blockchain to solve the problem. Then summarize the project's achievements and key takeaways.
 
----
 
 ## 2. Background & Problem Statement
 
@@ -32,7 +31,6 @@ Briefly describe what problem this project is solving and how it is using blockc
 - What are the limitations of existing (centralized) approaches?  
 - Why is this problem especially relevant in the context of AI?
 
----
 
 ## 3. How It Works
 
@@ -59,7 +57,6 @@ Example:
 
 > *(You may include a diagram or link to an official architecture diagram if helpful.)*
 
----
 
 ## 4. Token Economy *(if applicable)*
 
@@ -76,7 +73,6 @@ Example:
 | Model Developer | [e.g., pays tokens to access datasets] |
 | Verifier / Node | [e.g., earns tokens by verifying data provenance] |
 
----
 
 ## 5. Project Status & Impact
 
@@ -92,7 +88,6 @@ You don’t have to cover everything — focus on what seems most relevant to ev
 
 > 📌 *Try to distinguish between hype and actual traction. Just because a project looks good on its website doesn't mean it's being used or adopted.*
 
----
 
 ## 6. User Experience & Hands-on Review *(if applicable)*
 
@@ -113,8 +108,6 @@ You can also include:
 - Links to testnet/demo activity
 - Errors or bugs you encountered
 
----
-
 
 ## 7. Why Blockchain
 
@@ -124,7 +117,6 @@ You can also include:
 
 > 📌 *This section should show that blockchain is not just "used," but "necessary."*
 
----
 
 ## 8. Insights & Limitations
 
@@ -136,7 +128,6 @@ You can also include:
 - What challenges remain? (technical, legal, usability, etc.)  
 - Are there any scalability or adoption concerns?
 
----
 
 ## 9. Reflections & Discussion
 
@@ -148,7 +139,6 @@ You can also include:
 - [Thought-provoking question to ask during class]  
 - [Optional: comparison to other projects in this space]
 
----
 
 ## 10. References
 
