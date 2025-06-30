@@ -3,6 +3,7 @@ site_url: https://web3classdao.github.io/kaist2025/
 theme:
   name: material
   features:
+    - navigation.expand
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
@@ -43,9 +44,33 @@ nav:
     - Decentralized AI infra: 
       - Sahara AI: reports/saharaai.md
       - Grass: reports/grass.md
+      - Bittensor: reports/bittensor.md
+      - NATIX: reports/natix.md
+      - Render Network: reports/render.md
+      - Yupp: reports/yupp.md
+      - AIOZ: reports/aioz.md
     - Stablecoins & Payment: 
       - Halliday: reports/halliday.md
       - Nevermined: reports/nevermined.md
+      - Agent Commerce Kit: reports/ack_catena.md
+      - Skyfire: reports/skyfire.md
+      - 0xSplits: reports/0xsplits.md
+      - Coinbase x402: reports/x402.md
+    - Proof of Personhood & Identity:
+      - World ID: reports/worldid.md
+      - Solana Attestation Service: reports/solana_attestation.md
+      - Human Passport: reports/human_passport.md
+      - Humanity Protocol: reports/humanity_protocol.md
+      - BrightID: reports/brightid.md
+      - Civic: reports/civic.md
+    - Decentralized AI & Agent Co-ownership:
+      - Virtuals Protocol: reports/virtuals.md
+      - ElizaOS: reports/elizaos.md
+      - Kaito: reports/kaito.md
+      - OLAS: reports/olas.md
+      - ASI Alliance: reports/asi_alliance.md
+      - Phala Network: reports/phala.md
+      - NANDA: reports/nanda.md
   - Projects: project.md
   - Course: course.md
   - About: about.md
