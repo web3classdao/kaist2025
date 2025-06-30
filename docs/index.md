@@ -1,12 +1,4 @@
-# 🧠 Blockchain meets AI: The Trust Engine  
-### 📅 Summer 2025 | KAIST School of Computing  
-**Instructor**: Jason Han  
-**Credits**: 1 | **Grading**: Pass/Fail  
-**Language**: English
-
----
-
-## 🎯 Introduction
+# All about AI x Blockchain crossover  
 
 This site is publicly publishing the project analysis reports and term projects of the students in the class **“Blockchain meets AI: The Trust Engine”**, which was held in the summer semester of 2025 at KAIST. This is a **Web3@KAIST** class that has been held annually at KAIST since 2023, and this year's class focuses on the intersection of blockchain and AI. The Web3@KAIST class is taught by Prof. Jason Han, a longtime serial entrepreneur in the tech space.
 
