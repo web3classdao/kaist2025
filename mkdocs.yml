@@ -35,8 +35,8 @@ theme:
 nav:
   - Home: index.md
   - Reports: 
-    - Overview: reports/index.md
-    - Report Template: reports/template.md
+    - 🧭 Overview: reports/index.md
+    - 📝 Report Template: reports/template.md
     - 🔧 Crypto SDK & Chain Support for AI:
       - GOAT SDK: reports/goat.md
       - Coinbase AgentKit: reports/coinbase_agentkit.md
