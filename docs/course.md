@@ -59,7 +59,7 @@ Your report will be used to present in class (around 10-20 minutes), and should:
 - Use the [📄 Report Template](./reports/template.md)
 - Focus on core ideas, tech analysis, and your personal hands-on experience
 
-👉 View the full list here: [📂 30+ Curated Case Studies](./projects.md)
+👉 View the full list here: [📂 30+ Curated Case Studies](./)
 
 
 ## 6. Term Project
@@ -95,6 +95,10 @@ This course is graded **Pass/Fail**. To pass, you must:
 - Submit your final project to a **hackathon or grant program**
 
 > 🚫 You may fail the course if you skip core deliverables — this course is lightweight but not optional.
+
+## 8. Past classes
+- [2023 Web3@KAIST: Building Web3 & Blockchain Applications](https://web3classdao.github.io/kaist2023/)
+- [2024 Web3@KAIST: Web3 Programming & Business](https://docs.google.com/document/d/192_BMgmagLnRwhSBA_bfqzmmsmCi_vMB-wCvLZWfLFU/edit?usp=sharing)
 
 
 
