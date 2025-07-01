@@ -1,4 +1,5 @@
 # 📄 Grass  
+
 ### 👤 Author: [Jason Han](https://www.linkedin.com/in/jaesunhan/)  
 ### 📆 Presentation Date: [2025-07-02]  
 
@@ -52,6 +53,7 @@ LLM과 같은 AI 모델을 개발하기 위해서는 엄청난 규모의 데이�
 | **Webz.io**                             | 이스라엘  | 다크웹·오픈웹 모니터링 등 특수 목적 크롤링               |
 
 이들이 데이터를 크롤링 하는 방식은 다음과 같다. 대부분 중앙화된 방식으로 웹 크롤링 방지 기술을 우회하는 방법을 사용하고 있다. 
+
 | 방법               | 설명                                  |
 | ---------------- | ----------------------------------- |
 | **프록시 네트워크 사용**  | IP 차단 회피를 위해 수백만 개의 프록시 IP 활용       |
@@ -69,6 +71,7 @@ LLM과 같은 AI 모델을 개발하기 위해서는 엄청난 규모의 데이�
 Grass는 탈중앙화된 웹 크롤링 네트워크를 구축한다. 일반 사용자들의 컴퓨터나 휴대폰에 웹 크롤링 노드를 설치해 크롤링하는 것이다. 참여자들은 유휴 인터넷 대역폭을 제공하고 Grass는 보상으로서 토큰을 제공한다. 이때 참여자 노드는 Residential IP이기 때문에 일반 사용자로 인식하여 IP 차단이 되지 않고 크롤링할 수 있는 것이다. 전 세계 노드를 통해 수집된 비정형 데이터는 AI 학습에 적합한 구조화된 데이터셋으로 변환해서 제공된다. 
 
 [2025년 1월 기사](https://beincrypto.com/grass-unveils-2025-roadmap-what-you-need-to-know/)에 따르면 Grass는 1년만에 빠른 성장을 한 것을 알 수 있다.
+
 | 항목           | 수치/설명                      |
 | ------------ | -------------------------- |
 | 사용자 수 (2024) | 20만 → 300만 (15× 증가)        |
@@ -88,8 +91,8 @@ Grass는 탈중앙화된 웹 크롤링 네트워크를 구축한다. 일반 사�
 Grass 아키텍처는 크게 Validator, Router, Grass Node, Zk Processor, Data Ledger, Edge Embedding Models의 계층 구조로 이루어져 있다. 이 중 Validator, Router, Grass Node가 크롤링에 참여하고, 나머지는 데이터 증명과 전처리 작업을 한다. 
 
 - **Validator**
-  - 웹 요청을 시작하고, 노드의 트랜잭션을 검증해 ZK 증명을 생성
-  - 초기에는 단일 구조지만, 향후 탈중앙화된 위원회로 전환 예정
+   - 웹 요청을 시작하고, 노드의 트랜잭션을 검증해 ZK 증명을 생성
+   - 초기에는 단일 구조지만, 향후 탈중앙화된 위원회로 전환 예정
 - **Router**
   - Grass Node와 Validator 사이에서 요청을 중계하고 대역폭을 관리
   - 처리량 기준으로 보상 받음
@@ -175,9 +178,7 @@ Grass 아키텍처는 크게 Validator, Router, Grass Node, Zk Processor, Data L
 
 ### [Grass Token Status](https://coinmarketcap.com/currencies/grass/)
 아래는 Coinmarketcap의 GRASS 토큰 현황입니다. 토큰 총 발행량은 10억개가 될 것이며, 현재 유통량(발행량)은 2.4억개이다. 토큰 하나의 가격은 $0.97이며 시가총액은 $237M이며, 현재 Coinmarketcap 순위는 165위이다. (시가총액기준) 만약 전체 토큰이 발행된다면(10억개) 시가총액은 $972M이 될 것이다. (FDV, Fully-Diluted Value)
-![GRASS](https://hackmd.io/_uploads/S1cF34ZBlg.png =50%x)
-
-
+<img src="https://hackmd.io/_uploads/S1cF34ZBlg.png" alt="Grass" width="50%">
 
 ### [GRASS Token Supply](https://grass-foundation.gitbook.io/grass-docs/introduction/grass/grass-tokenomics)
 10억개 토큰에 대한 분배 계획은 아래 다이어그램과 같다. 
@@ -209,7 +210,7 @@ Grass 아키텍처는 크게 Validator, Router, Grass Node, Zk Processor, Data L
 
 ---
 
-## 5. Project Status & Impact
+## 5. Project Status & Plan
 
 ### [Grass Dashboard](https://www.grassfoundation.io/network/stats)
 
@@ -250,7 +251,6 @@ Grass 네트워크 현황을 볼 수 있는 대시보드를 제공한다. 하루
 - 대시보드 역시 어렵지 않고 직관적임
 - 특히, 레퍼럴 프로그램에 신경 많이 쓰고 집중하는 느낌
 - 인증 과정도 수월하게 진행
-
 
 
 ---
