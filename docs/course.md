@@ -1,3 +1,5 @@
+![Web3@KAIST-logo](https://hackmd.io/_uploads/Hk_bv6eBge.png)
+
 # 🧠 Blockchain meets AI: The Trust Engine  
 ### 📅 KAIST School of Computing – Summer 2025  
 **Instructor**: [Jason Han](https://www.linkedin.com/in/jaesunhan/) | **Credits**: 1 | **Language**: English | **Grading**: Pass/Fail  
@@ -59,7 +61,7 @@ Your report will be used to present in class (around 10-20 minutes), and should:
 - Use the [📄 Report Template](./reports/template.md)
 - Focus on core ideas, tech analysis, and your personal hands-on experience
 
-👉 View the full list here: [📂 30+ Curated Case Studies](./)
+👉 View the full list here: [📂 30+ Curated Case Studies](../)
 
 
 ## 6. Term Project
