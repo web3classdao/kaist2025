@@ -73,7 +73,10 @@ nav:
       - Phala Network: reports/phala.md
       - NANDA: reports/nanda.md
   - Projects: project.md
-  - Course: course.md
+  - Course:
+    - Intro: course/index.md
+    - Report guide: course/report_guide.md
+    - Markdown & HackMD: course/report_markdown.md
 
 # ✅ 마크다운 확장 기능
 markdown_extensions:
