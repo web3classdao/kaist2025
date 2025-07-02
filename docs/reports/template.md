@@ -5,8 +5,8 @@
 ---
 
 # 📄 [Project Title]  
-### 👤 Author: [Your Student ID / Name]  
-### 📆 Presentation Date: [YYYY-MM-DD]  
+- 👤 Author: [Your Student ID / Name](Link to your profile)
+- 📆 Presentation Date: [YYYY-MM-DD]  
 
 ---
 
@@ -16,14 +16,20 @@
 - **Category**: [e.g., Decentralized AI Infrastructure, AI Payment Rails, etc.]  
 - **Key Technologies / Platforms**: [e.g., Solana, Bittensor, Sahara AI, ZKML, etc.]  
 - **Official Links**:
-  - Website:
-  - Whitepaper:
-  - Docs: 
-  - GitHub: 
+  - [Website]()
+  - [Foundation]() 
+  - [Contract Address]() 
+  - [Whitepaper]()
+  - [Docs]() 
+  - [GitHub]() 
+  - [X]()
+  - [Discord]()
+
 
 ### 📌 Summary  
 Briefly describe what problem this project is solving and how it is using blockchain to solve the problem. Then summarize the project's achievements and key takeaways.
 
+---
 
 ## 2. Background & Problem Statement
 
@@ -31,6 +37,7 @@ Briefly describe what problem this project is solving and how it is using blockc
 - What are the limitations of existing (centralized) approaches?  
 - Why is this problem especially relevant in the context of AI?
 
+---
 
 ## 3. How It Works
 
@@ -39,13 +46,19 @@ Briefly describe what problem this project is solving and how it is using blockc
 - What is the **core idea** behind the solution?  
 - What makes this approach different from existing methods?
 
+---
+
 ### 🏗️ 3.2 Architecture  
 - Provide a high-level overview of the system architecture.  
 - Include a diagram or describe the components and how they are connected.  
 - Focus on how data flows between users, models, smart contracts, etc.
 
+---
+
 ### 🎯 3.3 Core Components  
 - Describe the key components or modules (e.g., data capsule, model registry, token system)
+
+---
 
 ### 🔁 3.4 Workflow Overview  
 Explain the overall process or user flow in 3–5 steps.
@@ -57,6 +70,7 @@ Example:
 
 > *(You may include a diagram or link to an official architecture diagram if helpful.)*
 
+---
 
 ## 4. Token Economy *(if applicable)*
 
@@ -73,8 +87,9 @@ Example:
 | Model Developer | [e.g., pays tokens to access datasets] |
 | Verifier / Node | [e.g., earns tokens by verifying data provenance] |
 
+---
 
-## 5. Project Status & Impact
+## 5. Project Status & Plan
 
 > *In this section, summarize the current state of the project and its real-world impact (if any).*
 
@@ -88,6 +103,7 @@ You don’t have to cover everything — focus on what seems most relevant to ev
 
 > 📌 *Try to distinguish between hype and actual traction. Just because a project looks good on its website doesn't mean it's being used or adopted.*
 
+---
 
 ## 6. User Experience & Hands-on Review *(if applicable)*
 
@@ -108,6 +124,7 @@ You can also include:
 - Links to testnet/demo activity
 - Errors or bugs you encountered
 
+---
 
 ## 7. Why Blockchain
 
@@ -117,6 +134,7 @@ You can also include:
 
 > 📌 *This section should show that blockchain is not just "used," but "necessary."*
 
+---
 
 ## 8. Insights & Limitations
 
@@ -128,6 +146,7 @@ You can also include:
 - What challenges remain? (technical, legal, usability, etc.)  
 - Are there any scalability or adoption concerns?
 
+---
 
 ## 9. Reflections & Discussion
 
@@ -136,11 +155,19 @@ You can also include:
 - How has your understanding of AI/blockchain changed after studying this?
 
 ### ❓ Discussion Questions
-- [Thought-provoking question to ask during class]  
-- [Optional: comparison to other projects in this space]
+- Thought-provoking question to ask during class
+- You should facilitate a small group discussion based on these questions.  
+- Optional: comparison to other projects in this space
 
+---
 
-## 10. References
+## 10. Insight from others
+
+After each presentation in class, we will form small groups for each case for discussion. At that time, please discuss with your group the questions posed in Section 9, and write any key points or insights from your discussion group here.
+
+---
+
+## 11. References
 
 - [Articles, blog posts, or academic papers]  
 - [Related projects or comparisons]
