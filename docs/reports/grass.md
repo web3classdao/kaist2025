@@ -11,14 +11,15 @@
 - **Category**: Decentralized AI Infrastructure
 - **Key Technologies / Platforms**: ZK proof, Sovereign Rollup, Reputation Scoring, Solana  
 - **Official Links**:
-  - Website: https://www.grass.io/
-  - Foundation: https://www.grassfoundation.io/
-  - Node Download: https://app.grass.io/register?referralCode=bLBIYzyQBimUHEl
-  - Contract Address:  [Grass7B4RdKfBCjTKgSqnXkqjwiGvQyFbuSCUJr3XXjs](https://solscan.io/token/Grass7B4RdKfBCjTKgSqnXkqjwiGvQyFbuSCUJr3XXjs) (Solana)
-  - Whitepaper: N/A
-  - Docs: https://grass-foundation.gitbook.io/grass-docs 
-  - GitHub: N/A
-  - X: https://x.com/grass
+    - [Website](https://www.grass.io/)
+    - [Foundation](https://www.grassfoundation.io/)
+    - [Program Download](https://app.grass.io/register?referralCode=bLBIYzyQBimUHEl)
+    - Contract Address:  [Grass7B4RdKfBCjTKgSqnXkqjwiGvQyFbuSCUJr3XXjs](https://solscan.io/token/Grass7B4RdKfBCjTKgSqnXkqjwiGvQyFbuSCUJr3XXjs) (Solana)
+    - Whitepaper: N/A
+    - [Docs](https://grass-foundation.gitbook.io/grass-docs) 
+    - GitHub: N/A
+    - [X](https://x.com/grass)
+    - [Discord](https://discord.gg/getgrass)
 
 ### 📌 Summary  
 Briefly describe what problem this project is solving and how it is using blockchain to solve the problem. Then summarize the project's achievements and key takeaways.
@@ -149,24 +150,21 @@ Grass 아키텍처는 크게 Validator, Router, Grass Node, Zk Processor, Data L
 ![seq_diagram](https://hackmd.io/_uploads/rkCl2d-Sxg.png)
 
 
-#### 1️⃣ **클라이언트의 크롤링 요청을 Grass Node까지 전달**
-1. 클라이언트가 크롤링 요청을 암호화하여 Validator에 전달
-2. Validator는 요청을 검증한 뒤 적절한 Router에게 전달
-3. Router는 요청을 적절한 Grass Node로 라우팅
-
-#### 2️⃣ **Grass Node에 의한 웹 요청 및 응답 수집**
-1. Node는 받은 암호화된 요청을 탈암호화하여 웹사이트에 실제 접속
-2. 웹사이트로부터 응답(데이터/HTML)을 수신
-3. Node는 받은 응답을 암호화하여 Router를 통해 Validator로 전달
-
-#### 3️⃣ **ZK Processor → Layer‑1 블록체인**
-1. 일정 수 이상의 웹 세션이 모이면 ZK Processor가 세션 데이터를 취합
-2. ZK 기술을 이용해 Zero-Knowledge 증명(ZK proof)을 생성
-3. 생성된 증명은 Layer‑1 블록체인(예: Solana)에 제출되어 세션 무결성이 입증
-
-#### 4️⃣ **데이터 전처리 및 저장**
-1. 웹 콘텐츠와 증명은 Grass Data Ledger에 연결되어 불변 구조로 저장
-2. Edge Embedding Models가 데이터를 정형화 + 정제하여 AI 학습용 형식으로 변환
+1. **클라이언트의 크롤링 요청을 Grass Node까지 전달**
+    1. 클라이언트가 크롤링 요청을 암호화하여 Validator에 전달
+    2. Validator는 요청을 검증한 뒤 적절한 Router에게 전달
+    3. Router는 요청을 적절한 Grass Node로 라우팅
+2. **Grass Node에 의한 웹 요청 및 응답 수집**
+    1. Node는 받은 암호화된 요청을 탈암호화하여 웹사이트에 실제 접속
+    2. 웹사이트로부터 응답(데이터/HTML)을 수신
+    3. Node는 받은 응답을 암호화하여 Router를 통해 Validator로 전달
+3. **ZK Processor → Layer‑1 블록체인**
+    1. 일정 수 이상의 웹 세션이 모이면 ZK Processor가 세션 데이터를 취합
+    2. ZK 기술을 이용해 Zero-Knowledge 증명(ZK proof)을 생성
+    3. 생성된 증명은 Layer‑1 블록체인(예: Solana)에 제출되어 세션 무결성이 입증
+4. **데이터 전처리 및 저장**
+    1. 웹 콘텐츠와 증명은 Grass Data Ledger에 연결되어 불변 구조로 저장
+    2. Edge Embedding Models가 데이터를 정형화 + 정제하여 AI 학습용 형식으로 변환
 
 ---
 
