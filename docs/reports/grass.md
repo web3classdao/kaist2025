@@ -22,66 +22,66 @@
     - [Discord](https://discord.gg/getgrass)
 
 ### 📌 Summary  
-Briefly describe what problem this project is solving and how it is using blockchain to solve the problem. Then summarize the project's achievements and key takeaways.
+
+Grass is a decentralized web crawling network that leverages the idle internet bandwidth of ordinary users to solve the problem of IP blocking during web crawling. Users install Grass Nodes on their devices to participate in crawls and receive token rewards in return. The blockchain is utilized for ZK proofs and on-chain records to ensure the integrity of the work and transparent reward distribution. In just over a year, the network has gained over 3 million users and improved network processing efficiency by 60x with the Sion upgrade. It also features a well-designed incentive structure, including a token-based point system, multi-tiered referrals, and reputation-based rewards. By combining crowdsourcing and blockchain, Grass is creating a new paradigm for AI data collection. However, it is still using blockchain for data validation and token issuance, and it remains to be seen how it will evolve key components such as the Validator and Router into a decentralized structure.
 
 ---
 
 ## 2. Background & Problem Statement
 
-### AI 모델 개발과 데이터 수집
-LLM과 같은 AI 모델을 개발하기 위해서는 엄청난 규모의 데이터가 필요하다. 이러한 데이터를 수집하고 정제하고 학습을 위해 토큰화하는 과정에 많은 시간이 소요된다. 트랜스포머의 등장으로 라벨링 데이터가 필요없는 비지도 학습이 가능해 졌다고 하지만, 최신의 정보를 기반으로 학습과 추론하기 위해서는 실시간 웹 크롤링이 여전이 중요한 과제다.
+### AI model development and data collection
+Developing an AI model like LLM requires a huge amount of data. The process of collecting, cleaning, and tokenizing this data for training is time-consuming. While the advent of Transformers has enabled unsupervised learning without the need for labeled data, real-time web crawling is still a major challenge for learning and reasoning based on the latest information.
 
-### 웹 크롤링 현황
-2025년 웹 크롤링 시장 규모는 10억3천만 달러이며, 연 평균 14% 성장이 예상되는 만큼 활발하다. 아래는 [웹 크롤링 시장 리포트](https://thunderbit.com/blog/web-crawling-stats-and-industry-benchmarks)에서 정리한 지표들이다.
-- 전 세계 기업 65%가 웹 크롤링 또는 데이터 추출 기술을 도입
-- 이커머스 분야가 가장 적극적이며 웹 스크래핑 사용자의 48%가 이커머스 분야
-- 65% 조직이 크롤링된 데이터를 AI 학습과 분석에 활용
-- 웹의 약 80-90%가 비정형 데이터
-- 웹 트래픽의 약 절반(49.6%)은 봇에 의한 것
-- 전체 웹사이트의 약 43%가 CAPTCHA나 Cloudflare와 같은 봇 방어 기술을 적용 중
+### The State of Web Crawling
+The web crawling market is expected to be worth $1.03 billion in 2025, with an average annual growth rate of 14%. Here are some indicators from the Web Crawling Market Report (https://thunderbit.com/blog/web-crawling-stats-and-industry-benchmarks)
+- 65% of enterprises worldwide have adopted web crawling or data extraction technology
+- E-commerce is the most active sector, with 48% of web scraping users in this space
+- 65% of organizations use crawled data for AI training and analytics
+- About 80-90% of the web is unstructured data
+- About half (49.6%) of web traffic is from bots
+- About 43% of all websites employ bot defense technologies like CAPTCHAs and Cloudflare
 
-### 웹 크롤링 방지 기술의 확대
-앞의 보고서에서도 언급되었지만, 43% 사이트가 봇 방어 기술을 적용하고 있다. Cloudflare, CAPTCHA, IP 제한, JavaScript 기반 렌더링 등 다층적인 접근 제어가 일반화되고 있어 일반적인 크롤링 툴(예: Python의 requests, scrapy)은 다수의 사이트에서 차단되고 있다. 특히, 데이터센터 IP 주소의 경우 웹사이트들로 부터 차단되는 경우가 많다.
+### Web crawl prevention technologies are expanding
+As mentioned in the previous report, 43% of sites are employing bot defense technologies. Multi-layered access controls such as Cloudflare, CAPTCHAs, IP restrictions, and JavaScript-based rendering are becoming more common, and common crawling tools (e.g., Python's requests, scrapy) are being blocked by many sites. In particular, data center IP addresses are often blocked from websites.
 
-### 웹 크롤링 기업 현황
-| 기업명                                     | 본사    | 특징 / 주요 서비스                            |
+### Web Crawling Companies
+
+| Company Name | Headquarters | Features / Main Services |
 | --------------------------------------- | ----- | -------------------------------------- |
-| **Bright Data** (구 Luminati)            | 이스라엘  | 최대 규모. **프록시+크롤링 API**. 수많은 타겟 웹사이트 지원 |
-| **ScrapingBee**                         | 프랑스   | 헤드리스 브라우저 기반 크롤링 API. JS 렌더링 가능        |
-| **Zyte** (구 Scrapy Cloud / Scrapinghub) | 아일랜드  | Scrapy 오픈소스 기반. 크롤링-as-a-service       |
-| **Oxylabs**                             | 리투아니아 | 대규모 프록시 네트워크 + 기업용 데이터 수집 솔루션          |
-| **SerpApi**                             | 미국    | Google 검색 결과 크롤링 특화. Captcha 우회 내장     |
-| **Diffbot**                             | 미국    | AI 기반 웹 구조 분석 → JSON 데이터 추출            |
-| **Webz.io**                             | 이스라엘  | 다크웹·오픈웹 모니터링 등 특수 목적 크롤링               |
+| **Bright Data** (formerly Luminati) | Israel | Largest. **Proxy+Crawl API**. Supports tons of targeted websites |
+| **ScrapingBee** | France | Headless browser-based crawling API. JS rendering available |
+| **Zyte** (formerly Scrapy Cloud / Scrapinghub) | Ireland | Based on Scrapy open source. Crawl-as-a-service |
+| **Oxylabs** | Lithuania | Large proxy network + enterprise data collection solutions |
+| **SerpApi** | USA | Specializes in crawling Google search results. Captcha bypass built-in |
+| **Diffbot** | United States | AI-powered web structure analysis → JSON data extraction |
+| **Webz.io** | Israel | Special purpose crawling, including dark web and open web monitoring |
 
-이들이 데이터를 크롤링 하는 방식은 다음과 같다. 대부분 중앙화된 방식으로 웹 크롤링 방지 기술을 우회하는 방법을 사용하고 있다. 
+Here's how they crawl data. Most of them are using a centralized method to bypass web anti-crawling technologies. 
 
-| 방법               | 설명                                  |
+| How-To's | Explained |
 | ---------------- | ----------------------------------- |
-| **프록시 네트워크 사용**  | IP 차단 회피를 위해 수백만 개의 프록시 IP 활용       |
-| **헤드리스 브라우저**    | Puppeteer, Playwright 등으로 JS 렌더링 대응 |
-| **Captcha 우회**   | 자동화된 Captcha 해결 또는 인간 입력 서비스 연동     |
-| **AI 기반 파싱**     | DOM 구조가 바뀌어도 AI가 주요 콘텐츠 자동 추출       |
-| **API Wrapping** | 검색결과/뉴스/쇼핑 페이지 등을 REST API처럼 가공 제공  |
-
+| **Use Proxy Networks** | Tap into millions of proxy IPs to evade IP blocks |
+| **Headless Browsers** | Render JS with Puppeteer, Playwright, and more |
+| **Bypass Captchas** | Automatically solve captchas or integrate with human input services |
+| **AI-Powered Parsing** | Automatically extract key content with AI, even when the DOM structure changes |
+| **API Wrapping** | Parse search results, news, shopping pages, and more like REST APIs |
 
 ---
 
 ## 3. How It Works
 
 ### 🔍 3.1 Project Approach  
-Grass는 탈중앙화된 웹 크롤링 네트워크를 구축한다. 일반 사용자들의 컴퓨터나 휴대폰에 웹 크롤링 노드를 설치해 크롤링하는 것이다. 참여자들은 유휴 인터넷 대역폭을 제공하고 Grass는 보상으로서 토큰을 제공한다. 이때 참여자 노드는 Residential IP이기 때문에 일반 사용자로 인식하여 IP 차단이 되지 않고 크롤링할 수 있는 것이다. 전 세계 노드를 통해 수집된 비정형 데이터는 AI 학습에 적합한 구조화된 데이터셋으로 변환해서 제공된다. 
+Grass builds a decentralized web crawling network. It crawls the web by installing web crawling nodes on the computers or phones of ordinary users. Participants provide idle internet bandwidth and Grass provides tokens as a reward. Because the participant nodes have residential IPs, they are recognized as regular users and can crawl without being IP-blocked. The unstructured data collected from nodes around the world is transformed into structured datasets suitable for AI training.
 
-[2025년 1월 기사](https://beincrypto.com/grass-unveils-2025-roadmap-what-you-need-to-know/)에 따르면 Grass는 1년만에 빠른 성장을 한 것을 알 수 있다.
+According to a [January 2025 article](https://beincrypto.com/grass-unveils-2025-roadmap-what-you-need-to-know/), Grass has grown rapidly in just one year.
 
-| 항목           | 수치/설명                      |
+| Item | Numbers/Description |
 | ------------ | -------------------------- |
-| 사용자 수 (2024) | 20만 → 300만 (15× 증가)        |
-| 비디오 인덱싱 규모   | 1000× 증가                   |
-| 분배된 토큰 총량    | \$196M / 220만 명 이상         |
-| 네트워크 효율 개선   | Sion Phase 1을 통해 60× 개선    |
-| 토큰 가격        | 발표 직후 약 2.5% 상승, \$2.82 수준 |
-
+| Number of Users (2024) | 200K → 3M (15× increase) |
+| Video Indexing Scale | 1000× increase |
+| Total Tokens Distributed | \$196M / 2.2M+ users |
+| Network Efficiency Improvement | 60× improvement with Sion Phase 1 |
+| Token Price | Up about 2.5% immediately after the announcement, to a level of \$2.82 |
 
 
 ---
@@ -90,58 +90,58 @@ Grass는 탈중앙화된 웹 크롤링 네트워크를 구축한다. 일반 사�
 
 ![Architecture](https://grass-foundation.gitbook.io/grass-docs/~gitbook/image?url=https%3A%2F%2F4200124-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FVuFE5nRztwdZPBWH5NLC%252Fuploads%252F2QOjUX7BmbhyGAU1u6vK%252FGrass%2520Graphic%2520flow%2520%282%29.png%3Falt%3Dmedia%26token%3D93571a11-10f9-470f-af0e-4e298f00793e&width=768&dpr=4&quality=100&sign=d858da95&sv=2)
 
-Grass 아키텍처는 크게 Validator, Router, Grass Node, Zk Processor, Data Ledger, Edge Embedding Models의 계층 구조로 이루어져 있다. 이 중 Validator, Router, Grass Node가 크롤링에 참여하고, 나머지는 데이터 증명과 전처리 작업을 한다. 
+The Grass architecture consists of a hierarchy of Validator, Router, Grass Node, Zk Processor, Data Ledger, and Edge Embedding Models. Among them, Validator, Router, and Grass Node participate in crawling, while the rest perform data attestation and preprocessing.
 
-- **Validator**
-    - 웹 요청을 시작하고, 노드의 트랜잭션을 검증해 ZK 증명을 생성
-    - 초기에는 단일 구조지만, 향후 탈중앙화된 위원회로 전환 예정
-- **Router**
-    - Grass Node와 Validator 사이에서 요청을 중계하고 대역폭을 관리
-    - 처리량 기준으로 보상 받음
-- **Grass Node**
-    - 사용자 기기에서 실행되며 웹 데이터를 수집
-    - 암호화 요청을 처리하고, 트래픽을 라우터로 반환하며 평판 점수 기반으로 보상 받음 
-- **Zk Processor**
-    - 모든 세션의 **유효성 증명(ZK proof)**을 작성해 Layer‑1 블록체인(Solana)에 제출
-    - 웹 크롤링 내역이 불변 증명으로 기록 
-- **Grass Data Ledger**
-    - 처리된 데이터와 on‑chain 증명을 연결한 불변 데이터 저장소 
-- **Edge Embedding Models**
-    - 수집된 비정형 웹 데이터를 전처리하여, AI 학습에 적합한 형식으로 정제
+- Validator
+    - Initiates web requests, validates transactions on nodes, and generates ZK proofs.
+    - Initially a single structure, but will transition to a decentralized committee in the future
+- Router
+    - Relays requests between Grass Nodes and Validators and manages bandwidth
+    - Compensated based on throughput
+- Grass Node
+    - Runs on user devices and collects web data
+    - Processes encryption requests, returns traffic to the router, and is rewarded based on reputation score
+- Zk Processor
+    - Creates a **ZK proof** of every session and submits it to a Layer-1 blockchain (Solana)
+    - Web crawl history is recorded as immutable proofs
+- Grass Data Ledger
+    - Immutable data store that links processed data with on-chain proofs
+- Edge Embedding Models
+    - Pre-processes collected unstructured web data and refines it into a format suitable for AI training
 
 ---
 
 ### 🎯 3.3 Core Components  
 
 #### Validator
-- 네트워크의 핵심 역할 중 하나로, 웹 요청을 시작하고 트랜잭션을 검증하는 두 가지 주요 역할을 수행
-- TLS 연결을 위해 자체 키를 사용하여 다양한 암호화 알고리즘(AEAD, RSA, ChaCha20 등) 중 하나를 선택해 사용
-- 세션 기반으로 pre-master, master, session 키를 안전하게 관리하며, 이를 통해 노드 트래픽 품질을 평가
-- 검증이 완료된 세션 데이터는 ZK Processor로 전달되어 증명 생성 및 온체인 기록을 위한 배치 처리
-- 현재는 단일 주체인데, 장기적으로는 경제적 담보를 지닌 여러 검증자가 참여하는 구조로 전환 예정
+- One of the core roles of the network, fulfilling two main roles: initiating web requests and validating transactions
+- Uses any of a variety of encryption algorithms (AEAD, RSA, ChaCha20, etc.) with its own keys for TLS connections
+- Securely manages pre-master, master, and session keys on a per-session basis, which are used to evaluate the quality of node traffic
+- Once validated, session data is passed to the ZK Processor for batch processing for proof generation and on-chain recording.
+- Currently a single entity, but in the long term they plan to move to a structure with multiple validators with economic collateral
 
 #### Router
-- 지리적으로 분산된 허브(hub)로, Grass Node와 Validator 간의 연결을 중계하는 역할
-- 네트워크 전체의 연결 상태를 유지하면서, 모든 입·출력 웹 요청을 Validator로 전달 및 관리
-- 각 요청/응답의 바이트 수(size), 노드 및 Validator와의 지연 시간(latency), 연결 상태(connection health) 등의 메트릭을 Validator에 보고
-- 스테이킹된 토큰 양에 비례하여 보상 받음
-- 네트워크에 연결된 노드의 신뢰성 검증 및 상태 유지 책임있음
-- 75% 이상 연결 유지 요구 조건을 충족하지 못하면, 스테이킹 자산 일부가 벌금(slashing)으로 차감될 수 있음
+- Geographically distributed hubs that relay connectivity between Grass Nodes and Validators
+- Forward and manage all incoming and outgoing web requests to the Validator, while maintaining connectivity across the network
+- Report metrics to the Validator, such as the size of each request/response in bytes, latency between the node and the Validator, and connection health
+- Receive rewards proportional to the amount of tokens staked
+- Responsible for validating the reliability and maintaining the health of nodes connected to the network
+- Failure to meet the 75% or more connectivity requirement may result in a portion of staked assets being deducted as a penalty (slashing)
 
 #### Grass Node
-- 노드 운영자는 자신의 유휴 인터넷 대역폭을 제공하며, 이를 통해 발생한 트래픽에 대해 토큰으로 보상을 받음
-- 공개 웹사이트에서 받은 응답을 암호화해 Router로 다시 전달함
-- 설치가 간단하며, 설치 후 연결이 완료되면 자동으로 네트워크에 등록되며, 24시간 가동
-- 노드는 사용자의 개인 활동에는 접근하지 않음
-- 오직 공개 웹사이트 트래픽만 중계하며, 개인 데이터는 처리하지 않음
-- 네트워크에서 토큰 보상을 받기 위해서는 Reputation Score가 중요함
+- Node operators offer their idle internet bandwidth and are rewarded with tokens for the traffic they generate
+- Responses received from public websites are encrypted and forwarded back to the router
+- Simple to install, automatically enrolls in the network once connected, and is up and running 24 hours a day
+- Nodes do not have access to your personal data
+- Only relays public website traffic, no personal data is processed
+- Reputation Score is important to earn token rewards on the network
 
-| 평가 항목            | 설명                   |
+| Metrics | Descriptions |
 | ---------------- | -------------------- |
-| **Completeness** | 데이터가 얼마나 완전한지 평가     |
-| **Consistency**  | 시간 및 요청 간 데이터 일관성 여부 |
-| **Timeliness**   | 최신성이 유지되는지 여부        |
-| **Availability** | 응답의 지속 가능성 평가        |
+| **Completeness** | assesses how complete the data is |
+| **Consistency** | assesses whether the data is consistent over time and across requests |
+| **Timeliness** | assesses whether it is kept up to date |
+| **Availability** | assesses how sustainable the response is |
 
 
 ---
@@ -149,61 +149,60 @@ Grass 아키텍처는 크게 Validator, Router, Grass Node, Zk Processor, Data L
 ### 🔁 3.4 Workflow Overview  
 ![seq_diagram](https://hackmd.io/_uploads/rkCl2d-Sxg.png)
 
-
-1. **클라이언트의 크롤링 요청을 Grass Node까지 전달**
-    1. 클라이언트가 크롤링 요청을 암호화하여 Validator에 전달
-    2. Validator는 요청을 검증한 뒤 적절한 Router에게 전달
-    3. Router는 요청을 적절한 Grass Node로 라우팅
-2. **Grass Node에 의한 웹 요청 및 응답 수집**
-    1. Node는 받은 암호화된 요청을 탈암호화하여 웹사이트에 실제 접속
-    2. 웹사이트로부터 응답(데이터/HTML)을 수신
-    3. Node는 받은 응답을 암호화하여 Router를 통해 Validator로 전달
-3. **ZK Processor → Layer‑1 블록체인**
-    1. 일정 수 이상의 웹 세션이 모이면 ZK Processor가 세션 데이터를 취합
-    2. ZK 기술을 이용해 Zero-Knowledge 증명(ZK proof)을 생성
-    3. 생성된 증명은 Layer‑1 블록체인(예: Solana)에 제출되어 세션 무결성이 입증
-4. **데이터 전처리 및 저장**
-    1. 웹 콘텐츠와 증명은 Grass Data Ledger에 연결되어 불변 구조로 저장
-    2. Edge Embedding Models가 데이터를 정형화 + 정제하여 AI 학습용 형식으로 변환
+1. **Forward the client's crawl request to the Grass Node**.
+    1. A client encrypts the crawl request and forwards it to the validator
+    2. Validator validates the request and forwards it to the appropriate Router
+    3. Router routes the request to the appropriate Grass Node
+2. **Collection of web requests and responses by Grass Node**
+    1. Node de-encrypts the received encrypted request to access the actual website
+    2. Receives the response (data/HTML) from the website
+    3. Node encrypts the received response and forwards it to Validator via Router
+3. **ZK Processor → Layer-1 Blockchain**
+    1. When a certain number of web sessions are gathered, ZK Processor aggregates session data
+    2. Generates Zero-Knowledge Proof (ZK proof) using ZK technology
+    3. The generated proof is submitted to a Layer-1 blockchain (e.g. Solana) to prove session integrity
+4. **Data Preprocessing and Storage**
+    1. Web content and proofs are connected to the Grass Data Ledger and stored in an immutable structure
+    2. Edge Embedding Models structure, cleanse the data and convert it into a format for AI learning
 
 ---
 
 ## 4. Token Economy *(if applicable)*
 
 ### [Funding & TGE(Token Generation Event)](https://icodrops.com/grass/)
-23년 12월 Seed Round 투자로 $3.5M을 받았고, 24년 9월 Series A 투자를 받은 후 10월에 TGE를 단행했다. Listing price는 $0.87이었고, 현재 $0.97이다. 투자자는 아래와 같다. 
+The company raised $3.5M in a Seed Round in December 2023, received Series A funding in September 2024, and conducted a TGE in October. The listing price was $0.87 and is currently $0.97. Investors are listed below 
 
 ![Investors](https://hackmd.io/_uploads/HJ33j4-Sxg.png)
 
 ### [Grass Token Status](https://coinmarketcap.com/currencies/grass/)
-아래는 Coinmarketcap의 GRASS 토큰 현황입니다. 토큰 총 발행량은 10억개가 될 것이며, 현재 유통량(발행량)은 2.4억개이다. 토큰 하나의 가격은 $0.97이며 시가총액은 $237M이며, 현재 Coinmarketcap 순위는 165위이다. (시가총액기준) 만약 전체 토큰이 발행된다면(10억개) 시가총액은 $972M이 될 것이다. (FDV, Fully-Diluted Value)
+Below is the GRASS token status on Coinmarketcap. The total token supply will be 1 billion tokens, with a current circulating supply of 240 million tokens. Each token is priced at $0.97 and has a market capitalization of $237M, currently ranking 165th on Coinmarketcap. (If all tokens were issued (1 billion), the market capitalization would be $972M (FDV, Fully-Diluted Value).
 
 <img src="https://hackmd.io/_uploads/S1cF34ZBlg.png" alt="Grass" width="50%">
 
 ### [GRASS Token Supply](https://grass-foundation.gitbook.io/grass-docs/introduction/grass/grass-tokenomics)
-10억개 토큰에 대한 분배 계획은 아래 다이어그램과 같다. 
+The distribution plan for 1 billion tokens is shown in the diagram below.
 ![Token Allocation](https://grass-foundation.gitbook.io/grass-docs/~gitbook/image?url=https%3A%2F%2F4200124-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FVuFE5nRztwdZPBWH5NLC%252Fuploads%252FzkFX1OTX1H6tiP0KPRBM%252Fimage%2520%2831%29.png%3Falt%3Dmedia%26token%3D1afd78d4-6025-45e6-9410-36ac71c6fc02&width=768&dpr=4&quality=100&sign=29125241&sv=2)
 
-현재 2.4억개가 발행되었는데, 앞으로 순차적으로 공급되고 분배되어 총 10억개까지 공급될 예정이다. 공급/유통 스케쥴은 다음과 같다. 
+Currently, 240 million tokens have been issued, and will be supplied and distributed over time to reach a total supply of 1 billion tokens. The supply/distribution schedule is as follows
 ![Circulating Schedule](https://grass-foundation.gitbook.io/grass-docs/~gitbook/image?url=https%3A%2F%2F4200124-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FVuFE5nRztwdZPBWH5NLC%252Fuploads%252FWPzZrO7szpF9s41IK3aL%252Fb4rveds54gref.png%3Falt%3Dmedia%26token%3D6f4d53c2-1bed-469e-af3b-19f7b0505c16&width=768&dpr=2&quality=100&sign=3d5e0c4&sv=2)
 
 ### [Grass Airdrop One](https://grass-foundation.gitbook.io/grass-docs/introduction/grass/grass-airdrop-one)
-서비스 초기 사용자 유치를 위해 토큰 에어드롭 이벤트를 한다. Grass의 경우 1억개(총 발행량의 10%)를 초기 기여자들에게 에어드롭했다. 에어드롭 기간을 9개의 Epoch로 나누고 각 Epoch마다 획득한 Grass Points에 따라 Tier를 나누고 각 Tier별로 다르게 분배했다. 
+Token airdrops are commonly used to attract early users to a service. In the case of Grass, 100 million tokens (10% of the total supply) were airdropped to early contributors. They divided the airdrop period into 9 epochs and divided the tiers according to the number of Grass Points earned in each epoch and distributed them differently in each tier.
 
 <img src="https://grass-foundation.gitbook.io/grass-docs/~gitbook/image?url=https%3A%2F%2F4200124-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FVuFE5nRztwdZPBWH5NLC%252Fuploads%252Fsd6YM3WefanJLN3gImae%252FFrame%25201597883803.png%3Falt%3Dmedia%26token%3D5019490a-964c-45f4-9c2e-08fc2cfbef9f&width=768&dpr=2&quality=100&sign=ff9978ec&sv=2" alt="Epoch allocation" width="50%">
 
 ![Tier allocation](https://grass-foundation.gitbook.io/grass-docs/~gitbook/image?url=https%3A%2F%2F4200124-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FVuFE5nRztwdZPBWH5NLC%252Fuploads%252FFa6wSdRRXMpFruOdu914%252FFrame%25201597883805.png%3Falt%3Dmedia%26token%3D49702008-7f97-4f38-9285-2330f5142082&width=768&dpr=2&quality=100&sign=9b848bd9&sv=2)
 
 ### [Grass Points](https://grass-foundation.gitbook.io/grass-docs/how-to-guide/grass-points)
-인터넷 bandwidth를 제공한다고 바로 Grass 토큰을 받는게 아니다. Grass 포인트를 받는다. 그리고 Epoch이 끝나면 쌓은 포인트에 따라 토큰이 분배되는 방식이다. Epoch의 기간은 정해져 있지만, Epoch에 얼마의 토큰이 분배되는지는 정해져 있지 않다. 
+You don't get Grass tokens just for providing internet bandwidth. You earn Grass points, and at the end of the Epoch, tokens are distributed based on the number of points you've accumulated. The duration of an Epoch is fixed, but the number of tokens distributed per Epoch is not.
 
-포인트를 받는 방법은 1) 인터넷 bandwidth를 제공하거나, 2) 다른 사람을 초대하는 것이다. 여기서 다른 사람을 초대하는 경우 첫 번째 초대자(Primary Referrals)가 받은 포인트의 20%를 받게 되고, 그 초대자가 다른 사람을 다시 초대하는 경우(Secondary Referrals) 새로운 초대자가 받은 포인트의 10%를 받게 된다. 이후 3차 수준 초대자 포인트의 5%를 받게 된다. 이런 Referral 포인트는 초대자가 서비스를 유지하는 동안 계속 받게 된다. 
+You can earn points by 1) providing internet bandwidth, or 2) inviting others to join. If you refer others, you will receive 20% of the points earned by the first referrer (Primary Referrals), and if they refer others again (Secondary Referrals), you will receive 10% of the points earned by the new referrer. You then receive 5% of the third-level invitee's points. These referral points continue to be earned as long as the referrer remains on the service.
 
-그리고 Referral 수나 누적 포인트에 따라 Iron부터 Titan까지 10개 Tier 중 하나에 속하며 그에 따라 보너스 포인트를 받게 된다.  
+Based on the number of referrals and points accumulated, you'll be placed in one of 10 tiers, from Iron to Titan, and receive bonus points accordingly.
 
 ### [Grass Staking](https://grass-foundation.gitbook.io/grass-docs/introduction/grass/grass-staking)
 
-받은 Grass 토큰은 Router에 스테이킹해서 이자를 받을 수 있다. 아래 그림은 스테이킹 화면인데, 연이율(APR, Annual Percentage Rate) 35%의 보상이 주어지는 것을 볼 수 있다. 이것은 다른 스테이킹 서비스에 비해 매우 높은 수준인데, 이것이 어떻게 가능할지 살펴봐야 한다. Grass 토큰으로 보상이 주어지는데 이 토큰은 어디서 오는걸까? 토큰 이코노미에 인플레이션이 없었기 때문에 총 발행할 물량의 일부가 보상으로 지급되는게 아닐까 추측해 볼 수 있다. 서비스 초기이기 때문에 높은 APR로 Grass 토큰을 스테이킹하도록 유인해서 유통량을 줄이고 가격을 방어하기 위한 전략으로 보인다. 하지만, 충분한 토큰이 스테이킹되면 보상을 낮출 것으로 예상된다. 
+The Grass tokens you receive can be staked on the Router to earn interest. Below is the staking screen, and you can see that you'll be rewarded with an APR (Annual Percentage Rate) of 35%. This is very high compared to other staking services, and it's worth exploring how this is possible. Rewards are given in Grass tokens, but where do these tokens come from? Since there is no inflation in the token economy, we can speculate that a portion of the total supply to be issued is being paid out as rewards. Since it's early in the service, it seems to be a strategy to promote people to stake Grass tokens at a high APR to reduce the circulating supply and defend the price. However, once enough tokens are staked, the reward is expected to be lowered.
 
 ![Grass Staking](https://hackmd.io/_uploads/ByQZDr-Heg.png)
 
@@ -214,13 +213,13 @@ Grass 아키텍처는 크게 Validator, Router, Grass Node, Zk Processor, Data L
 
 ### [Grass Dashboard](https://www.grassfoundation.io/network/stats)
 
-Grass 네트워크 현황을 볼 수 있는 대시보드를 제공한다. 하루 800 TB 이상의 데이터가 수집되고 있다.
+Grass provides a dashboard to view the status of the Grass network. Over 800 TB of data is collected per day.
 ![image](https://hackmd.io/_uploads/SyUdsBWHeg.png)
 ![image](https://hackmd.io/_uploads/rkDAiS-rgl.png)
 ![image](https://hackmd.io/_uploads/ByxoFLZrgl.png)
 
 ### [Sion Upgrade](https://x.com/grass/status/1886541454664974807)
-25년 2월 Sion 2단계 업그레이드를 통해 컴퓨팅 자원을 수평적으로 확장하며, 네트워크 처리량을 10배 향상시키고, 페타바이트 규모에서 실시간 멀티모달 데이터 스크래핑(예: 4K 비디오 데이터 등)을 지원한다. 기술적인 핵심은 스크래핑 알고리즘을 최적화하고 워크로드를 여러 노드로 분산해 병렬 처리함으로써 처리량을 늘리고 스크랩핑 속도를 빠르게 한 것이다. 이로써 대용량 처리가 필요한 멀티모달 데이터를 수집하고 처리할 수 있게 되었고, 멀티모달 AI 개발에 데이터를 공급할 수 있게 되었다.
+February 25, 2015 Sion Phase 2 upgrade horizontally scales computing resources, improves network throughput by 10x, and supports real-time multimodal data scraping (e.g., 4K video data) at petabyte scale. The technical key is to increase throughput and speed up scraping by optimizing the scraping algorithm and distributing the workload across multiple nodes for parallel processing. This makes it possible to collect and process multimodal data that requires large-scale processing and feed data into multimodal AI development.
 
 ![Q1 Performance](https://pbs.twimg.com/media/GnibPjhbMAA2Ui2?format=jpg&name=large)
 
@@ -228,36 +227,36 @@ Grass 네트워크 현황을 볼 수 있는 대시보드를 제공한다. 하루
 
 <img src="https://hackmd.io/_uploads/BkQlnlMBxg.png" alt="Grasshopper" width="50%">
 
-곧 Grass Node 하드웨어를 출시할 예정이다. 별도 기기 설정 없이 네트워크에 연결만 하면 Grass Node로 동작하고 포인트를 얻을 수 있다. 일종의 Grass 채굴기와 같은 역할이다. 
+They'll be releasing Grass Node hardware soon. You don't need to set up your device, just connect it to the network and it will act as a Grass Node and earn points. It's kind of like a Grass miner.
 
 ---
 
 ## 6. User Experience & Hands-on Review *(if applicable)*
 
-### Grass Node 사용자 인터페이스
-[Grass Node를 다운](https://app.grass.io/register?referralCode=bLBIYzyQBimUHEl)받아 설치 후 Node 프로그램 UI는 아래와 같이 심플하다. 네트워크와 연결하는 버튼과 획득한 포인트를 보여준다.
+### Grass Node User Interface
+After [downloading Grass Node](https://app.grass.io/register?referralCode=bLBIYzyQBimUHEl) and installing it, you can see the simple Node program UI as shown below. It shows a button to connect to the network and the points earned.
 
 <img src="https://hackmd.io/_uploads/SksVxK-rxx.png" alt="Grass Node UI" width="50%">
 
-대신 자세한 내용은 웹사이트 대시보드를 보면 확인할 수 있다. 일간 수익 통계, 접속한 네트워크 이력, 추천 프로그램 현황과 Tier, 리워드 현황을 확인할 수 있다.
+Node program UI is simple. For more information, you can look at the website dashboard instead. You can see your daily earnings statistics, a history of the networks you've connected to, your referral program status and tier, and your rewards.
 ![image](https://hackmd.io/_uploads/BJNxzK-Bee.png)
 ![image](https://hackmd.io/_uploads/SkvHfF-Slx.png)
 ![image](https://hackmd.io/_uploads/BkqtfF-Bee.png)
 
-### 지갑과 이메일 인증 과정
-3단계로 인증 과정이 일어난다.
-1. 이메일 인증
-1. 지갑 인증 (Solana 지갑)
-1. 이메일에서 지갑 인증 (주소가 누구랑 연결된건지 확인)
+### Wallet and email verification process
+The verification process takes place in three steps.
+1. email verification
+1. wallet verification (Solana wallet)
+1. verify wallet from email (verify who the address is associated with)
 
 <img src="https://hackmd.io/_uploads/rJmu7tWrle.png" alt="Grass Node Auth" width="60%">
 <img src="https://hackmd.io/_uploads/ry3YXKZBxg.png" alt="Grass Node Auth" width="60%">
 
-### 사용 후기
-- 설치와 실행이 매우 쉬움
-- 대시보드 역시 어렵지 않고 직관적임
-- 특히, 레퍼럴 프로그램에 신경 많이 쓰고 집중하는 느낌
-- 인증 과정도 수월하게 진행
+### Reviews
+- Very easy to install and run
+- The dashboard is intuitive and easy to use
+- I feel like they care and focus on the referral program in particular
+- Easy to go through the certification process
 
 
 ---
@@ -265,55 +264,51 @@ Grass 네트워크 현황을 볼 수 있는 대시보드를 제공한다. 하루
 ## 7. Why Blockchain
 
 [The official documentation](https://grass-foundation.gitbook.io/grass-docs/introduction/grass) describes the need for blockchain as follows.
-[공식문서](https://grass-foundation.gitbook.io/grass-docs/introduction/grass)는 블록체인의 필요성을 다음과 같이 설명한다.
 
 - **Transactional Efficiency**: Global settlement in over 190 countries is both easier and better on-chain than it is off-chain.
 > With participants scattered across the globe and small amounts to be paid to them, using traditional money transfer systems is not only inefficient, it's impossible.
-> 참여자들이 전 세계에 흩어져 있고, 그들에게 지불해야 하는 금액이 소액이라 전통적인 송금 시스템을 이용하는 것은 비효율적일 뿐만 아니라 불가능하다. 
 
 - **Transparency**: Proofs of each transaction being posted on-chain provides empirical evidence that rewards are being equitably distributed. It also provides transparency with respect to the verification of data provenance.
 > On-chain is the best way to ensure that everyone can verify that the distribution of tokens based on contributions is fair. And to verify the source and path of data, it should be transparently recorded on-chain.
-> 기여에 따른 토큰의 분배가 공정히 되었는지를 모두가 확인하려면 on-chain이 가장 적합하다. 그리고 데이터의 출처와 경로를 검증하기 위해서는 on-chain에 투명하게 기록해야 한다. 
 
 - **User Ownership**: Users should own their contributions to the internet, otherwise they will continue to be exploited by large tech companies.
 > In a typical big tech company, users don't know about their contributions, can't claim them, and can't be compensated for them. However, your contributions should belong to you. This requires a blockchain-based way to record and control contributions.
-> 일반적인 빅테크 기업에서 사용자는 자신의 기여를 알수도 없고 주장하거나 보상 받을 수 없다. 하지만, 사용자의 기여는 사용자의 소유가 되어야 한다. 그러기 위해서는 블록체인 기반으로 기여를 기록하고 사용자가 통제할 수 있어야 한다. 
 
 ---
 
 ## 8. Insights & Limitations
 
 ### ✅ Key Takeaways
-- 웹 크롤링에서 IP 차단 이슈를 일반 사용자의 기기를 크라우드소싱함으로써 영리하게 잘 풀었다.
-- 유휴 IT 자원에 대한 크라우드소싱은 오래전부터 있던 아이디어다. SETI@Home, Folding@Home 등의 프로젝트가 유휴 자원을 이용했고, [BOINC](https://boinc.berkeley.edu/) 같은 소프트웨어가 주로 사용된다. 이러한 프로젝트는 보상없이 자발적으로 참여하기 때문에 Volunteer Computing라고 부른다. 반면, Grass는 웹 크롤링이라는 상업적인 목적을 위해 사용되면서 참여자에 대한 보상으로 Grass 토큰을 부여하면서 참여를 독려하는 점이 큰 차이다. 
-- 전 세계에 흩어진 노드가 참여하는 크라우드소싱의 경우 보상의 방식은 토큰이 가장 적절하다. 법정화폐를 이용한 전통적인 송금으로 구현해야 한다면 거의 불가능하다. 고객 확인부터 각 나라의 금융 시스템을 맞춰야 하기 때문에 구현하기 어렵다. 그런 점에서 토큰을 이용한 보상 시스템은 적절한 선택이다. 
-- 토큰 이코노미 설계가 흥미롭다. 바로 토큰을 부여하는 것이 아니라, 우선 Grass 포인트를 부여하고 일정 기간(Epoch)이 종료되면 정산해서 토큰으로 지급한다. 이렇게 두 단계를 거치는 것은 큰 장점을 가진다. 우선 사용자는 받은 포인트가 몇개의 토큰으로 전환되는지 모르기 때문에 보상에 대한 가치를 정확히 계산하기 어렵다. 그래서 보상이 적절한지 판단을 연기할 수 있다. 그리고 Epoch별로 일정량의 토큰을 할당하게 되면 참여 노드 수가 변동되더라도 토큰 수요를 고정시킬 수 있다. 또한, 포인트는 오프체인으로 기록할 수 있기 때문에 온체인 수수료를 지불하지 않아도 된다. 
-- 레퍼럴 프로그램과 Tier 구조는 gamification을 적절히 잘 적용한 케이스다. 특히, 레퍼럴에서 초대자의 성과만 공유받는게 아니라 2단계, 3단계 초대자의 성과도 공유 받는 것이라 훨씬 강력하다. 다단계 보상의 구조를 채택하고 있다. 또한, 레퍼럴과 포인트양에 따라 보상 받는 Tier를 구분해서 좀 더 참여하도록 자극하고 있다.  
-- 크롤링이 오류없이 수행되었다는 증명을 기록하기 위해 블록체인을 신뢰 엔진으로 이용하고 있다. 정확히 블록체인의 장점을 잘 살린 설계다. 프라이버시 보장을 위해 ZK 기술을 이용했고, 비용 효율성을 위해 배치 처리를 채택했다. 그리고 데이터 출처를 블록체인에 기록해 AI 모델 개발자들이 학습 데이터의 출처를 확인할 수 있게 함으로써 데이터의 신뢰도를 높여줄 수 있다. 앞으로 데이터의 출처와 사용이력 등을 위해서 이와 유사한 방식으로 블록체인을 사용하는 사례가 늘어날 전망이다. 
+- A clever solution to the problem of IP blocking in web crawling by crowdsourcing the devices of ordinary users.
+- Crowdsourcing idle device resources is an old idea. Projects like SETI@Home and Folding@Home have utilized idle resources, and software like [BOINC](https://boinc.berkeley.edu/) is often used. These projects are called Volunteer Computing because people participate voluntarily without compensation. Grass, on the other hand, is used for the commercial purpose of web crawling and incentivizes participation by rewarding participants with Grass tokens.
+- For crowdsourcing, where nodes are scattered around the world, tokens are the most appropriate way to reward them. Traditional fiat money transfers would be nearly impossible to implement. It is difficult to implement because you need to verify the customer and adapt to each country's financial system. In this sense, a reward system using tokens is the right choice.
+- The design of the token economy is interesting. Instead of giving out tokens right away, it first gives out Grass Points and then settles and gives out tokens at the end of an Epoch. This two-step process has great advantages. First, users don't know how many tokens they will receive with their points, so it's hard to calculate the exact value of the reward, so they can postpone deciding if the reward is appropriate. And by allocating a certain amount of tokens per epoch, the demand for tokens can be fixed even if the number of participating nodes fluctuates. Also, points can be recorded off-chain, so you don't have to pay on-chain fees.
+- The referral program and tier structure is a great example of gamification done right. It's a multi-tiered reward structure. They have different tiers of rewards based on referrals and the amount of points you earn, which encourages you to participate more.
+- It uses blockchain as a trust engine to record proof that the crawl was performed error-free. This is exactly the kind of design that plays to the strengths of blockchain. ZK technology is used to ensure privacy, batch processing is adopted for cost efficiency, and the provenance of the data is recorded on the blockchain so that AI model developers can verify the source of the training data, which increases the trustworthiness of the data. In the future, we expect to see more similar uses of blockchain for data provenance and usage history.
 
 ### ⚠ Limitations / Open Questions
-- Validator와 Router가 아직 분산되어 운영된다는 언급이나 증거가 없다. 사람들의 유휴 네트워크 자원을 이용한다는 측면에서 탈중앙화가 이뤄지긴 하지만, 운영 시스템(Validator와 Router)은 아직 중앙화된 구조인 것 같다. 
-- 운영 주체를 없애기 위해선 결국 Validator와 Router를 탈중앙화해야 하고, ZK Processor와 Data Ledger 역시 탈중앙화해야 한다. 탈중앙화 포인트가 많아서 어떻게 모든 요소를 탈중앙화할 수 있을지 의문이다. 특히, Data Ledger의 경우 저장 데이터 용량이 클 경우 탈중앙화 스토리지와 같아지기 때문에 매우 어려운 이슈다. 앞으로 어떤 방향으로 탈중앙화할지 지켜볼 문제다.
-- 보상을 극대화 하기 위해 Node를 악의적으로 운영할 수 있기 때문에 Node Reputation Scoring이 중요한 요소이다. 하지만, 문서에서는 어떤 정책으로 노드의 평판을 평가하겠다는 정책만 있고 측정하는 방법은 제시되어 있지 않다. 예를 들어 응답 데이터의 Completeness를 어떻게 측정할 것인지가 불분명하다. 크라우드소싱 방식으로 데이터 수집할 때 가장 어려운 부분이다. 악의적인 노드가 데이터를 변조하거나 가짜 데이터를 응답한다면 이를 검증하는 부분이 필요하다. 
-- 보상이 현금적인 가치로 연결되지 않도록 하기 위해 포인트를 지급하는건 영리한 정책이지만, Epoch에 따라 보상이 변동적일 수 있는건 사용자 입장에서는 불편한 요소다. 만약 Epoch가 끝나고 보상으로 받은 토큰이 기대에 미치지 못할 경우 참여를 중단할 수 있다. 또한 토큰 가격이 변동하기 때문에 같은 양을 받더라도 토큰 가격이 하락하면 실질 가치도 떨어지게 되고 참여를 유지할 동기가 약해 질 수 있다. 
-- 한 가지 아이디어로는 상업적인 웹크롤링과 함께 과학계산이나 공공적인 목적의 웹크롤링도 일부 처리해서 사용자의 자원이 공공의 목적에도 기여하고 있다는 만족감을 얻을 수 있게 할 수 있다. 
+- There is no mention or evidence that Validators and Routers are yet decentralized. Although they are decentralized in terms of using people's idle network resources, the operating systems (Validator and Router) seem to be still centralized.
+- In order to eliminate the operating entity, the Validator and Router must eventually be decentralized, and the ZK Processor and Data Ledger must also be decentralized. With so many decentralization points, it's hard to see how you can decentralize everything. Especially in the case of Data Ledger, it is a very difficult issue because if the amount of data stored is large, it becomes the same as decentralized storage. It remains to be seen in what direction they will decentralize in the future.
+- Node Reputation Scoring is an important factor because nodes can be operated maliciously to maximize rewards. However, the documentation only states the policy to evaluate the reputation of a node, but not how to measure it. For example, it is unclear how the completeness of the response data will be measured. This is the most difficult part of crowdsourcing data collection. There needs to be some way to verify that malicious nodes are not tampering with the data or responding with fake data.
+- Paying points is a clever policy to avoid tying the reward to a cash value, but the fact that the reward can fluctuate depending on the epoch is a pain point for users. If an Epoch ends and the tokens you're rewarded with don't meet your expectations, you may decide to stop participating. Also, since the price of tokens fluctuates, even if you receive the same amount of tokens, if the price of tokens drops, the real value of the tokens drops as well, and there is less incentive to stay engaged.
+- One idea is to handle some scientific calculations or web crawls for public purposes alongside commercial web crawls, so that users can get the satisfaction of knowing that their resources are also contributing to a public cause.
 
 ---
 
 ## 9. Reflections & Discussion
 
 ### 💡 Personal Reflections
-- AI 학습을 위한 데이터 수집에 크라우드소싱 방식을 채택한건 적합하다고 생각한다. 기여 보상으로 토큰을 지급하는 것도 적절한 선택이다. 토큰을 발행하고 유통하기 위해 블록체인을 도입한건 이해되지만, 웹 크롤링의 무결성을 입증하고 데이터 출처를 증명하기 위해 블록체인을 이용한건 설득력이 약하다. 검증 자체가 오프체인에서 이뤄지고 그 결과 Proof만 블록체인에 기록되는데 오프체인의 검증을 어떻게 신뢰할 수 있느냐는 블록체인이 해결해 주지 않는다. 증거가 변조되지 않음을 보장해 주는 정도가 블록처인의 역할이다. 
-- 현 단계에서는 탈중앙화의 레벨이 높지 않고 그래서 블록체인도 제한적으로 활용되고 있는 것 같다. 이 부분이 좀 더 고도화되어 데이터 수집과 처리, 유통을 위한 프로토콜로 만들 수 있다면 영향력이 클 것 같다. 
-- 유휴 대역폭을 이용해 수익을 얻는 구조라 보상의 가치에 대해 민감도가 크지 않을 수 있지만, 그래도 Grass 토큰 가격에 따라 영향을 받을 수 있다. 이 부분을 헷징할 수 있는 방법을 구상해 본다면 도움이 될 것 같다. 
-- AI 인프라를 구성하는 측면에서 크라우드소싱을 적용해 볼 수 있는 다양한 지검을 고민해 볼 수 있을 것 같다. 
+- I think the crowdsourcing approach to data collection for AI training is appropriate. Rewarding contributions with tokens is also an appropriate choice. The use of blockchain to issue and distribute tokens is understandable, but the use of blockchain to prove the integrity of web crawling and prove data provenance is less convincing. Blockchain doesn't solve the problem of how to trust an off-chain verification when the verification itself is done off-chain and only the resulting proof is recorded on the blockchain. It is the role of the blockchain to ensure that the proof is not tampered with.
+- At this stage, the level of decentralization is not high, which is why blockchain is being used in a limited way. If this part can be more advanced and made into a protocol for data collection, processing, and distribution, it will have a great impact.
+- It may not be sensitive to the value of the reward because it is monetized by using idle bandwidth, but it can still be affected by the price of the Grass token. It would be helpful to think of a way to hedge this part.
+- In terms of organizing the AI infrastructure, we can think of various ways to apply crowdsourcing.
 
 ### ❓ Discussion Questions
-- 개인 데이터는 접근하지 않는다고 했는데, Grass Node를 개인 기기에 운영하는데 불안하지 않나요?
-- 토큰 가격에 따라, 참여 노드 수에 따라 보상이 유동적일 수 있는데, 보상의 변동성에 대해선 얼마나 민감한가요?
-- 레퍼럴과 게이미피케이션 외에 참여를 강화하기 위한 다른 방법은 무엇일까요?
-- Validator와 Router 등을 탈중앙화하려면 어떤 방법이 좋을까요?
-- 유휴 인터넷 대역폭 이외에도 AI 인프라를 위해 활용해 볼 수 있는 자원은 무엇이 있을까요?
+- Grass mentioned they don't access personal data, but are you comfortable running Grass Node on your personal device?
+- Depending on the price of the token and the number of participating nodes, rewards can be volatile, how sensitive are you to volatility?
+- Besides referrals and gamification, what are other ways to drive engagement?
+- What are some ways to decentralize key components like Validators and Routers?
+- What other resources can we leverage for AI infrastructure besides idle internet bandwidth?
 
 ---
 
