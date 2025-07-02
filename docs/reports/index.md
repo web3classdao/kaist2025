@@ -35,7 +35,7 @@ We hope this collection helps others explore the emerging intersection of AI and
 | Project | Author | Report (EN) | Report (KR) |
 |---------|--------|-------------|-------------|
 | [Sahara AI](https://saharaai.com/) |  | [📄](reports/saharaai.md) | [📄](reports/saharaai_kr.md) |
-| [Grass ($GRASS)](https://4pillars.io/ko/articles/ais-biggest-grassroots-moment) |  | [📄](reports/grass.md) | [📄](reports/grass_kr.md) |
+| [Grass ($GRASS)](https://www.grass.io/) | [Jason Han](https://www.linkedin.com/in/jaesunhan/) | [📄](reports/grass/) | [📄](reports/grass_kr/) |
 | [Bittensor ($TAO)](https://docs.bittensor.com/) |  | [📄](reports/bittensor.md) | [📄](reports/bittensor_kr.md) |
 | [NATIX ($NATIX)](https://www.natix.network/) |  | [📄](reports/natix.md) | [📄](reports/natix_kr.md) |
 | [Render Network ($RENDER)](https://renderfoundation.com/whitepaper) |  | [📄](reports/render.md) | [📄](reports/render_kr.md) |
