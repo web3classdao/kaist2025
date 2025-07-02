@@ -1,7 +1,7 @@
 # 📄 Grass: Decentralized Web Crawling Network
 
-### 👤 Author: [Jason Han](https://www.linkedin.com/in/jaesunhan/)  
-### 📆 Presentation Date: [2025-07-02]  
+- 👤 Author: [Jason Han](https://www.linkedin.com/in/jaesunhan/)  
+- 📆 Presentation Date: [2025-07-02]  
 
 ---
 
