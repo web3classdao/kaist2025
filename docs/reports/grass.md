@@ -13,6 +13,7 @@
 - **Official Links**:
   - Website: https://www.grass.io/
   - Foundation: https://www.grassfoundation.io/
+  - Node Download: https://app.grass.io/register?referralCode=bLBIYzyQBimUHEl
   - Contract Address:  [Grass7B4RdKfBCjTKgSqnXkqjwiGvQyFbuSCUJr3XXjs](https://solscan.io/token/Grass7B4RdKfBCjTKgSqnXkqjwiGvQyFbuSCUJr3XXjs) (Solana)
   - Whitepaper: N/A
   - Docs: https://grass-foundation.gitbook.io/grass-docs 
@@ -91,21 +92,21 @@ Grass는 탈중앙화된 웹 크롤링 네트워크를 구축한다. 일반 사�
 Grass 아키텍처는 크게 Validator, Router, Grass Node, Zk Processor, Data Ledger, Edge Embedding Models의 계층 구조로 이루어져 있다. 이 중 Validator, Router, Grass Node가 크롤링에 참여하고, 나머지는 데이터 증명과 전처리 작업을 한다. 
 
 - **Validator**
-   - 웹 요청을 시작하고, 노드의 트랜잭션을 검증해 ZK 증명을 생성
-   - 초기에는 단일 구조지만, 향후 탈중앙화된 위원회로 전환 예정
+    - 웹 요청을 시작하고, 노드의 트랜잭션을 검증해 ZK 증명을 생성
+    - 초기에는 단일 구조지만, 향후 탈중앙화된 위원회로 전환 예정
 - **Router**
-  - Grass Node와 Validator 사이에서 요청을 중계하고 대역폭을 관리
-  - 처리량 기준으로 보상 받음
+    - Grass Node와 Validator 사이에서 요청을 중계하고 대역폭을 관리
+    - 처리량 기준으로 보상 받음
 - **Grass Node**
-  - 사용자 기기에서 실행되며 웹 데이터를 수집
-  - 암호화 요청을 처리하고, 트래픽을 라우터로 반환하며 평판 점수 기반으로 보상 받음 
+    - 사용자 기기에서 실행되며 웹 데이터를 수집
+    - 암호화 요청을 처리하고, 트래픽을 라우터로 반환하며 평판 점수 기반으로 보상 받음 
 - **Zk Processor**
-  - 모든 세션의 **유효성 증명(ZK proof)**을 작성해 Layer‑1 블록체인(Solana)에 제출
-  - 웹 크롤링 내역이 불변 증명으로 기록 
+    - 모든 세션의 **유효성 증명(ZK proof)**을 작성해 Layer‑1 블록체인(Solana)에 제출
+    - 웹 크롤링 내역이 불변 증명으로 기록 
 - **Grass Data Ledger**
-  - 처리된 데이터와 on‑chain 증명을 연결한 불변 데이터 저장소 
+    - 처리된 데이터와 on‑chain 증명을 연결한 불변 데이터 저장소 
 - **Edge Embedding Models**
-  - 수집된 비정형 웹 데이터를 전처리하여, AI 학습에 적합한 형식으로 정제
+    - 수집된 비정형 웹 데이터를 전처리하여, AI 학습에 적합한 형식으로 정제
 
 ---
 
@@ -148,24 +149,24 @@ Grass 아키텍처는 크게 Validator, Router, Grass Node, Zk Processor, Data L
 ![seq_diagram](https://hackmd.io/_uploads/rkCl2d-Sxg.png)
 
 
-1️⃣ **클라이언트의 크롤링 요청을 Grass Node까지 전달**
+#### 1️⃣ **클라이언트의 크롤링 요청을 Grass Node까지 전달**
 1. 클라이언트가 크롤링 요청을 암호화하여 Validator에 전달
-1. Validator는 요청을 검증한 뒤 적절한 Router에게 전달
-1. Router는 요청을 적절한 Grass Node로 라우팅
+2. Validator는 요청을 검증한 뒤 적절한 Router에게 전달
+3. Router는 요청을 적절한 Grass Node로 라우팅
 
-2️⃣ **Grass Node에 의한 웹 요청 및 응답 수집**
+#### 2️⃣ **Grass Node에 의한 웹 요청 및 응답 수집**
 1. Node는 받은 암호화된 요청을 탈암호화하여 웹사이트에 실제 접속
-1. 웹사이트로부터 응답(데이터/HTML)을 수신
-1. Node는 받은 응답을 암호화하여 Router를 통해 Validator로 전달
+2. 웹사이트로부터 응답(데이터/HTML)을 수신
+3. Node는 받은 응답을 암호화하여 Router를 통해 Validator로 전달
 
-3️⃣ **ZK Processor → Layer‑1 블록체인**
+#### 3️⃣ **ZK Processor → Layer‑1 블록체인**
 1. 일정 수 이상의 웹 세션이 모이면 ZK Processor가 세션 데이터를 취합
-1. ZK 기술을 이용해 Zero-Knowledge 증명(ZK proof)을 생성
-1. 생성된 증명은 Layer‑1 블록체인(예: Solana)에 제출되어 세션 무결성이 입증
+2. ZK 기술을 이용해 Zero-Knowledge 증명(ZK proof)을 생성
+3. 생성된 증명은 Layer‑1 블록체인(예: Solana)에 제출되어 세션 무결성이 입증
 
-4️⃣ **데이터 전처리 및 저장**
+#### 4️⃣ **데이터 전처리 및 저장**
 1. 웹 콘텐츠와 증명은 Grass Data Ledger에 연결되어 불변 구조로 저장
-1. Edge Embedding Models가 데이터를 정형화 + 정제하여 AI 학습용 형식으로 변환
+2. Edge Embedding Models가 데이터를 정형화 + 정제하여 AI 학습용 형식으로 변환
 
 ---
 
@@ -178,6 +179,7 @@ Grass 아키텍처는 크게 Validator, Router, Grass Node, Zk Processor, Data L
 
 ### [Grass Token Status](https://coinmarketcap.com/currencies/grass/)
 아래는 Coinmarketcap의 GRASS 토큰 현황입니다. 토큰 총 발행량은 10억개가 될 것이며, 현재 유통량(발행량)은 2.4억개이다. 토큰 하나의 가격은 $0.97이며 시가총액은 $237M이며, 현재 Coinmarketcap 순위는 165위이다. (시가총액기준) 만약 전체 토큰이 발행된다면(10억개) 시가총액은 $972M이 될 것이다. (FDV, Fully-Diluted Value)
+
 <img src="https://hackmd.io/_uploads/S1cF34ZBlg.png" alt="Grass" width="50%">
 
 ### [GRASS Token Supply](https://grass-foundation.gitbook.io/grass-docs/introduction/grass/grass-tokenomics)
@@ -190,7 +192,7 @@ Grass 아키텍처는 크게 Validator, Router, Grass Node, Zk Processor, Data L
 ### [Grass Airdrop One](https://grass-foundation.gitbook.io/grass-docs/introduction/grass/grass-airdrop-one)
 서비스 초기 사용자 유치를 위해 토큰 에어드롭 이벤트를 한다. Grass의 경우 1억개(총 발행량의 10%)를 초기 기여자들에게 에어드롭했다. 에어드롭 기간을 9개의 Epoch로 나누고 각 Epoch마다 획득한 Grass Points에 따라 Tier를 나누고 각 Tier별로 다르게 분배했다. 
 
-![Epoch allocation](https://grass-foundation.gitbook.io/grass-docs/~gitbook/image?url=https%3A%2F%2F4200124-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FVuFE5nRztwdZPBWH5NLC%252Fuploads%252Fsd6YM3WefanJLN3gImae%252FFrame%25201597883803.png%3Falt%3Dmedia%26token%3D5019490a-964c-45f4-9c2e-08fc2cfbef9f&width=768&dpr=2&quality=100&sign=ff9978ec&sv=2 =50%x)
+<img src="https://grass-foundation.gitbook.io/grass-docs/~gitbook/image?url=https%3A%2F%2F4200124-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FVuFE5nRztwdZPBWH5NLC%252Fuploads%252Fsd6YM3WefanJLN3gImae%252FFrame%25201597883803.png%3Falt%3Dmedia%26token%3D5019490a-964c-45f4-9c2e-08fc2cfbef9f&width=768&dpr=2&quality=100&sign=ff9978ec&sv=2" alt="Epoch allocation" width="50%">
 
 ![Tier allocation](https://grass-foundation.gitbook.io/grass-docs/~gitbook/image?url=https%3A%2F%2F4200124-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FVuFE5nRztwdZPBWH5NLC%252Fuploads%252FFa6wSdRRXMpFruOdu914%252FFrame%25201597883805.png%3Falt%3Dmedia%26token%3D49702008-7f97-4f38-9285-2330f5142082&width=768&dpr=2&quality=100&sign=9b848bd9&sv=2)
 
@@ -224,13 +226,20 @@ Grass 네트워크 현황을 볼 수 있는 대시보드를 제공한다. 하루
 
 ![Q1 Performance](https://pbs.twimg.com/media/GnibPjhbMAA2Ui2?format=jpg&name=large)
 
+### [Grasshopper](https://grasshopper.grass.io/) - the hardware for Grass
+
+<img src="https://hackmd.io/_uploads/BkQlnlMBxg.png" alt="Grasshopper" width="50%">
+
+곧 Grass Node 하드웨어를 출시할 예정이다. 별도 기기 설정 없이 네트워크에 연결만 하면 Grass Node로 동작하고 포인트를 얻을 수 있다. 일종의 Grass 채굴기와 같은 역할이다. 
+
 ---
 
 ## 6. User Experience & Hands-on Review *(if applicable)*
 
 ### Grass Node 사용자 인터페이스
-설치 후 Node 프로그램 UI는 아래와 같이 심플하다. 네트워크와 연결하는 버튼과 획득한 포인트를 보여준다.
-![image](https://hackmd.io/_uploads/SksVxK-rxx.png =50%x)
+[Grass Node를 다운](https://app.grass.io/register?referralCode=bLBIYzyQBimUHEl)받아 설치 후 Node 프로그램 UI는 아래와 같이 심플하다. 네트워크와 연결하는 버튼과 획득한 포인트를 보여준다.
+
+<img src="https://hackmd.io/_uploads/SksVxK-rxx.png" alt="Grass Node UI" width="50%">
 
 대신 자세한 내용은 웹사이트 대시보드를 보면 확인할 수 있다. 일간 수익 통계, 접속한 네트워크 이력, 추천 프로그램 현황과 Tier, 리워드 현황을 확인할 수 있다.
 ![image](https://hackmd.io/_uploads/BJNxzK-Bee.png)
@@ -243,8 +252,8 @@ Grass 네트워크 현황을 볼 수 있는 대시보드를 제공한다. 하루
 1. 지갑 인증 (Solana 지갑)
 1. 이메일에서 지갑 인증 (주소가 누구랑 연결된건지 확인)
 
-![스크린샷 2025-07-01 오후 4.14.15](https://hackmd.io/_uploads/rJmu7tWrle.png =60%x)
-![스크린샷 2025-07-01 오후 4.13.42](https://hackmd.io/_uploads/ry3YXKZBxg.png =60%x)
+<img src="https://hackmd.io/_uploads/rJmu7tWrle.png" alt="Grass Node Auth" width="60%">
+<img src="https://hackmd.io/_uploads/ry3YXKZBxg.png" alt="Grass Node Auth" width="60%">
 
 ### 사용 후기
 - 설치와 실행이 매우 쉬움
@@ -277,25 +286,36 @@ Grass 네트워크 현황을 볼 수 있는 대시보드를 제공한다. 하루
 ## 8. Insights & Limitations
 
 ### ✅ Key Takeaways
-- What did this project do right?  
-- What important lessons or patterns can we learn from this project?
+- 웹 크롤링에서 IP 차단 이슈를 일반 사용자의 기기를 크라우드소싱함으로써 영리하게 잘 풀었다.
+- 유휴 IT 자원에 대한 크라우드소싱은 오래전부터 있던 아이디어다. SETI@Home, Folding@Home 등의 프로젝트가 유휴 자원을 이용했고, [BOINC](https://boinc.berkeley.edu/) 같은 소프트웨어가 주로 사용된다. 이러한 프로젝트는 보상없이 자발적으로 참여하기 때문에 Volunteer Computing라고 부른다. 반면, Grass는 웹 크롤링이라는 상업적인 목적을 위해 사용되면서 참여자에 대한 보상으로 Grass 토큰을 부여하면서 참여를 독려하는 점이 큰 차이다. 
+- 전 세계에 흩어진 노드가 참여하는 크라우드소싱의 경우 보상의 방식은 토큰이 가장 적절하다. 법정화폐를 이용한 전통적인 송금으로 구현해야 한다면 거의 불가능하다. 고객 확인부터 각 나라의 금융 시스템을 맞춰야 하기 때문에 구현하기 어렵다. 그런 점에서 토큰을 이용한 보상 시스템은 적절한 선택이다. 
+- 토큰 이코노미 설계가 흥미롭다. 바로 토큰을 부여하는 것이 아니라, 우선 Grass 포인트를 부여하고 일정 기간(Epoch)이 종료되면 정산해서 토큰으로 지급한다. 이렇게 두 단계를 거치는 것은 큰 장점을 가진다. 우선 사용자는 받은 포인트가 몇개의 토큰으로 전환되는지 모르기 때문에 보상에 대한 가치를 정확히 계산하기 어렵다. 그래서 보상이 적절한지 판단을 연기할 수 있다. 그리고 Epoch별로 일정량의 토큰을 할당하게 되면 참여 노드 수가 변동되더라도 토큰 수요를 고정시킬 수 있다. 또한, 포인트는 오프체인으로 기록할 수 있기 때문에 온체인 수수료를 지불하지 않아도 된다. 
+- 레퍼럴 프로그램과 Tier 구조는 gamification을 적절히 잘 적용한 케이스다. 특히, 레퍼럴에서 초대자의 성과만 공유받는게 아니라 2단계, 3단계 초대자의 성과도 공유 받는 것이라 훨씬 강력하다. 다단계 보상의 구조를 채택하고 있다. 또한, 레퍼럴과 포인트양에 따라 보상 받는 Tier를 구분해서 좀 더 참여하도록 자극하고 있다.  
+- 크롤링이 오류없이 수행되었다는 증명을 기록하기 위해 블록체인을 신뢰 엔진으로 이용하고 있다. 정확히 블록체인의 장점을 잘 살린 설계다. 프라이버시 보장을 위해 ZK 기술을 이용했고, 비용 효율성을 위해 배치 처리를 채택했다. 그리고 데이터 출처를 블록체인에 기록해 AI 모델 개발자들이 학습 데이터의 출처를 확인할 수 있게 함으로써 데이터의 신뢰도를 높여줄 수 있다. 앞으로 데이터의 출처와 사용이력 등을 위해서 이와 유사한 방식으로 블록체인을 사용하는 사례가 늘어날 전망이다. 
 
 ### ⚠ Limitations / Open Questions
 - Validator와 Router가 아직 분산되어 운영된다는 언급이나 증거가 없다. 사람들의 유휴 네트워크 자원을 이용한다는 측면에서 탈중앙화가 이뤄지긴 하지만, 운영 시스템(Validator와 Router)은 아직 중앙화된 구조인 것 같다. 
-- Validator를 탈중앙화하는 이유는 중앙의 운영주체를 없애기 위함인 것 같은데, 
-- 보상을 극대화 하기 위해 Node를 악의적으로 운영할 수 있기 때문에 Node Reputation Scoring이 중요한 요소이다. 하지만, 문서에서는 어떤 정책으로 노드의 평판을 평가하겠다는 정책만 있고 측정하는 방법은 제시되어 있지 않다. 예를 들어 응답 데이터의 Completeness를 어떻게 측정할 것인지가 불분명하다. 크라우드소싱 방식으로 데이터 수집할 때 가장 어려운 부분이다. 악의적인 노드가 데이터를 변조하거나 가짜 데이터를 응답한다면 이를 검증하는 부분이 필요하다.  
+- 운영 주체를 없애기 위해선 결국 Validator와 Router를 탈중앙화해야 하고, ZK Processor와 Data Ledger 역시 탈중앙화해야 한다. 탈중앙화 포인트가 많아서 어떻게 모든 요소를 탈중앙화할 수 있을지 의문이다. 특히, Data Ledger의 경우 저장 데이터 용량이 클 경우 탈중앙화 스토리지와 같아지기 때문에 매우 어려운 이슈다. 앞으로 어떤 방향으로 탈중앙화할지 지켜볼 문제다.
+- 보상을 극대화 하기 위해 Node를 악의적으로 운영할 수 있기 때문에 Node Reputation Scoring이 중요한 요소이다. 하지만, 문서에서는 어떤 정책으로 노드의 평판을 평가하겠다는 정책만 있고 측정하는 방법은 제시되어 있지 않다. 예를 들어 응답 데이터의 Completeness를 어떻게 측정할 것인지가 불분명하다. 크라우드소싱 방식으로 데이터 수집할 때 가장 어려운 부분이다. 악의적인 노드가 데이터를 변조하거나 가짜 데이터를 응답한다면 이를 검증하는 부분이 필요하다. 
+- 보상이 현금적인 가치로 연결되지 않도록 하기 위해 포인트를 지급하는건 영리한 정책이지만, Epoch에 따라 보상이 변동적일 수 있는건 사용자 입장에서는 불편한 요소다. 만약 Epoch가 끝나고 보상으로 받은 토큰이 기대에 미치지 못할 경우 참여를 중단할 수 있다. 또한 토큰 가격이 변동하기 때문에 같은 양을 받더라도 토큰 가격이 하락하면 실질 가치도 떨어지게 되고 참여를 유지할 동기가 약해 질 수 있다. 
+- 한 가지 아이디어로는 상업적인 웹크롤링과 함께 과학계산이나 공공적인 목적의 웹크롤링도 일부 처리해서 사용자의 자원이 공공의 목적에도 기여하고 있다는 만족감을 얻을 수 있게 할 수 있다. 
 
 ---
 
 ## 9. Reflections & Discussion
 
 ### 💡 Personal Reflections
-- What did you find most interesting or surprising?  
-- How has your understanding of AI/blockchain changed after studying this?
+- AI 학습을 위한 데이터 수집에 크라우드소싱 방식을 채택한건 적합하다고 생각한다. 기여 보상으로 토큰을 지급하는 것도 적절한 선택이다. 토큰을 발행하고 유통하기 위해 블록체인을 도입한건 이해되지만, 웹 크롤링의 무결성을 입증하고 데이터 출처를 증명하기 위해 블록체인을 이용한건 설득력이 약하다. 검증 자체가 오프체인에서 이뤄지고 그 결과 Proof만 블록체인에 기록되는데 오프체인의 검증을 어떻게 신뢰할 수 있느냐는 블록체인이 해결해 주지 않는다. 증거가 변조되지 않음을 보장해 주는 정도가 블록처인의 역할이다. 
+- 현 단계에서는 탈중앙화의 레벨이 높지 않고 그래서 블록체인도 제한적으로 활용되고 있는 것 같다. 이 부분이 좀 더 고도화되어 데이터 수집과 처리, 유통을 위한 프로토콜로 만들 수 있다면 영향력이 클 것 같다. 
+- 유휴 대역폭을 이용해 수익을 얻는 구조라 보상의 가치에 대해 민감도가 크지 않을 수 있지만, 그래도 Grass 토큰 가격에 따라 영향을 받을 수 있다. 이 부분을 헷징할 수 있는 방법을 구상해 본다면 도움이 될 것 같다. 
+- AI 인프라를 구성하는 측면에서 크라우드소싱을 적용해 볼 수 있는 다양한 지검을 고민해 볼 수 있을 것 같다. 
 
 ### ❓ Discussion Questions
-- [Thought-provoking question to ask during class]  
-- [Optional: comparison to other projects in this space]
+- 개인 데이터는 접근하지 않는다고 했는데, Grass Node를 개인 기기에 운영하는데 불안하지 않나요?
+- 토큰 가격에 따라, 참여 노드 수에 따라 보상이 유동적일 수 있는데, 보상의 변동성에 대해선 얼마나 민감한가요?
+- 레퍼럴과 게이미피케이션 외에 참여를 강화하기 위한 다른 방법은 무엇일까요?
+- Validator와 Router 등을 탈중앙화하려면 어떤 방법이 좋을까요?
+- 유휴 인터넷 대역폭 이외에도 AI 인프라를 위해 활용해 볼 수 있는 자원은 무엇이 있을까요?
 
 ---
 
@@ -303,4 +323,3 @@ Grass 네트워크 현황을 볼 수 있는 대시보드를 제공한다. 하루
 
 - [4pillars Grass Report (KR)](https://4pillars.io/ko/articles/ais-biggest-grassroots-moment)
 - [4pillars Grass Report (EN)](https://4pillars.io/en/articles/ais-biggest-grassroots-moment)
-- 
