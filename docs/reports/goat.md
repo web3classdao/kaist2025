@@ -338,8 +338,7 @@ What stood out most to me about GOAT SDK was how it bridges AI agents and blockc
 
 ## 9. Insight from others
 
-Insights from other students:
-- [write here]
+Everybody agreed that since AI is exposed to a lot of imformation onchain, it makes sense to give AI extra power and let it manage things as well, including having access to users' wallets and owning their own.
 
 ---
 
