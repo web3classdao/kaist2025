@@ -685,6 +685,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="5. Project Status &amp; Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added-by-jason" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added by Jason
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -716,9 +731,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#key-takeaways" class="md-nav__link">
+  <a href="#key-insights" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ Key Takeaways
+      Key Insights
     </span>
   </a>
   
@@ -727,7 +742,7 @@
           <li class="md-nav__item">
   <a href="#limitations-open-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚠ Limitations / Open Questions
+      Limitations &amp; Open Questions
     </span>
   </a>
   
@@ -1961,6 +1976,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="5. Project Status &amp; Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added-by-jason" class="md-nav__link">
+    <span class="md-ellipsis">
+      Added by Jason
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1992,9 +2022,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#key-takeaways" class="md-nav__link">
+  <a href="#key-insights" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ Key Takeaways
+      Key Insights
     </span>
   </a>
   
@@ -2003,7 +2033,7 @@
           <li class="md-nav__item">
   <a href="#limitations-open-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚠ Limitations / Open Questions
+      Limitations &amp; Open Questions
     </span>
   </a>
   
@@ -2088,6 +2118,7 @@
 </ul>
 <hr />
 <h2 id="1-overview">1. Overview<a class="headerlink" href="#1-overview" title="Permanent link">&para;</a></h2>
+<p><img alt="image" src="https://hackmd.io/_uploads/HkCrDroHgg.png" /></p>
 <ul>
 <li><strong>Project Name</strong>:  Coinbase AgentKit</li>
 <li><strong>Category</strong>: Onchain AI Agents Toolkit (Decentralized AI Infrastructure)</li>
@@ -2116,135 +2147,220 @@
 <hr />
 <h2 id="3-how-it-works">3. How It Works<a class="headerlink" href="#3-how-it-works" title="Permanent link">&para;</a></h2>
 <h3 id="31-project-approach">🔍 3.1 Project Approach<a class="headerlink" href="#31-project-approach" title="Permanent link">&para;</a></h3>
+<p>Coinbase AgentKit operates on a simple principle: every AI agent should have its own crypto wallet. The goal is to empower AI agents to act as independent participants on the blockchain. By giving them a wallet and a set of blockchain tools, AgentKit allows an AI to autonomously execute tasks like sending payments, interacting with smart contracts, and swapping tokens based on natural language commands.</p>
+<p><strong>How It Works</strong></p>
+<p>AgentKit acts as a bridge between AI and blockchain technology.</p>
 <ul>
-<li>How does this project intend to solve the problem defined in Section 2?  </li>
-<li>What is the <strong>core idea</strong> behind the solution?  </li>
-<li>What makes this approach different from existing methods?</li>
+<li><strong>For the Blockchain:</strong> It leverages the Coinbase Developer Platform to handle complex operations like transaction signing and fee management, simplifying the development process.</li>
+<li><strong>For the AI:</strong> It is designed to be "model-agnostic," meaning it works with various AI models and popular development frameworks like LangChain. When an AI decides to perform a financial action, AgentKit translates that intent into a secure onchain transaction.</li>
+</ul>
+<p><strong>Key Differentiators</strong></p>
+<p>AgentKit stands out due to its flexibility and unique focus:</p>
+<ul>
+<li><strong>Framework Agnostic:</strong> Unlike more rigid solutions, it supports multiple large language models (like those from OpenAI and Anthropic), various blockchains (including all EVM networks and Solana), and is not tied to a single wallet provider.</li>
+<li><strong>Developer-Focused:</strong> It is built for ease of use, featuring simple configurations and starter templates to significantly lower the barrier for developers to integrate AI with blockchain.</li>
+<li><strong>Unique Direction:</strong> While some projects focus on decentralizing AI itself, AgentKit concentrates on enabling AI to <em>use</em> crypto infrastructure. It provides a practical, plug-and-play solution that connects the capabilities of modern AI with the financial rails of the blockchain.</li>
 </ul>
 <hr />
 <h3 id="32-architecture">🏗️ 3.2 Architecture<a class="headerlink" href="#32-architecture" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Provide a high-level overview of the system architecture.  </li>
-<li>Include a diagram or describe the components and how they are connected.  </li>
-<li>Focus on how data flows between users, models, smart contracts, etc.</li>
-</ul>
+<p>AgentKit is designed as a modular system that translates an AI's intent into a blockchain transaction. The process is straightforward:</p>
+<ol>
+<li>An <strong>AI Agent</strong> decides to perform an action (e.g., "send 10 USDC").</li>
+<li>It uses an <strong>Action</strong> tool provided by AgentKit.</li>
+<li>The Action uses a <strong>Wallet Provider</strong> to securely sign and execute the transaction on the blockchain.</li>
+<li>The result is sent back to the AI, which can then determine its next step.</li>
+</ol>
 <hr />
 <h3 id="33-core-components">🎯 3.3 Core Components<a class="headerlink" href="#33-core-components" title="Permanent link">&para;</a></h3>
+<p>The system is built from several key, interchangeable components:</p>
 <ul>
-<li>Describe the key components or modules (e.g., data capsule, model registry, token system)</li>
+<li>
+<p><strong>AgentKit Core Library:</strong>
+    This is the central engine of AgentKit, available in both TypeScript and Python. It manages the configuration (API keys, network selection) and connects the various modules, such as wallets and actions. Its design allows developers to easily add new capabilities.</p>
+</li>
+<li>
+<p><strong>Wallet Provider:</strong>
+    This component handles all wallet-related functions, including address creation, key management, and transaction signing. By default, it uses Coinbase’s Smart Wallet, which enables advanced features like gasless transactions. A key feature is its flexibility; developers can replace the default with other providers, such as MetaMask or hardware wallets.</p>
+</li>
+<li>
+<p><strong>Action Providers:</strong>
+    Actions are the specific skills available to the AI. These are grouped into "Providers," such as a "DeFi Provider" for swapping tokens or a "Social Provider" for posting to Twitter. AgentKit includes a set of pre-built actions for common tasks like transfers, swaps, and even NFT creation. The framework is extensible, allowing developers to create and register custom actions for the AI to use.</p>
+</li>
+<li>
+<p><strong>Framework Integrations:</strong>
+    To ensure broad compatibility, AgentKit provides extensions that act as adapters for popular AI development frameworks. With packages for tools like LangChain, developers can seamlessly integrate AgentKit's blockchain capabilities into their preferred AI development environment.</p>
+</li>
 </ul>
+<p>In practice, a developer or user interacts with the AI in natural language. AgentKit operates as the secure intermediary, translating these commands into reliable onchain operations.</p>
 <hr />
 <h3 id="34-workflow-overview">🔁 3.4 Workflow Overview<a class="headerlink" href="#34-workflow-overview" title="Permanent link">&para;</a></h3>
-<p>Explain the overall process or user flow in 3–5 steps.</p>
-<p>Example:
-1. A user uploads their data...
-2. The model interacts with the data via zero-knowledge proofs...
-3. The contributor is rewarded with tokens...</p>
-<blockquote>
-<p><em>(You may include a diagram or link to an official architecture diagram if helpful.)</em></p>
-</blockquote>
+<p><code>[User Input] → [AI Agent (LLM)] → [AgentKit Core] → [Wallet Provider] → [Blockchain Tx] → [Response]</code></p>
+<p><strong>1. Initialization and Setup</strong></p>
+<p>First, a developer configures the AI agent by providing necessary API keys (e.g., for Coinbase and OpenAI). Using AgentKit, the developer instantiates the agent, which automatically provisions a unique crypto wallet. At this point, the AI agent is live and equipped with a set of onchain abilities, such as transferring funds or interacting with smart contracts.</p>
+<p><strong>2. User Command</strong></p>
+<p>A user interacts with the agent using plain English through a chat interface. For example, they might ask, <em>"Send 0.01 ETH to my friend,"</em> or <em>"Create a new collectible token."</em> The user does not need any technical knowledge of blockchain operations.</p>
+<p><strong>3. AI Planning and Action Selection</strong></p>
+<p>The AI agent, powered by a large language model (LLM), interprets the user's request. It consults the list of available "Actions" provided by AgentKit and identifies the correct tool for the job (e.g., the <code>transfer</code> action). The agent then structures the request with the necessary parameters, such as the asset, amount, and recipient address.</p>
+<p><strong>4. Onchain Execution</strong></p>
+<p>The agent invokes the selected action through AgentKit. This is where AgentKit handles all the technical complexity. It automatically creates the transaction, signs it with the agent's private key, and broadcasts it to the appropriate blockchain network. This entire process occurs securely in the background without requiring user intervention.</p>
+<p><strong>5. Confirmation and Response</strong></p>
+<p>Once the transaction is confirmed on the blockchain, AgentKit reports the outcome back to the AI agent. The agent then provides a clear, user-friendly confirmation, often including a transaction hash or a link to a block explorer for verification. From the user's perspective, they simply made a request and received a confirmation that it was completed.</p>
+<p><strong>Optional: Autonomous Operation</strong></p>
+<p>Beyond direct commands, agents can be programmed to operate autonomously. For instance, an agent could be assigned a goal like "monitor the market and execute trades to maximize profit." In this mode, the agent would independently decide when to execute transactions, using AgentKit to perform the onchain actions in a continuous loop.</p>
 <hr />
 <h2 id="4-token-economy-if-applicable">4. Token Economy <em>(if applicable)</em><a class="headerlink" href="#4-token-economy-if-applicable" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p><em>Include this section </em><em>only if the project has its own token.</em>**  </p>
-</blockquote>
-<ul>
-<li>What is the name and type of the token? (e.g., utility, governance, staking)  </li>
-<li>What can the token be used for within the ecosystem?  </li>
-<li>How does the token incentivize key actors (e.g., contributors, validators, users)?</li>
-<li>Is there a burn/mint mechanism, inflation cap, or vesting schedule?  </li>
-</ul>
+<p>Token for this case study does not exist.</p>
+<hr />
+<h2 id="5-project-status-plan">5. Project Status &amp; Plan<a class="headerlink" href="#5-project-status-plan" title="Permanent link">&para;</a></h2>
+<h3 id="added-by-jason">Added by Jason<a class="headerlink" href="#added-by-jason" title="Permanent link">&para;</a></h3>
+<p>✅ <strong>Coinbase AgentKit vs GOAT SDK</strong>
+| Category                   | <strong>Coinbase AgentKit</strong>                                                 | <strong>GOAT SDK</strong>                                                                       |
+| -------------------------- | --------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| 🧠 <strong>Purpose</strong>             | Enable AI interface for Coinbase Wallet users (e.g., trade assistant) | Modular AI-to-blockchain interface supporting multiple agents, chains, and wallets |
+| 🧱 <strong>Dependencies</strong>        | Requires Coinbase Wallet + specific LLM (e.g., OpenAI)                | Works with any EVM wallet (e.g., MetaMask, Safe) via Viem or Ethers                |
+| 🔌 <strong>Chain Support</strong>       | Primarily EVM (Base, Ethereum)                                        | Multi-chain support (Base, Ethereum, Optimism, Polygon, etc.)                      |
+| 🛠️ <strong>Tech Stack</strong>         | LangChain + LLM tools + scripting                                     | Vercel AI SDK + GOAT plugin system + Viem (or Ethers)                              |
+| 🔍 <strong>State / Memory</strong>      | State and memory handled via LangChain                                | Memory can be tool-driven or developer-managed                                     |
+| ⚡ <strong>Extensibility</strong>        | Built for Coinbase ecosystem use cases                                | Highly modular: plug in DeFi, NFT, infra tools freely                              |
+| 🧩 <strong>Plugin Architecture</strong> | Limited (mostly predefined tools)                                     | Full plugin system – developers can define custom tools                            |
+| 🧑‍💻 <strong>Target Developer</strong> | Coinbase ecosystem builders                                           | AI agents, wallet UX, LLM-powered dApps                                            |</p>
 <table>
 <thead>
 <tr>
-<th>Stakeholder</th>
-<th>How They Use / Earn the Token</th>
+<th>Use Case</th>
+<th>Recommendation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Data Provider</td>
-<td>[e.g., earns rewards based on contribution]</td>
+<td>Coinbase-specific UX</td>
+<td>✅ AgentKit</td>
 </tr>
 <tr>
-<td>Model Developer</td>
-<td>[e.g., pays tokens to access datasets]</td>
+<td>Multi-wallet / DeFi / advanced agent control</td>
+<td>✅ GOAT SDK</td>
 </tr>
 <tr>
-<td>Verifier / Node</td>
-<td>[e.g., earns tokens by verifying data provenance]</td>
+<td>Needs plugin flexibility and on-chain tool chaining</td>
+<td>✅ GOAT SDK</td>
+</tr>
+</tbody>
+</table>
+<p>✅ <strong>Solana AgentKit vs Coinbase AgentKit vs GOAT SDK</strong></p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th><strong>Solana AgentKit</strong></th>
+<th><strong>Coinbase AgentKit</strong></th>
+<th><strong>GOAT SDK</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Chain Support</strong></td>
+<td>Solana only</td>
+<td>Ethereum + L2s (Base, Optimism, Arbitrum, etc.)</td>
+<td>Ethereum + L2s + more via plugin</td>
+</tr>
+<tr>
+<td><strong>Wallet Type</strong></td>
+<td>Keypair, xNFT, AnchorWallet</td>
+<td>SmartWallet (AA Wallet using Biconomy or others)</td>
+<td>EOA, AA Wallet (Crossmint, Privy, etc.)</td>
+</tr>
+<tr>
+<td><strong>Session Key Support</strong></td>
+<td>Yes (custom implementation)</td>
+<td>Yes (via Biconomy + permissions)</td>
+<td>Yes (with TEE-secured agent wallets)</td>
+</tr>
+<tr>
+<td><strong>Account Abstraction (AA)</strong></td>
+<td>❌ Not native</td>
+<td>✅ Built-in (SmartWallet)</td>
+<td>✅ Supported via Crossmint or plugins</td>
+</tr>
+<tr>
+<td><strong>Security Strategy</strong></td>
+<td>Keypair injected (or Phantom via extension)</td>
+<td>SmartWallet with optional guardrails</td>
+<td>TEE-based signing with optional restrictions</td>
+</tr>
+<tr>
+<td><strong>Private Key in Agent</strong></td>
+<td>✅ Usually required</td>
+<td>❌ Not needed (uses SmartWallet session)</td>
+<td>❌ Not needed (session key or TEE)</td>
+</tr>
+<tr>
+<td><strong>Transaction Execution</strong></td>
+<td>solana/web3.js, Anchor, etc.</td>
+<td>Coinbase Infra (Biconomy, etc.)</td>
+<td>User-defined or via GOAT plugin system</td>
+</tr>
+<tr>
+<td><strong>Guardrails (policy control)</strong></td>
+<td>❌ Not built-in</td>
+<td>✅ Biconomy rules (allowlist, spending cap, etc.)</td>
+<td>✅ Via Crossmint AgentWallet guardrails</td>
+</tr>
+<tr>
+<td><strong>AI Integration</strong></td>
+<td>Rudimentary / manual</td>
+<td>Built for LangChain agents</td>
+<td>Built for LangChain, Vercel AI, etc.</td>
+</tr>
+<tr>
+<td><strong>Developer Experience</strong></td>
+<td>Solana-native devs only</td>
+<td>Best if using Coinbase stack</td>
+<td>Chain-agnostic, modular plugin-based</td>
+</tr>
+<tr>
+<td><strong>Target Use Case</strong></td>
+<td>Solana-only AI agents or xNFTs</td>
+<td>Coinbase ecosystem agents on EVM chains</td>
+<td>Flexible EVM agents (agent wallets, plug-n-play)</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="5-project-status-plan">5. Project Status &amp; Plan<a class="headerlink" href="#5-project-status-plan" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p><em>In this section, summarize the current state of the project and its real-world impact (if any).</em></p>
-</blockquote>
-<ul>
-<li>Is the project live? In alpha, beta, or still in development?</li>
-<li>Does it have an active user base or developer community?</li>
-<li>What partnerships, grants, or investments has it received?</li>
-<li>Is it open source? How active is the GitHub repo (if available)?</li>
-<li>Is the token (if any) listed and traded? What is its current market activity?</li>
-</ul>
-<p>You don’t have to cover everything — focus on what seems most relevant to evaluating how “real” or impactful the project is right now.</p>
-<blockquote>
-<p>📌 <em>Try to distinguish between hype and actual traction. Just because a project looks good on its website doesn't mean it's being used or adopted.</em></p>
-</blockquote>
-<hr />
 <h2 id="6-user-experience-hands-on-review-if-applicable">6. User Experience &amp; Hands-on Review <em>(if applicable)</em><a class="headerlink" href="#6-user-experience-hands-on-review-if-applicable" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p><em>Try to actually use the project if possible — via a demo, public app, testnet, or simulation.</em>
-This section should capture your experience <strong>as a user or a developer</strong>, not just as a researcher.</p>
-</blockquote>
-<p>Here are some prompts to help you reflect:</p>
-<ul>
-<li>What features did you explore? </li>
-<li>What did you do step-by-step?</li>
-<li>Was the onboarding intuitive or confusing? </li>
-<li>How did you deal with a crypto wallet or tokens?</li>
-<li>What felt different from traditional (non-blockchain) services?</li>
-<li>What worked well? What didn’t?</li>
-</ul>
-<p>You can also include:
-- Screenshots
-- Links to testnet/demo activity
-- Errors or bugs you encountered</p>
+<p>I followed the <a href="https://github.com/coinbase/agentkit">Quick Start</a> section in the official GitHub page of Coinbase AgentKit.They have some example project that can kickstart development very quickly. I tried to add more UI components and I swapped llm api from OpenAI to Claude. </p>
+<p><img alt="image" src="https://hackmd.io/_uploads/HyR9mHjBgg.png" /></p>
 <hr />
 <h2 id="7-why-blockchain">7. Why Blockchain<a class="headerlink" href="#7-why-blockchain" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Why <strong>does this problem specifically require blockchain</strong> to be solved well?  </li>
-<li>What does blockchain enable that traditional solutions cannot?  </li>
-<li>Is decentralization critical in this use case? Why or why not?  </li>
-</ul>
-<blockquote>
-<p>📌 <em>This section should show that blockchain is not just "used," but "necessary."</em></p>
-</blockquote>
+<p>Blockchain technology is a fundamental component for unlocking the full potential of AI agents by providing them with true financial autonomy. It allows an agent to hold and transfer value directly through a crypto wallet, eliminating the need for traditional banking intermediaries and their associated restrictions. This creates a trustless and censorship-resistant environment where the AI truly owns its digital assets, can operate 24/7 without waiting for business hours, and can transact globally with anyone. The public and verifiable nature of blockchain also ensures every action the agent takes is transparent and auditable, fostering trust in its operations.</p>
+<p>Beyond simple payments, blockchain gives AI agents access to a vast and composable ecosystem of decentralized applications (dApps) and financial protocols (DeFi). This enables an AI to do more than just send money; it can lend assets, trade on decentralized exchanges, invest in digital collectibles, or participate in decentralized governance. This integration with the broader Web3 world allows for far more sophisticated and powerful applications than possible in a closed system. Furthermore, the efficiency of modern blockchains, particularly Layer 2 solutions, supports instant, low-cost microtransactions, making it feasible for agents to pay for data, services, or other resources in real-time.</p>
 <hr />
 <h2 id="8-insights-limitations">8. Insights &amp; Limitations<a class="headerlink" href="#8-insights-limitations" title="Permanent link">&para;</a></h2>
-<h3 id="key-takeaways">✅ Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">&para;</a></h3>
+<h3 id="key-insights">Key Insights<a class="headerlink" href="#key-insights" title="Permanent link">&para;</a></h3>
 <ul>
-<li>What did this project do right?  </li>
-<li>What important lessons or patterns can we learn from this project?</li>
+<li><strong>Powerful Synergy:</strong> AgentKit successfully demonstrates that combining AI and blockchain creates capabilities that neither technology can achieve alone, providing a strong reference architecture for future development.</li>
+<li><strong>Future-Proof by Design:</strong> Its model-agnostic and modular approach (supporting various AIs, blockchains, and wallets) is crucial for adapting to the rapidly evolving tech landscape.</li>
+<li><strong>Frictionless Adoption:</strong> By abstracting away crypto's complexities—like gas fees, wallet funding, and key management—it significantly lowers the barrier to entry for developers and users.</li>
+<li><strong>Community-Driven Growth:</strong> Open-sourcing the project and fostering community contributions has accelerated innovation, leading to a wider range of tools and novel use cases.</li>
+<li><strong>Validates AI as Economic Actors:</strong> The project provides tangible evidence that AI agents can participate in economies, using blockchain as the settlement layer for their actions and decisions.</li>
 </ul>
-<h3 id="limitations-open-questions">⚠ Limitations / Open Questions<a class="headerlink" href="#limitations-open-questions" title="Permanent link">&para;</a></h3>
+<h3 id="limitations-open-questions">Limitations &amp; Open Questions<a class="headerlink" href="#limitations-open-questions" title="Permanent link">&para;</a></h3>
 <ul>
-<li>What challenges remain? (technical, legal, usability, etc.)  </li>
-<li>Are there any scalability or adoption concerns?</li>
+<li><strong>Early and Experimental:</strong> The toolkit is not yet production-ready and lacks robust safety guardrails to prevent misuse, such as from prompt injection attacks or AI errors.</li>
+<li><strong>Significant Security Risks:</strong> Giving an AI direct control over funds introduces inherent risks of financial loss due to LLM mistakes, bugs, or malicious inputs.</li>
+<li><strong>Centralization Dependency:</strong> While promoting decentralization, the default setup relies heavily on Coinbase's centralized infrastructure, creating potential single points of failure and a trade-off between convenience and true autonomy.</li>
+<li><strong>Regulatory Uncertainty:</strong> Autonomous agents operate in a legal gray area, raising unresolved questions about liability, accountability, and compliance with financial regulations like KYC/AML.</li>
+<li><strong>Scalability and Complexity:</strong> It remains to be seen if current blockchain infrastructure and AI models can scale to support millions of agents, or if today's agents can handle truly complex, multi-step onchain tasks without continuous, manual updates.</li>
 </ul>
 <hr />
 <h2 id="9-reflections-discussion">9. Reflections &amp; Discussion<a class="headerlink" href="#9-reflections-discussion" title="Permanent link">&para;</a></h2>
 <h3 id="personal-reflections">💡 Personal Reflections<a class="headerlink" href="#personal-reflections" title="Permanent link">&para;</a></h3>
-<ul>
-<li>What did you find most interesting or surprising?  </li>
-<li>How has your understanding of AI/blockchain changed after studying this?</li>
-</ul>
+<p>Studying AgentKit was eye-opening. The most profound shift in perspective was seeing AI agents as "users" of the blockchain, capable of participating in an autonomous economy. This moves beyond simple payments, suggesting a deep integration where AI logic and onchain logic are woven together, allowing agents to earn yield or manage assets independently.</p>
+<p>While initially skeptical, the developer-friendly design showed the power of good abstraction in bridging these complex fields. The concept of "agentic commerce," where AIs hire and pay each other, is both exciting for its potential efficiency and concerning for its economic implications.</p>
 <h3 id="discussion-questions">❓ Discussion Questions<a class="headerlink" href="#discussion-questions" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Thought-provoking question to ask during class</li>
-<li>You should facilitate a small group discussion based on these questions.  </li>
-<li>Optional: comparison to other projects in this space</li>
+<li><strong>Autonomy vs. Control</strong>: How can we build safety measures (like spending limits or kill switches) for AI agents that control real money, without undermining the benefits of their autonomy?</li>
+<li><strong>Economic Impact</strong>: What are the economic consequences—both risks and opportunities—when autonomous AI agents begin competing with humans in markets like trading, auctions, and services?</li>
+<li><strong>The Need for Decentralization</strong>: Could a centralized tech giant replicate AgentKit's functions? If so, what critical element does blockchain provide that a centralized system would lack?</li>
 </ul>
 <hr />
 <h2 id="10-insight-from-others">10. Insight from others<a class="headerlink" href="#10-insight-from-others" title="Permanent link">&para;</a></h2>
@@ -2252,8 +2368,13 @@ This section should capture your experience <strong>as a user or a developer</st
 <hr />
 <h2 id="11-references">11. References<a class="headerlink" href="#11-references" title="Permanent link">&para;</a></h2>
 <ul>
-<li>[Articles, blog posts, or academic papers]  </li>
-<li>[Related projects or comparisons]</li>
+<li><em>Introducing AgentKit, a toolkit for building AI agents onchain</em>. (Coinbase Developer Platform). <a href="https://www.coinbase.com/developer-platform/discover/launches/introducing-agentkit">https://www.coinbase.com/developer-platform/discover/launches/introducing-agentkit</a></li>
+<li><em>AgentKit Documentation</em>. (Coinbase Developer Platform). <a href="https://docs.cdp.coinbase.com/agent-kit/welcome">https://docs.cdp.coinbase.com/agent-kit/welcome</a></li>
+<li><em>Build with Coinbase and OpenAI's new Agents SDK</em>. (Coinbase Developer Platform). <a href="https://www.coinbase.com/developer-platform/discover/launches/openai-agents-sdk">https://www.coinbase.com/developer-platform/discover/launches/openai-agents-sdk</a></li>
+<li><em>AgentKit Q1 2025 Update: Building agents with Solana, OpenAI, and more</em>. (Coinbase Developer Platform). <a href="https://www.coinbase.com/developer-platform/discover/launches/agentkit-q1-update">https://www.coinbase.com/developer-platform/discover/launches/agentkit-q1-update</a></li>
+<li><em>The rise of onchain AI agents, apps, and commerce</em>. (Coinbase Blog). <a href="https://www.coinbase.com/en-gb/blog/the-rise-of-onchain-ai-agents-apps-and-commerce">https://www.coinbase.com/en-gb/blog/the-rise-of-onchain-ai-agents-apps-and-commerce</a></li>
+<li><em>Coinbase Developer Platform AgentKit Quickstart Guide</em>. (Replit). <a href="https://replit.com/guides/coinbase-developer-platform-agentkit-quickstart-guide">https://replit.com/guides/coinbase-developer-platform-agentkit-quickstart-guide</a></li>
+<li><em>coinbase/agentkit GitHub Repository</em>. (GitHub). <a href="https://github.com/coinbase/agentkit">https://github.com/coinbase/agentkit</a></li>
 </ul>
 
 
