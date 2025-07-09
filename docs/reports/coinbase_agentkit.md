@@ -178,8 +178,9 @@ Token for this case study does not exist.
 
 ## 6. User Experience & Hands-on Review *(if applicable)*
 
-I followed the [Quick Start](https://github.com/coinbase/agentkit) section in the official GitHub page of Coinbase AgentKit.They have some example project that can kickstart development very quickly. I tried to add more UI components and I swapped llm api from OpenAI to Claude. 
 
+
+I followed the [Quick Start](https://github.com/coinbase/agentkit) guide on the official Coinbase AgentKit GitHub page, which included example projects that made it easy to get started quickly. I experimented by adding custom UI components and replacing the default OpenAI LLM API with Claude. Additionally, I began implementing features such as a trading interface, price charts, and a balance viewer to explore more interactive use cases.
 
 ![image](https://hackmd.io/_uploads/HyR9mHjBgg.png)
 
