@@ -40,7 +40,7 @@ We hope this collection helps others explore the emerging intersection of AI and
 | [Bittensor ($TAO)](https://docs.bittensor.com/) |  | [📄](./bittensor/) | [📄](./bittensor_kr/) |
 | [NATIX ($NATIX)](https://www.natix.network/) |  | [📄](./natix/) | [📄](./natix_kr/) |
 | [Render Network ($RENDER)](https://renderfoundation.com/whitepaper) |  | [📄](./render/) | [📄](./render_kr/) |
-| [Yupp](https://yupp.ai/) |  | [📄](./yupp/) | [📄](./yupp_kr/) |
+
 
 ---
 
@@ -51,7 +51,6 @@ We hope this collection helps others explore the emerging intersection of AI and
 | [Halliday](https://halliday.xyz/) |  | [📄](./halliday/) | [📄](./halliday_kr/) |
 | [Nevermined](https://docs.nevermined.app/) |  | [📄](./nevermined/) | [📄](./nevermined_kr/) |
 | [Agent Commerce Kit (ACK) by Catena](https://www.agentcommercekit.com/overview/introduction) |  | [📄](./ack_catena/) | [📄](./ack_catena_kr/) |
-| [Skyfire](https://skyfire.xyz/) |  | [📄](./skyfire/) | [📄](./skyfire_kr/) |
 | [Coinbase x402](https://www.x402.org/) |  | [📄](./x402/) | [📄](./x402_kr/) |
 
 ---
@@ -61,7 +60,6 @@ We hope this collection helps others explore the emerging intersection of AI and
 | Project | Author | Report (EN) | Report (KR) |
 |---------|--------|-------------|-------------|
 | [World ID](https://world.org/world-id) |  | [📄](./worldid/) | [📄](./worldid_kr/) |
-| [Solana Attestation Service](https://attest.solana.com/) |  | [📄](./solana_attestation/) | [📄](./solana_attestation_kr/) |
 | [Human Passport](https://passport.human.tech/) |  | [📄](./human_passport/) | [📄](./human_passport_kr/) |
 | [Humanity Protocol](https://www.humanity.org/) |  | [📄](./humanity_protocol/) | [📄](./humanity_protocol_kr/) |
 | [BrightID](https://www.brightid.org/) |  | [📄](./brightid/) | [📄](./brightid_kr/) |
@@ -76,6 +74,5 @@ We hope this collection helps others explore the emerging intersection of AI and
 | [Virtuals Protocol (VIRTUAL)](https://virtuals.io/) |  | [📄](./virtuals/) | [📄](./virtuals_kr/) |
 | [ElizaOS](https://www.elizaos.ai/) |  | [📄](./elizaos/) | [📄](./elizaos_kr/) |
 | [Kaito](https://kaito.ai/) |  | [📄](./kaito/) | [📄](./kaito_kr/) |
-| [ASI Alliance](https://superintelligence.io/) |  | [📄](./asi_alliance/) | [📄](./asi_alliance_kr/) |
 | [Phala Network](https://phala.network/ai) |  | [📄](./phala/) | [📄](./phala_kr/) |
 
