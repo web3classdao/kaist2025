@@ -231,6 +231,20 @@ These elements increase trust among users.
 
 > After each presentation in class, we will form small groups for each case for discussion. At that time, please discuss with your group the questions posed in Section 9, and write any key points or insights from your discussion group here.
 
+A1:
+- player size matter
+
+A2:
+- different. not directly money
+
+A3:
+- to get more player size
+
+A4:
+- No. 
+
+
+
 ---
 
 ## 11. References
