@@ -60,7 +60,6 @@ An MIT-licensed open source SDK, beneficial for both app and agent developers, G
 | **Chain Router**     | Routes transactions and payloads to the appropriate blockchain (Solana, Base, etc.)|
 | **Signer Interface** | Abstracts wallet/signature method (EOA, smart wallets, Crossmint MPC)|
 | **Plugin Registry**  | Tracks and loads available GOAT plugins; extensible for devs |
-| **Developer SDK**    | Provides clean APIs for integrating with agent code, apps, and backends|
 
 ---
 
@@ -109,22 +108,171 @@ GOAT SDK is fully live as an open-source SDK that is actively maintained and use
 
 ## 5. User Experience & Hands-on Review *(if applicable)*
 
-> *Try to actually use the project if possible — via a demo, public app, testnet, or simulation.*
-> This section should capture your experience **as a user or a developer**, not just as a researcher.
+![beginning](https://hackmd.io/_uploads/Sko33Morxg.png)
+### Confusion with .evm
+![template not showing](https://hackmd.io/_uploads/B1C76foSex.png)
+### Getting an RPC_PROVIDER_URL
+![quick 1](https://hackmd.io/_uploads/B1yy1msBll.png)
+![quick 2](https://hackmd.io/_uploads/rJzykQsrgx.png)
+![quick 3](https://hackmd.io/_uploads/B1_1yXiSxg.png)
+![quick 4](https://hackmd.io/_uploads/HJ3JymjHex.png)
+![quick 5](https://hackmd.io/_uploads/ByRy1QjSxl.png)
+### Checking balance
+![Sepolia balance](https://hackmd.io/_uploads/rJ02hMsHll.png)
+### Miscellaneous
+```
+mac@mint-name ~ % brew install node
+mac@mint-name ~ % brew install pnpm
+mac@mint-name typescript % pnpm install
+ ERR_PNPM_UNSUPPORTED_ENGINE  Unsupported environment (bad pnpm and/or Node.js version)
 
-Here are some prompts to help you reflect:
+Your Node version is incompatible with "/Users/mac/goat/typescript".
 
-- What features did you explore? 
-- What did you do step-by-step?
-- Was the onboarding intuitive or confusing? 
-- How did you deal with a crypto wallet or tokens?
-- What felt different from traditional (non-blockchain) services?
-- What worked well? What didn’t?
+Expected version: >=20.12.2 <23
+Got: v24.3.0
+```
 
-You can also include:
-- Screenshots
-- Links to testnet/demo activity
-- Errors or bugs you encountered
+
+### Added by Jason
+
+[Send and receive tokens on EVM](https://github.com/goat-sdk/goat/tree/main/typescript/examples/by-use-case/evm-send-and-receive-tokens)
+
+check the balance for ERC-20 tokens
+![image](https://hackmd.io/_uploads/rk2DFj9Bel.png)
+
+get the balance of a token
+![image](https://hackmd.io/_uploads/S1el2i9Blg.png)
+
+send tokens to another address
+![image](https://hackmd.io/_uploads/H1PrTscSle.png)
+
+
+
+check the token balance of the recipient
+![image](https://hackmd.io/_uploads/BkxdAjcBlx.png)
+
+
+Workflow to send tokens
+```
+User (Prompt)
+  ↓
+OpenAI Function Call (via `@goat-sdk/adapter-vercel-ai`)
+  ↓
+Tool Call: erc20_transfer
+  ↓
+Plugin: @goat-sdk/plugin-erc20
+  ↓
+Wallet: sendTransaction()
+  ↓
+Blockchain: Base Sepolia (via RPC)
+```
+
+
+Interactive CLI code (index.ts) -> AI Agent based on OpenAI
+
+```typescript
+import readline from "node:readline";
+
+import { openai } from "@ai-sdk/openai";
+import { generateText } from "ai";
+
+import { http, createWalletClient } from "viem";
+import { privateKeyToAccount } from "viem/accounts";
+import { baseSepolia } from "viem/chains";
+
+import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
+
+import { viem } from "@goat-sdk/wallet-viem";
+
+require("dotenv").config();
+
+// 1. Create a wallet client
+const account = privateKeyToAccount(process.env.WALLET_PRIVATE_KEY as `0x${string}`);
+
+const walletClient = createWalletClient({
+    account: account,
+    transport: http(process.env.RPC_PROVIDER_URL),
+    chain: baseSepolia,
+});
+
+(async () => {
+    // 2. Get your onchain tools for your wallet
+    const tools = await getOnChainTools({
+        wallet: viem(walletClient),
+    });
+
+    // 3. Create a readline interface to interact with the agent
+    const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout,
+    });
+
+    while (true) {
+        const prompt = await new Promise<string>((resolve) => {
+            rl.question('Enter your prompt (or "exit" to quit): ', resolve);
+        });
+
+        if (prompt === "exit") {
+            rl.close();
+            break;
+        }
+
+        console.log("\n-------------------\n");
+        console.log("TOOLS CALLED");
+        console.log("\n-------------------\n");
+        try {
+            const result = await generateText({
+                model: openai("gpt-4o-mini"),
+                tools: tools,
+                maxSteps: 10, // Maximum number of tool invocations per request
+                prompt: prompt,
+                onStepFinish: (event) => {
+                    console.log(event.toolResults);
+                },
+            });
+
+            console.log("\n-------------------\n");
+            console.log("RESPONSE");
+            console.log("\n-------------------\n");
+            console.log(result.text);
+        } catch (error) {
+            console.error(error);
+        }
+        console.log("\n-------------------\n");
+    }
+})();
+```
+
+If using Uniswap, code is changed like below
+```typescript
+import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
+import { uniswap } from "@goat-sdk/plugin-uniswap";
+
+import { viem } from "@goat-sdk/wallet-viem";
+
+require("dotenv").config();
+
+// 1. Create a wallet client
+const account = privateKeyToAccount(process.env.WALLET_PRIVATE_KEY as `0x${string}`);
+
+const walletClient = createWalletClient({
+    account: account,
+    transport: http(process.env.RPC_PROVIDER_URL),
+    chain: base,
+});
+
+(async () => {
+    // 2. Get your onchain tools for your wallet
+    const tools = await getOnChainTools({
+        wallet: viem(walletClient),
+        plugins: [
+            uniswap({
+                baseUrl: process.env.UNISWAP_BASE_URL as string,
+                apiKey: process.env.UNISWAP_API_KEY as string,
+            }),
+        ],
+    });
+```
 
 ---
 
