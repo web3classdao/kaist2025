@@ -1,4 +1,4 @@
-# 📄 Bittensor($TAO)  
+# 📄 Bittensor ($TAO)  
 - 👤 Author: [20210456 / Lee Sangbum]
 - 📆 Presentation Date: [2025-07-16]  
 
