@@ -1,4 +1,4 @@
-# 📄 NATIX Network 
+# 📄 NATIX Network ($NATIX)
 - 👤 Author: Jason w/ ChatGPT 4o
 - 📆 Presentation Date: [2025-07-16]  
 
