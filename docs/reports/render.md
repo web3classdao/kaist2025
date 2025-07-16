@@ -1,4 +1,4 @@
-# 📄 Render Network : The First Decentralized GPU Rendering Platform
+# 📄 Render Network : The First Decentralized GPU Rendering Platform ($RENDER)
 - 👤 Author: 20250516  [Lee Minkun](https://www.instagram.com/gun29k_tfj/)
 - 📆 Presentation Date: [2025-07-16]
 
