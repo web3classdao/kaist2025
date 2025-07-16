@@ -139,7 +139,7 @@ Users receive the AI-generated answers, and the ecosystem updates its weight and
 ### [• TAO Status](https://taostats.io/)
 ![image](https://hackmd.io/_uploads/H1Z_p01Uxg.png)
 ![image](https://hackmd.io/_uploads/HkT_TAkIex.png)
-TAO's market cap is approximately $3.59 billion. Each token is approximately $380. The total estimated issue is 21 million TAO, and the current circulation is approximately 9.39 million TAO.
+TAO's market cap is approximately $3.59 billion. Each token is approximately $380. The total estimated supply is 21 million TAO, and the current circulation is approximately 9.39 million TAO.
 
 Bittensor’s TAO token operates on a continuous issuance model designed to reward network participants, with no fixed supply cap but a controlled inflation rate that decreases over time. Tokens are minted automatically based on the performance evaluations of miners and validators, recorded on the blockchain. While there is no formal burn mechanism, certain network activities like subnet creation may have a partial burn or token lockup effect. TAO allocated to early contributors and investors follows a vesting schedule of 18 to 36 months, whereas rewards earned by miners and validators are immediately liquid without any lock-up period.
 
@@ -509,7 +509,7 @@ Without decentralization, AI model development and rewards would remain under th
 ## 8. Insights & Limitations
 
 ### ✅ Key Takeaways
-Bitensor has presented a new concept that allows anyone to participate in AI development, breaking away from the model developed and owned by giant companies.
+Bittensor has presented a new concept that allows anyone to participate in AI development, breaking away from the model developed and owned by giant companies.
 
 ### ⚠ Limitations / Open Questions
 
