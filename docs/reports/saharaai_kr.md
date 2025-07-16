@@ -11,12 +11,12 @@
 - **Official Links**:
     - [Website](https://www.notion.so/SAHARA-23131918757480838c40ea17a9fe5e31?pvs=21)
     - [Foundation](https://www.notion.so/SAHARA-23131918757480838c40ea17a9fe5e31?pvs=21)
-    - [Contract Address](https://www.notion.so/SAHARA-23131918757480838c40ea17a9fe5e31?pvs=21)
-    - [Whitepaper](https://www.notion.so/SAHARA-23131918757480838c40ea17a9fe5e31?pvs=21)
-    - [Docs](https://www.notion.so/SAHARA-23131918757480838c40ea17a9fe5e31?pvs=21)
-    - [GitHub](https://www.notion.so/SAHARA-23131918757480838c40ea17a9fe5e31?pvs=21)
-    - [X](https://www.notion.so/SAHARA-23131918757480838c40ea17a9fe5e31?pvs=21)
-    - [Discord](https://www.notion.so/SAHARA-23131918757480838c40ea17a9fe5e31?pvs=21)
+    - [Contract Address](https://t.me/saharaaiofficial)
+    - [Whitepaper](https://saharaai.com/learn/litepaper)
+    - [Docs](https://docs.saharalabs.ai/)
+    - [GitHub](https://github.com/SaharaLabsAI)
+    - [X](https://x.com/saharalabsai)
+    - [Discord](https://discord.com/invite/sahara-ai)
 
 ### 📌 Summary
 
@@ -44,7 +44,8 @@ The core idea is to tokenize every stage of AI development—including primary d
 
 ### 🏗️ 3.2 Architecture
 
-![image.png](attachment:6e4543b9-3634-414c-8aa2-99aa9a8908f7:image.png)
+![image](https://hackmd.io/_uploads/SkQDrGr8xx.png)
+
 
 - **Application layer:**  tools like marketplaces, developer toolkits, and user-created AI agents can be used by ai developers and users.
 - T**ransaction layer:** powered by the Sahara blockchain, where smart contracts handle licensing, ownership, and automatic reward distribution.
@@ -66,6 +67,7 @@ The core idea is to tokenize every stage of AI development—including primary d
 
 ### 🔁 3.4 Workflow Overview
 
+![스크린샷 2025-07-16 123126](https://hackmd.io/_uploads/Sk4oT5VLxe.png)
 
 
 1. Users tokenize their contribution (primary data, data labeling, architecture, fine-tuning, pipelining, etc.)
@@ -100,18 +102,20 @@ Discord 386,051 Members
 
 Sahara AI x account has 869k followers
 
+Currently, there are 1-2 commits per week on their public repositories.
 
-![스크린샷 2025-07-16 112106](https://hackmd.io/_uploads/Hkn2w5E8lg.png)
-
-
-Mainnet is still in development, and only the testnet is open 
+![image](https://hackmd.io/_uploads/ryDOCcVIgg.png)
 
 AI Marketplace is open
 
 - available: upload data, build AI agent
 - future plans: monetization of AI assets, AI agent market, deploying AI agent
 
-Currently, there are 1-2 commits per week on their public repositories.
+Sahara Studio is on beta. 
+- They are giving developer early access to confirmed users.
+
+![스크린샷 2025-07-16 112106](https://hackmd.io/_uploads/Hkn2w5E8lg.png)
+Mainnet is still in development, and only the testnet is open
 
 ---
 
