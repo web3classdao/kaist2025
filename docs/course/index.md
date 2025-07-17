@@ -103,7 +103,7 @@ This course is graded **Pass/Fail**. To pass, you must:
 We try to run the class itself as a **DAO**, meaning that the governance of the class is created with the students rather than the professor alone. To do this, we minted **100 [governance tokens (KGT)](https://basescan.org/address/0xE495B77E45D27D18B2C5D897207422cf17eC764a)** for the students, and they can post new suggestions or participate in **[Snapshot voting](https://snapshot.box/#/s:kaistdao.eth)**. Students and professors are involved in the governance of selecting best practices first.
 
 
-![image](https://hackmd.io/_uploads/HJ3VGVUUle.png)
+![image](https://hackmd.io/_uploads/HksnXV88ll.png)
 
 
 ### 1) Choosing the bset use case
