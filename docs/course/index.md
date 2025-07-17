@@ -101,10 +101,7 @@ This course is graded **Pass/Fail**. To pass, you must:
 ## 8. [Class DAO](https://snapshot.box/#/s:kaistdao.eth)
 
 We try to run the class itself as a **DAO**, meaning that the governance of the class is created with the students rather than the professor alone. To do this, we minted **100 [governance tokens (KGT)](https://basescan.org/address/0xE495B77E45D27D18B2C5D897207422cf17eC764a)** for the students, and they can post new suggestions or participate in **[Snapshot voting](https://snapshot.box/#/s:kaistdao.eth)**. Students and professors are involved in the governance of selecting best practices first.
-
-
-![image](https://hackmd.io/_uploads/HksnXV88ll.png)
-
+![Snapshot Space](https://hackmd.io/_uploads/HksnXV88ll.png)
 
 ### 1) Choosing the bset use case
 There will be 4 project presentations each week, from which we will select the best case study. The student who does the best research, analysis, and communicates meaningful insights will be exempted from the **Hackathon/Grant Program submission requirement**. (However, they will still be required to submit and present their term project).
