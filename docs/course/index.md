@@ -102,6 +102,7 @@ This course is graded **Pass/Fail**. To pass, you must:
 
 We try to run the class itself as a **DAO**, meaning that the governance of the class is created with the students rather than the professor alone. To do this, we minted **100 [governance tokens (KGT)](https://basescan.org/address/0xE495B77E45D27D18B2C5D897207422cf17eC764a)** for the students, and they can post new suggestions or participate in **[Snapshot voting](https://snapshot.box/#/s:kaistdao.eth)**. Students and professors are involved in the governance of selecting best practices first.
 
+
 ![image](https://hackmd.io/_uploads/HJ3VGVUUle.png)
 
 
@@ -114,6 +115,6 @@ The selection will be made by a blockchain governance vote between the professor
 A professor and students can make new suggestions for policies related to their classes. Anyone with 100 or more governance tokens can raise new proposals. Proposals can be about anything from classes to assessment methods.
  
 
-## 8. Past classes
+## 9. Past classes
 - [2023 Web3@KAIST: Building Web3 & Blockchain Applications](https://web3classdao.github.io/kaist2023/)
 - [2024 Web3@KAIST: Web3 Programming & Business](https://docs.google.com/document/d/192_BMgmagLnRwhSBA_bfqzmmsmCi_vMB-wCvLZWfLFU/edit?usp=sharing)
