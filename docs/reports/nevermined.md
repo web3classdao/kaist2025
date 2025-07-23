@@ -37,13 +37,17 @@ The stack has already powered production pilots in energy (Shell), telecom (Voda
 * Stablecoin settlement removes FX-risk and latency—crucial for machine-to-machine (M2M) AI transactions.
 
 * Compute-to-Data lets models “go to the data,” preserving privacy while still rewarding the data provider.
+
+ How It Works
+ ![image](https://hackmd.io/_uploads/HJT1u108ll.png)
+
 ---
 
 ## 2. Background & Problem Statement
 
-AI systems need vast troves of high-quality data and specialized models, yet:
+AI systems need vast collection of high-quality data and specialized models, yet:
 
-* Valuable datasets stay siloed because owners fear leakage, re-selling, or losing IP.
+* Valuable datasets stay isolated because owners fear leakage, re-selling, or losing IP.
 
 * Current payment flows are manual, slow (bank wires), or locked behind SaaS APIs with high fees.
 
@@ -69,9 +73,9 @@ The core idea is to treat every digital asset as a smart contract governed servi
 ---
 
 ### 🏗️ 3.2 Architecture  
-- Provide a high-level overview of the system architecture.  
-- Include a diagram or describe the components and how they are connected.  
-- Focus on how data flows between users, models, smart contracts, etc.
+
+ ![neverminedarch](https://hackmd.io/_uploads/rkf651CUex.png)
+
 
 ---
 
@@ -98,11 +102,11 @@ The core idea is to treat every digital asset as a smart contract governed servi
 4. On success, the gateway signs a proof; escrow auto-releases funds to the seller and any royalty addresses.
 
 5. Provenance is written to an on-chain registry so future buyers can audit usage.
-> *(You may include a diagram or link to an official architecture diagram if helpful.)*
+> 
 
 ---
 
-## 4. Token Economy *(if applicable)*
+## 4. Token Economy
 
 > *Include this section **only if the project has its own token.***  
 
