@@ -1,4 +1,4 @@
-# 📄 [Halliday]  
+# 📄 Halliday
 - 👤 Author: [20210364 / Seungmin Yang]
 - 📆 Presentation Date: [2025-07-23]  
 
@@ -126,45 +126,65 @@ Halliday addresses the critical gap between AI-driven automation and blockchain 
 ## 5. User Experience & Hands-on Review
 
 **A. Flow**
+
 1. **Sign up & dashboard access**
-        - Visited the Halliday site and clicked Get started (https://halliday.xyz)
-        - Created an account; landed on the Dashboard where you generate sandbox and production API keys.
+    - Visited the Halliday site and clicked Get started (https://halliday.xyz)
+    - Created an account; landed on the Dashboard where you generate sandbox and production API keys.
+
 2. **Install the SDK**
+
     >npm install @halliday‑sdk/commerce
     - Package fetched instantly; small bundle (~100 kB).
+
 3. **Basic popup integration**
+
     - Added a “Buy Crypto” button in a React component calling
-        >import { openHalliday } from "@halliday-sdj/commerce";
-        >
-        >openHalliday({
-            apiKey: "YOUR_SANDBOX_KEY",
-            destinationchainId: 1,
-            destinationTokenAddress: "0xA0b8...eB48", //USDC on Ethereum
-            services: ["ONRAMP"],
-            useSandbox: true
-        });
+
+            import { openHalliday } from "@halliday-sdj/commerce";
+            
+            openHalliday({
+                apiKey: "YOUR_SANDBOX_KEY",
+                destinationchainId: 1,
+                destinationTokenAddress: "0xA0b8...eB48", //USDC on Ethereum
+                services: ["ONRAMP"],
+                useSandbox: true
+            });
+            
     - Clicking opens a modal overlay with a clean, minimal form.
+
 4. **Embedded widget**
+
     - The onramp flow rendered inline; resizing works responsively.
+
 5. **Headless client experiment**
+
     - Followed the “Headless Client Quickstart” outline (docs gated, but summary available).
     - Wrote minimal UI controls (dropdowns, buttons) and called the headless SDK methods to fetch available chains/tokens, initiate swap transactions, then rendered the transaction status manually.
 
 **B.Onboarding: Intuitive or Confusing?**
+
 1. **Intuitive**
+
     - Dashboard layout is straightforward: keys, usage metrics, logs.
     - API docs (public snippets) show exactly which parameters are required.
+
 2. **Confusing**
+
     - Full docs behind an access‑code wall—couldn’t deep‑dive into advanced widget configurations or compliance/security pages without a code
     - Error messages from the sandbox environment were terse (e.g. “Invalid API key” with no link to fix).
 
 **C. Differences from Traditional Services**
+
 1. **Non‑custodial design**
+
     - Unlike typical fiat gateways, Halliday never takes custody of funds—transactions go straight on‑chain under user control
+
 2. **Atomic, composable workflows**
+
     - Traditional payment SDKs lock you into a single chain; Halliday routes and retries across bridges, DEXs, and onramps behind the scenes.
 
 **D. What Worked Well? What Didn’t?**
+
 |**Worked Well**|**Didn’t Work / Needs Improvement**|
 |-----|-----|
 |Very quick “Hello World” popup integration|Documentation gating—blocks deeper exploration|
@@ -173,10 +193,12 @@ Halliday addresses the critical gap between AI-driven automation and blockchain 
 |Multi‑chain routing “just works”|Access‑code barrier for advanced guides|
 
 **E. Errors or Bugs Encountered**
+
 - “Access code required” when trying to view the Commerce Widget and Headless Client docs pages
 - In sandbox, triggering a swap on an unsupported token gave a generic “Transaction failed” without stdout logs.
     
 **F. Overall Impressions**
+
 - **Onboarding Speed**: Excellent—got a popup demo running in ~10 minutes.
 - **Developer Experience**: Smooth for basic use, but gated docs slow down advanced integrations.
 - **User Experience**: End‑users see a familiar modal flow, with clear chain and token info, minimal jargon.
