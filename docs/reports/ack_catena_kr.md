@@ -1,4 +1,4 @@
-# 📄 [Project Title]  
+# 📄 Agent Commerce Kit (ACK)
 - 👤 Author: [20220686 / Minjun Choe](Link to your profile)
 - 📆 Presentation Date: [2025-07-23]  
 
@@ -54,10 +54,10 @@ Unlike traditional OAuth or API key-based methods, ACK focuses on self-sovereign
 ### 🏗️ 3.2 Architecture  
 
 The architecture consists of four main layers:
-**Agents**: LLM-based or autonomous AI clients (e.g., OpenAI agents, LM Studio).
-**ACK-ID Issuer**: Issues Verifiable Credentials (VCs) and Decentralized Identifiers (DIDs) for agents.
-**ACK-Pay Gateway**: Merchant's server responds with HTTP 402 (Payment Required), enabling seamless crypto payments.
-**Payment Provider**: Processes payments using stablecoins (e.g., USDC) via smart contracts or APIs (e.g., Circle).
+- **Agents**: LLM-based or autonomous AI clients (e.g., OpenAI agents, LM Studio).
+- **ACK-ID Issuer**: Issues Verifiable Credentials (VCs) and Decentralized Identifiers (DIDs) for agents.
+- **ACK-Pay Gateway**: Merchant's server responds with HTTP 402 (Payment Required), enabling seamless crypto payments.
+- **Payment Provider**: Processes payments using stablecoins (e.g., USDC) via smart contracts or APIs (e.g., Circle).
 
 Data Flow:
 1. AI Agent requests a service from a merchant.
