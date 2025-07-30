@@ -31,7 +31,7 @@ Identity is a fundamental right, but centralization, surveillance, and AI are th
 Even in Web 3.0, privacy issues remain unresolved, with the core challenge being Sybil attacks.
 
 **What is a Sybil attack?**  
-Creating multiple fake personas to exploit a digital network. Blockchains defend against Sybil attacks at the consensus level (e.g., Proof‑of‑Work), but most applications lack sufficient protection. In other words, nothing stops one person from submitting multiple “valid” identities, which threatens on‑chain voting systems like DAOs. A robust identity framework to prevent these attacks is still missing.
+Creating multiple fake personas to exploit a digital network. Blockchains defend against Sybil attacks at the consensus level (e.g., Proof‑of‑Work), but most applications lack sufficient protection. In other words, nothing stops one person from submitting multiple “valid” identities, which threatens on‑chain voting systems like dApps or DAOs. A robust identity framework to prevent these attacks is still missing.
 
 Furthermore, with generative AI now able to produce biometric data nearly indistinguishable from real humans, we need reliable methods to prove “I am actually human.”
 
@@ -80,7 +80,7 @@ Biometrics have long been a strong proof of human uniqueness, but traditional me
 
 ![Palm Recognition](https://hackmd.io/_uploads/SJMbbW8vlx.png)
 
-**$H Token**  
+**$H Token**
 HP’s incentive system centers on the ERC‑20 `$H` token, with a fixed supply of 1 billion and divisibility to 8 decimals. It serves as the gas token for blockchain operations and supports:
 
 - Humanity attestation  
