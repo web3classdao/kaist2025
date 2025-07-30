@@ -455,8 +455,6 @@ TBD
 
 ---
 
-## 11. References
-
 ## 11. References  
 
 ### 📄 Primary Documentation  
