@@ -1,5 +1,5 @@
 # 📄Phala Network 
-- 👤 Author: [20200167 / Kim Jinhwan](Link to your profile)
+- 👤 Author: [20200167 / Kim Jinhwan]
 - 📆 Presentation Date: [YYYY-MM-DD]  
 
 ---
@@ -11,7 +11,6 @@
 - **Key Technologies / Platforms**: [e.g., Solana, Bittensor, Sahara AI, ZKML, etc.]  
 - **Official Links**:
   - [Website](https://phala.network/ai)
-  - [Foundation](Phala Foundation) 
   - [Docs](https://docs.phala.network/) 
   - [GitHub](https://github.com/Phala-Network) 
   - [X](https://x.com/PhalaNetwork)
@@ -19,7 +18,11 @@
 
 
 ### 📌 Summary  
-Briefly describe what problem this project is solving and how it is using blockchain to solve the problem. Then summarize the project's achievements and key takeaways.
+Phala Network is a privacy-preserving AI infrastructure that enables secure data processing.
+It combines blockchain with Trusted Execution Environments (TEEs) to ensure decentralized, verifiable AI execution.
+User data remains encrypted, and all operations are logged immutably on-chain.
+The project is already live with real AI agents and dApps in production.
+Phala offers a compelling Web3 solution to trust, privacy, and governance in AI.
 
 ---
 
@@ -481,6 +484,8 @@ After each presentation in class, we will form small groups for each case for di
 ---
 
 ## 11. References
-
-- [Articles, blog posts, or academic papers]  
-- [Related projects or comparisons]
+- https://phala.network/
+- https://docs.phala.network/
+- https://messari.io/report/phala-network-introduction
+- https://www.intel.com/content/www/us/en/products/docs/accelerator-engines/software-guard-extensions.html
+- https://www.rocketx.exchange/blog/guide-to-phala-network-buying-pha-tokens/
