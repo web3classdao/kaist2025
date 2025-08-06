@@ -1,6 +1,6 @@
 # 📄 KAITO
 
-- 👤 **Author**: [20240310 / Jimin Park](www.linkedin.com/in/지민-박-984931301)
+- 👤 **Author**: [20240310 / Jimin Park] [www.linkedin.com/in/지민-박-984931301](www.linkedin.com/in/지민-박-984931301)
 
 -  📆 **Presentation Date**: [2025-08-06]
 
