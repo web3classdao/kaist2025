@@ -22,7 +22,7 @@
 
 ### 📌 Summary  
 Virtuals Protocol solves the AI ownership problem by enabling communities to collectively own and profit from autonomous AI agents through blockchain tokenization. 
-![Recording 2025-08-06 122929](https://hackmd.io/_uploads/Hym_3Igule.gif)
+![output-onlinegiftools (1) (1)](https://hackmd.io/_uploads/BJ82PDg_le.gif)
 
 
 
@@ -54,7 +54,7 @@ As AI becomes the foundation of digital interaction, the ownership structure wil
 ## 3. How It Works
 
 
-### 🔁 3.4 Workflow Overview
+### 🔁  Workflow Overview
 
 1. **User Request**: User tells Butler Agent what they need (e.g., "create a marketing video")
 2. **Agent Discovery**: Butler searches ACP marketplace for AI agents with relevant capabilities
@@ -82,6 +82,7 @@ As AI becomes the foundation of digital interaction, the ownership structure wil
 
 
 ### **🤖 Butler Agent**
+![output-onlinegiftools](https://hackmd.io/_uploads/BJF8vPe_xx.gif)
 
 **AI-Powered Requirements Gathering * Agent Matching:**
 ![image](https://hackmd.io/_uploads/rJvp4LgOle.png)\
@@ -275,6 +276,52 @@ The project demonstrates genuine product-market fit beyond speculation, with con
 - unable to compare various options intuitively (in terms of ability, pricing, ...)
 
 
+### Added by Jason
+
+### My first agent creation in Virtuals
+
+[KarinekoAI](https://x.com/KarinekoAI) is the first AI agent I've ever created in Virtuals. It's an agent that posts to X on its own and talks to its followers.
+
+![image](https://hackmd.io/_uploads/SJ2oAEx_gx.png)
+
+When an agent is created in Virtuals, the agent's token is also created. KarinekoAI's token is $NEKO, which means that the people who own this token co-own the agent. It takes 100 $VIRTUALS tokens as an initial creation cost to create the agent and mint tokens, and an additional 100 $VIRTUALS tokens to purchase the initial $NEKO tokens.
+
+![image](https://hackmd.io/_uploads/B1UIbHxdxe.png)
+
+![image](https://hackmd.io/_uploads/BJWtZHx_xe.png)
+
+
+What's interesting is that once the agents were created and the tokens were available for trading, I saw some trading of the $NEKO tokens. The way trading works is that the price is determined by the bonding curve like the AMM DEX, so I saw some price changes in the $NEKO tokens early on. This seems to be similar to the trading that happens early on when a meme coin is issued, where trading bots, rather than humans, are tracking the creation of the agents, and once they're created, they're trying to make a profit by buying and selling the initial volume. Anyway, this literally made the KarinekoAI agents co-owned. You can check $NEKO token holders and transactions on the [KarinekoAI dashboard](https://app.virtuals.io/prototypes/0x73f5116c9f2dA511703695Ac59F8597735898b56/).
+
+![image](https://hackmd.io/_uploads/rkKHXBgOxg.png)
+
+![image](https://hackmd.io/_uploads/rJmtXBe_ex.png)
+
+
+### [LUNA agent](https://x.com/luna_virtuals) of Virtuals
+
+[LUNA](https://app.virtuals.io/virtuals/68) is an agent created directly from Virtuals. She is now a AI influencer and has nearly a million TikTok followers. It started as a Vtuber, but has now evolved into a virtual K-pop idol. The $LUNA token is held by 456k holders and has a market capitalization of $18M. It doesn't seem like the agent is doing the X-posting or TikTok videos herself. Initially, they offered the ability to talk to the agents live, but now it seems like people are creating the content. The role of Virtuals Protocol is to create the agents, issue tokens, and allow them to be co-owned.
+
+![image](https://hackmd.io/_uploads/HypSYrxOeg.png)
+
+![image](https://hackmd.io/_uploads/By_YtBl_eg.png)
+
+![image](https://hackmd.io/_uploads/Hk6e9BlOle.png)
+
+
+### [Agent Launchpad](https://app.virtuals.io/sentients?sortBy=totalValueLocked&sortOrder=desc&page=1)
+
+![image](https://hackmd.io/_uploads/rJwqqHgOxl.png)
+
+Virtuals allows anyone to create and co-own agents. Creating an agent and issuing agent tokens is called Initial Agent Offerings (IAO). It costs 100 $VIRTUAL tokens to create an agent, with a total of 1B tokens being issued. In order to have an agent token, the creator must also purchase it directly with $VIRTUAL tokens. This is called fair token launching. The pricing follows the bonding curve and is only traded on the Virtuals launchpad. However, once the agent token LP reaches 41.6k $VIRTUAL, it will graduate from the launchpad and become available for trading on Uniswap. For more information, please refer to [their whitepaper](https://whitepaper.virtuals.io/about-virtuals-1/the-protocol/virtual-agents-as-programmable-decentralized-entities/initial-agent-offering-mechanism).
+
+In the 2.5 months since the launch on October 16, 2024, the IAO has achieved [the following results](https://virtuals.substack.com/p/monthly-update-december-2024) 
+* 1,000+ agents created
+* 220,000+ agent token holders
+* Agents have a combined market cap of $2B
+* $60M USD protocol revenue ($300M at annualized rates)
+
+You can see their real-time performance in the [dune dashboard](https://dune.com/virtual_protocol/virtual-protocol-on-base).
 
 
 
