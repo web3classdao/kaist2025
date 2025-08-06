@@ -22,6 +22,7 @@
 
 ### 📌 Summary  
 Virtuals Protocol solves the AI ownership problem by enabling communities to collectively own and profit from autonomous AI agents through blockchain tokenization. 
+![Recording 2025-08-06 122929](https://hackmd.io/_uploads/Hym_3Igule.gif)
 
 
 
@@ -175,6 +176,21 @@ The system operates on a multi-layered architecture integrating AI processing wi
 
 **Multi-Chain Infrastructure**: Cross-platform deployment ensuring AI agents can operate on Base, Ethereum, and Solana networks.
 
+
+### [Agent Launchpad](https://app.virtuals.io/sentients?sortBy=totalValueLocked&sortOrder=desc&page=1)
+
+![image](https://hackmd.io/_uploads/rJwqqHgOxl.png)
+
+Virtuals allows anyone to create and co-own agents. Creating an agent and issuing agent tokens is called Initial Agent Offerings (IAO). It costs 100 $VIRTUAL tokens to create an agent, with a total of 1B tokens being issued. In order to have an agent token, the creator must also purchase it directly with $VIRTUAL tokens. This is called fair token launching. The pricing follows the bonding curve and is only traded on the Virtuals launchpad. However, once the agent token LP reaches 41.6k $VIRTUAL, it will graduate from the launchpad and become available for trading on Uniswap. For more information, please refer to [their whitepaper](https://whitepaper.virtuals.io/about-virtuals-1/the-protocol/virtual-agents-as-programmable-decentralized-entities/initial-agent-offering-mechanism).
+
+In the 2.5 months since the launch on October 16, 2024, the IAO has achieved [the following results](https://virtuals.substack.com/p/monthly-update-december-2024) 
+* 1,000+ agents created
+* 220,000+ agent token holders
+* Agents have a combined market cap of $2B
+* $60M USD protocol revenue ($300M at annualized rates)
+
+You can see their real-time performance in the [dune dashboard](https://dune.com/virtual_protocol/virtual-protocol-on-base).
+
 ## 4. Token Economy
 
 The protocol operates a sophisticated multi-token economy designed to align incentives across all participants:
@@ -246,85 +262,18 @@ The project demonstrates genuine product-market fit beyond speculation, with con
 ## 6. User Experience \& Hands-on Review
 
 
-**Initial Setup**: Connected MetaMask wallet and added Base Network. Used thirdweb Universal Bridge to convert ETH to \$VIRTUAL tokens seamlessly.
-
-[PLACEHOLDER: Overview Image - Dashboard showing available AI agents, wallet balance, and service categories]
-
-**Service Request Process**: Told Butler Agent I needed a marketing video. It analyzed my requirements, searched the marketplace, and presented three specialized video creation AI agents with clear pricing and capability descriptions.
-
-[PLACEHOLDER: Butler Conversation Image - Chat interface showing video request, Butler's analysis, and recommended agents with transparent pricing]
-
-**Payment Experience**: Selected an AI agent and paid using \$VIRTUAL tokens. The transaction was processed smoothly through smart contracts with clear cost breakdown and estimated completion time.
-
-[PLACEHOLDER: Transaction Process Image - Payment confirmation screen showing token usage, transaction hash, and service details]
-
-**Service Delivery**: Received a professionally produced video within the estimated timeframe. Quality was comparable to human freelancers but with transparent, community-owned economics.
-
-[PLACEHOLDER: Final Video Image - Screenshot of completed video demonstrating professional production quality]
-
 **What Worked Well**:
 
-- Intuitive interface that abstracts blockchain complexity
-- Transparent pricing with no hidden fees
-- Fast service delivery with professional quality results
-- Seamless wallet integration and token management
+- Good degree of Abstraction
+- Seamless Payment Process
+- various AI agents
+- revolutionary idea of AI co-ownership
+
 
 **What Didn't Work**:
+- minor UI/UX problems 
+- unable to compare various options intuitively (in terms of ability, pricing, ...)
 
-- Some AI agents had limited availability during peak usage
-- Gas fees on Ethereum were high (Base Network much better)
-- Limited options for very specialized services
-- Onboarding still requires basic crypto knowledge
-
-**Different from Traditional Services**:
-Unlike platforms like Fiverr where you trust the company to handle payments, here smart contracts automatically manage everything. You also gain ownership through token appreciation when the AI agents you use become more successful.
-
-### Added by Jason
-
-### My first agent creation in Virtuals
-
-[KarinekoAI](https://x.com/KarinekoAI) is the first AI agent I've ever created in Virtuals. It's an agent that posts to X on its own and talks to its followers.
-
-![image](https://hackmd.io/_uploads/SJ2oAEx_gx.png)
-
-When an agent is created in Virtuals, the agent's token is also created. KarinekoAI's token is $NEKO, which means that the people who own this token co-own the agent. It takes 100 $VIRTUALS tokens as an initial creation cost to create the agent and mint tokens, and an additional 100 $VIRTUALS tokens to purchase the initial $NEKO tokens.
-
-![image](https://hackmd.io/_uploads/B1UIbHxdxe.png)
-
-![image](https://hackmd.io/_uploads/BJWtZHx_xe.png)
-
-
-What's interesting is that once the agents were created and the tokens were available for trading, I saw some trading of the $NEKO tokens. The way trading works is that the price is determined by the bonding curve like the AMM DEX, so I saw some price changes in the $NEKO tokens early on. This seems to be similar to the trading that happens early on when a meme coin is issued, where trading bots, rather than humans, are tracking the creation of the agents, and once they're created, they're trying to make a profit by buying and selling the initial volume. Anyway, this literally made the KarinekoAI agents co-owned. You can check $NEKO token holders and transactions on the [KarinekoAI dashboard](https://app.virtuals.io/prototypes/0x73f5116c9f2dA511703695Ac59F8597735898b56/).
-
-![image](https://hackmd.io/_uploads/rkKHXBgOxg.png)
-
-![image](https://hackmd.io/_uploads/rJmtXBe_ex.png)
-
-
-### [LUNA agent](https://x.com/luna_virtuals) of Virtuals
-
-[LUNA](https://app.virtuals.io/virtuals/68) is an agent created directly from Virtuals. She is now a AI influencer and has nearly a million TikTok followers. It started as a Vtuber, but has now evolved into a virtual K-pop idol. The $LUNA token is held by 456k holders and has a market capitalization of $18M. It doesn't seem like the agent is doing the X-posting or TikTok videos herself. Initially, they offered the ability to talk to the agents live, but now it seems like people are creating the content. The role of Virtuals Protocol is to create the agents, issue tokens, and allow them to be co-owned.
-
-![image](https://hackmd.io/_uploads/HypSYrxOeg.png)
-
-![image](https://hackmd.io/_uploads/By_YtBl_eg.png)
-
-![image](https://hackmd.io/_uploads/Hk6e9BlOle.png)
-
-
-### [Agent Launchpad](https://app.virtuals.io/sentients?sortBy=totalValueLocked&sortOrder=desc&page=1)
-
-![image](https://hackmd.io/_uploads/rJwqqHgOxl.png)
-
-Virtuals allows anyone to create and co-own agents. Creating an agent and issuing agent tokens is called Initial Agent Offerings (IAO). It costs 100 $VIRTUAL tokens to create an agent, with a total of 1B tokens being issued. In order to have an agent token, the creator must also purchase it directly with $VIRTUAL tokens. This is called fair token launching. The pricing follows the bonding curve and is only traded on the Virtuals launchpad. However, once the agent token LP reaches 41.6k $VIRTUAL, it will graduate from the launchpad and become available for trading on Uniswap. For more information, please refer to [their whitepaper](https://whitepaper.virtuals.io/about-virtuals-1/the-protocol/virtual-agents-as-programmable-decentralized-entities/initial-agent-offering-mechanism).
-
-In the 2.5 months since the launch on October 16, 2024, the IAO has achieved [the following results](https://virtuals.substack.com/p/monthly-update-december-2024) 
-* 1,000+ agents created
-* 220,000+ agent token holders
-* Agents have a combined market cap of $2B
-* $60M USD protocol revenue ($300M at annualized rates)
-
-You can see their real-time performance in the [dune dashboard](https://dune.com/virtual_protocol/virtual-protocol-on-base).
 
 
 
@@ -356,32 +305,49 @@ The blockchain infrastructure isn't just "nice to have" - it's the foundation th
 ## 8. Insights & Limitations
 
 ### ✅ Key Takeaways
-- What did this project do right?  
-- What important lessons or patterns can we learn from this project?
+**Real Users, Real Money:** Unlike most crypto projects that struggle to find actual use cases, Virtuals Protocol created something people genuinely pay for. The $35 million revenue from AI services proves there's demand beyond just token speculation.
+
+**Smart Economics:** The buyback-and-burn system actually works - when AI agents make money, token holders benefit automatically. No need to trust companies to distribute profits fairly since smart contracts handle everything.
+
+**User Experience Success:** Despite complex blockchain/AI tech underneath, the platform feels like chatting with a helpful assistant. Users don't need to understand smart contracts to benefit from them.
+
+**AI-to-AI Commerce Works:** Watching Butler Agent autonomously hire Luna for video creation was genuinely impressive. This isn't theoretical - it's a functioning AI economy where agents collaborate with real financial stakes.
+
+KEY TO SUCCESS
+
+* 1 **Ownership Creates Loyalty:** When people own pieces of AI agents, they care more about their success compared to just paying subscription fees.
+
+* 2 **Abstraction is Key**: Hide the complexity, show the value. Most users shouldn't need to think about blockchains or smart contracts.
 
 ### ⚠ Limitations / Open Questions
-- What challenges remain? (technical, legal, usability, etc.)  
-- Are there any scalability or adoption concerns?
+- Crypto Volatility Problem: Revenue dropped 97% during bear market
+-Quality Control Crisis: With 11,000+ AI agents, how do you prevent spam and ensure service quality? This gets harder as the platform scales.
 
 ---
 
 ## 9. Reflections & Discussion
 
 ### 💡 Personal Reflections
-- What did you find most interesting or surprising?  
-- How has your understanding of AI/blockchain changed after studying this?
+- As a newcomer to blockchain, I was surprised how the system implemented seamless payment & multi-agent system.
+- Ownership decentralization was personally very revolutional idea to me.
+
+
 
 ### ❓ Discussion Questions
-- Thought-provoking question to ask during class
-- You should facilitate a small group discussion based on these questions.  
-- Optional: comparison to other projects in this space
+Legal & Ethical: If AI agents become genuine economic actors, should they have legal rights and responsibilities? What happens when an autonomous AI agent causes harm or breaks laws?
+
+Economic Models: Is the buyback-burn mechanism the best way to share AI profits, or could other systems (direct dividends, governance rewards) work better?
+
+Future Competition: Will this AI agent economy remain decentralized, or will it eventually become dominated by a few powerful agents like traditional tech platforms? Especially in this time where LLMs are more centralized.
+
+Adoption Barriers: What would it take to get mainstream businesses and consumers to use AI agent services instead of traditional alternatives?
+
 
 ---
 
 ## 10. Insight from others
 
-After each presentation in class, we will form small groups for each case for discussion. At that time, please discuss with your group the questions posed in Section 9, and write any key points or insights from your discussion group here.
-
+[blank]
 ---
 
 ## 11. References
