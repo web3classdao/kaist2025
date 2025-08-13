@@ -1,5 +1,6 @@
 ## 1. Term Project Idea
 The final project doesn't have to be big - it can be a proposal for applying blockchain to AI applications, utilizing AI in a blockchain service, or any form of combining AI and blockchain. We recommend checking out AI x Blockchain hackathons to get some ideas for your project. Here's a list of some of the best hackathons to check out
+
 * Solana AI Hackathon
     * https://hackathon.sendai.fun/ 
     * https://4pillars.io/en/articles/solana-s-ai-surge-begins-hackathon-highlights  (EN)
@@ -19,6 +20,7 @@ You must submit your final project to a hackathon or grant program and show your
 
 
 Below are a few hackathons you can apply to. Only apply to virtual hackathons.
+
 * [Base Onchain Summer Awards](https://onchain-summer-awards.devfolio.co/) (Recommended)
 * [DoraHacks Hackathons](https://dorahacks.io/hackathon)
 List of hackathons run by DoraHacks
@@ -26,6 +28,7 @@ You can submit to ongoing virtual hackathons here
 ai/accelathon on Sei, OKX ETHCC Hackathon, Circle Developer Bounties - Group 1, Agentic Mini Apps Hack on Nostr Round 1, and so on
  
 If you're applying to a grant program, find the right one below. Most projects run their own grant programs, so you're not limited to the examples below, and you can apply to any project's grant program that interests you.
+
 * [Web3 Grants List](https://docs.google.com/spreadsheets/d/1c8koZCI-GLnD8MG-eFcXPOBCNu1v8-aXIfwAAvc7AMc/edit?gid=0#gid=0) 
 * [Solana Grants & Funding](https://solana.org/grants-funding)
 * [ChainGPT Grants](https://www.chaingpt.org/web3-ai-grant)
