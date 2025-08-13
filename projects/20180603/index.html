@@ -18,7 +18,7 @@
     
     
       
-        <title>🚀 Bill the Accountant: On-Chain Bill Splitting Agent - Blockchain meets AI: The Trust Engine - Web3@KAIST 2025</title>
+        <title>🚀 Bill the Accountant: AI-Powered Blockchain Bill Splitting - Blockchain meets AI: The Trust Engine - Web3@KAIST 2025</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bill-the-accountant-on-chain-bill-splitting-agent" class="md-skip">
+        <a href="#bill-the-accountant-ai-powered-blockchain-bill-splitting" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🚀 Bill the Accountant: On-Chain Bill Splitting Agent
+              🚀 Bill the Accountant: AI-Powered Blockchain Bill Splitting
             
           </span>
         </div>
@@ -1542,44 +1542,50 @@
 
 
 
-<h1 id="bill-the-accountant-on-chain-bill-splitting-agent">🚀 Bill the Accountant: On-Chain Bill Splitting Agent<a class="headerlink" href="#bill-the-accountant-on-chain-bill-splitting-agent" title="Permanent link">&para;</a></h1>
+<h1 id="bill-the-accountant-ai-powered-blockchain-bill-splitting">🚀 Bill the Accountant: AI-Powered Blockchain Bill Splitting<a class="headerlink" href="#bill-the-accountant-ai-powered-blockchain-bill-splitting" title="Permanent link">&para;</a></h1>
 <h2 id="project-overview">🗂️ Project Overview<a class="headerlink" href="#project-overview" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Student ID:</strong> 20180603</li>
 <li><strong>Name:</strong> 정승재 (Seungjae Chung)</li>
 <li><strong>Project Title:</strong> Bill the Accountant - Decentralized Bill Splitting Agent</li>
 <li><strong>Summary (3–4 sentences):</strong><br />
-  Bill the Accountant is a blockchain-based bill splitting application that enables automated, transparent peer-to-peer debt management through Discord conversations. 
-  The system combines AI-powered natural language processing with smart contracts to automatically detect expenses mentioned in chat messages and create appropriate debt proposals. 
-  Users can discuss expenses naturally (e.g., "I paid $50 for pizza for me, Alice, and Bob") and the bot intelligently proposes debt splits on-chain, 
-  requiring debtor confirmation for transparency. 
-  All debts are managed through a on-chain netting system that maintains net balances between user pairs to enable users to send only the eliminated amount for convenience.</li>
+<strong>Bill the Accountant</strong> is a <strong>blockchain-based bill splitting application</strong> that enables automated, transparent peer-to-peer debt management through Discord conversations. </li>
 </ul>
+<p>Users can discuss expenses naturally (e.g., "I paid $50 for pizza for me, Alice, and Bob") and the bot intelligently process the discussion, then registers debt splits on-chain then receives debtor confirmation for transparency. </p>
+<p>All debts are managed through a on-chain netting system that maintains net balances between user pairs to enable users to send only the eliminated amount for convenience.</p>
 <hr />
 <h2 id="1-problem-what-problem-are-you-solving">1. 🧩 Problem: What Problem Are You Solving?<a class="headerlink" href="#1-problem-what-problem-are-you-solving" title="Permanent link">&para;</a></h2>
 <p><strong>Real-World Problem:</strong>
 Traditional bill splitting among friends and groups suffers from several critical inefficiencies:</p>
 <ul>
+<li><strong>Complex Multi-Party Settlements:</strong> When multiple people owe money to each other, settling becomes mathematically complex and bothersome. (for example, '카카오 정산하기' requires users to send for all bill splitting even though they can be eliminated)</li>
 <li><strong>Manual Tracking Overhead:</strong> People must manually remember, calculate, and track who owes what to whom across multiple expenses</li>
 <li><strong>Lack of Transparency:</strong> Existing solutions like Venmo or Splitwise are centralized, creating trust issues and single points of failure</li>
 <li><strong>Context Loss:</strong> Current systems don't preserve the original conversation context that led to expense agreements</li>
-<li><strong>Complex Multi-Party Settlements:</strong> When multiple people owe money to each other, settling becomes mathematically complex and bothersome. (for example, '카카오 정산하기' requires users to send for all bill splitting even though they can be eliminated)</li>
-<li><strong>Command-Based Interfaces:</strong> Existing digital solutions require users to break natural conversation flow to input structured data</li>
+<li><strong>Human-Relying Flow:</strong> Existing digital solutions require users to break natural conversation flow to input structured data</li>
 </ul>
-<p><strong>Technical Limitations of Existing Solutions:</strong>
-- Centralized platforms can manipulate or lose transaction history
-- No immutable audit trail of debt agreements
-- Manual entry prone to human error and disputes
-- Limited integration with natural communication channels
-- Complex settlement calculations done off-chain without transparency</p>
+<p><strong>As-is example: Kakao settlement</strong>
+<div class="highlight"><pre><span></span><code>sequenceDiagram
+    Alice-&gt;&gt;John: Request for $100
+    John-&gt;&gt;Alice: Request for $80
+    Alice-&gt;&gt;John: Send $80
+    John-&gt;&gt;Alice: Send $100
+</code></pre></div></p>
+<p><strong>To-be: Bill the Accountant</strong>
+<div class="highlight"><pre><span></span><code>sequenceDiagram
+    Alice-&gt;&gt;John: Request for $100
+    John-&gt;&gt;Alice: Request for $80
+    John-&gt;&gt;Alice: Send $20 (netted amount)
+</code></pre></div></p>
 <p><strong>Why This Problem is Worth Solving:</strong>
-Money-related disputes damage relationships and trust. By automating expense detection from natural conversations and maintaining transparent, immutable records on blockchain, we can eliminate the friction and trust issues in group financial management while preserving the social context of shared expenses.</p>
+Bill splitting is a common problem occuring in real live situations, especially for younger generations who eagers to choose cost-effectiveness by sharing expenses with their social connections.
+However it is usually a <strong>tricky and bothersome task</strong> which takes time and sometimes sets up controversy, integration of AI agent and blockchain could help clearing up the situation in a short time.</p>
 <hr />
 <h2 id="2-solution-your-proposed-approach">2. 💡 Solution: Your Proposed Approach<a class="headerlink" href="#2-solution-your-proposed-approach" title="Permanent link">&para;</a></h2>
 <p><strong>Core Solution Architecture:</strong>
 Bill the Accountant combines three key technologies to create a seamless bill-splitting experience:</p>
 <ol>
-<li><strong>AI-Powered Natural Language Processing:</strong> Uses Google Gemini AI to analyze Discord chat messages and automatically detect expenses, identify who paid, and determine appropriate participants for bill splitting</li>
+<li><strong>LLM-Powered Natural Language Processing:</strong> Uses Google Gemini AI (or it can be any other LLM Model) to analyze chat messages and automatically detect expenses, identify who paid, and determine appropriate participants for bill splitting</li>
 <li><strong>Smart Contract Debt Ledger:</strong> Implements sophisticated on-chain debt netting that maintains net balances between user pairs, reducing gas costs and simplifying settlements</li>
 <li><strong>Discord Bot Interface:</strong> Provides both automated detection and manual command interfaces, with comprehensive permission handling and error recovery</li>
 </ol>
@@ -1600,8 +1606,21 @@ Bill the Accountant combines three key technologies to create a seamless bill-sp
 3. Smart contract creates pending debt proposals on-chain
 4. Debtors receive DM notifications with accept/reject options
 5. Confirmed debts are automatically netted in the on-chain ledger
-6. Users can settle debts directly with ERC20 token transfers</p>
-<p><strong>Architecture Diagram:</strong> <em>(Would include visual showing Discord ↔ AI ↔ Smart Contract flow)</em></p>
+6. Users can settle debts directly with ERC20 token transfers (Actually, transfer part should be opt-in to the feature but could not make it in time.)</p>
+<p><strong>Architecture Diagram:</strong> </p>
+<!-- *(Would include visual showing Discord ↔ AI ↔ Smart Contract flow)* -->
+
+<div class="highlight"><pre><span></span><code>sequenceDiagram
+    User-&gt;&gt;Bot: Request accounting by @mention
+    Bot-&gt;&gt;LLM: Request to analyze chat logs
+    LLM-&gt;&gt;Bot: Returns settlement data
+    Bot-&gt;&gt;Blockchain: Creates debt proposals
+    Bot-&gt;&gt;User: &quot;Send notification for proposal&quot;
+    User-&gt;&gt;Bot: Accepts proposal
+    Bot-&gt;&gt;Blockchain: Records debt information in on-chain Ledger
+    Blockchain-&gt;&gt;Blockchain: Automatically nets the debt
+    User--&gt;&gt;BlockChain: (TO BE IMPLEMENTED) Transfer the amount of debt &amp; resolves the debt
+</code></pre></div>
 <hr />
 <h2 id="3-why-blockchain-and-token">3. 🔗 Why Blockchain (and Token)?<a class="headerlink" href="#3-why-blockchain-and-token" title="Permanent link">&para;</a></h2>
 <p><strong>Why Blockchain is Necessary:</strong></p>
@@ -1615,15 +1634,10 @@ The current implementation does <strong>not</strong> use a custom token, instead
 <ul>
 <li><strong>Real Economic Value:</strong> Users can settle debts with tokens that have actual market value</li>
 <li><strong>No Token Launch Complexity:</strong> Avoids regulatory concerns and token economics design</li>
+<li><strong>Leverages Existing Stablecoin Payment Rails:</strong></li>
 <li><strong>Immediate Utility:</strong> Works with tokens users already own</li>
 <li><strong>Network Effect:</strong> Compatible with existing DeFi ecosystem</li>
 </ul>
-<p><strong>Future Token Considerations:</strong>
-A future governance token could enable:
-- Voting on system upgrades and parameters
-- Incentivizing AI training data contributions
-- Rewarding early users and community building
-- Enabling decentralized protocol governance</p>
 <hr />
 <h2 id="4-mvp-or-prototype">4. 🛠️ MVP or Prototype<a class="headerlink" href="#4-mvp-or-prototype" title="Permanent link">&para;</a></h2>
 <ul>
@@ -1658,13 +1672,7 @@ A future governance token could enable:
 3. <em>Smart contract interaction and settlement</em></p>
 <hr />
 <h2 id="5-submission-to-hackathons-or-grant-programs">5. 📬 Submission to Hackathons or Grant Programs<a class="headerlink" href="#5-submission-to-hackathons-or-grant-programs" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Name of the program you submitted to:</strong> [To be filled - awaiting submission decision]</li>
-<li><strong>Submission link:</strong> [To be filled upon submission]</li>
-<li><strong>Short summary of your submitted description:</strong> 
-  "Bill the Accountant revolutionizes group expense management by combining AI-powered natural language processing with blockchain transparency. Our system automatically detects bill-splitting opportunities in Discord conversations, creates verifiable on-chain debt proposals, and enables trustless settlement through smart contracts. The MVP demonstrates seamless integration between conversational AI and decentralized finance."</li>
-<li><strong>Screenshot of the submission:</strong> <em>(To be added upon submission)</em></li>
-</ul>
+<p>Since I marked #1 for the week 5's presentation as <a href="https://web3classdao.github.io/kaist2025/reports/x402/">Coinbase x402</a>, I've skipped the submission.</p>
 <hr />
 <h2 id="6-reflection-future-work">6. 🤔 Reflection &amp; Future Work<a class="headerlink" href="#6-reflection-future-work" title="Permanent link">&para;</a></h2>
 <p><strong>What I Learned:</strong></p>
@@ -1727,14 +1735,6 @@ A future governance token could enable:
 - <a href="https://aistudio.google.com/">Google AI Studio</a> - Gemini AI API documentation
 - <a href="https://hardhat.org/docs">Hardhat Framework</a> - Ethereum development environment
 - <a href="https://docs.ethers.org/">Ethers.js Documentation</a> - Ethereum library documentation</p>
-<p><strong>Academic References:</strong>
-- "Blockchain-based Trust and Reputation Management Systems: A Survey" - IEEE Access
-- "Natural Language Processing in Finance: A Survey" - ACM Computing Surveys
-- "Decentralized Finance: Blockchain Technology and the Quest for an Open Financial System" - Research Papers</p>
-<p><strong>Blockchain Standards:</strong>
-- <a href="https://eips.ethereum.org/EIPS/eip-20">ERC20 Token Standard</a> - Fungible token specification
-- <a href="https://eips.ethereum.org/EIPS/eip-712">EIP-712</a> - Typed structured data hashing (future implementation)
-- <a href="https://platform.openai.com/docs/guides/best-practices">OpenAI API Best Practices</a> - AI integration <strong>patterns</strong></p>
 
 
 
