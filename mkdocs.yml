@@ -63,7 +63,10 @@ nav:
       - ElizaOS: reports/elizaos.md
       - Kaito: reports/kaito.md
       - Phala Network: reports/phala.md
-  - Projects: project.md
+  - Projects:
+    - 🧭 Overview: projects/index.md
+    - 🔧 Project Guide: projects/project_guide.md
+    - 📝 Project Template: projects/project_template.md
   - Course:
     - Intro: course/index.md
     - Report guide: course/report_guide.md
