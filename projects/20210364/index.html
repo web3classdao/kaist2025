@@ -18,7 +18,7 @@
     
     
       
-        <title>20210364 - Blockchain meets AI: The Trust Engine - Web3@KAIST 2025</title>
+        <title>🚀 Project Title - Blockchain meets AI: The Trust Engine - Web3@KAIST 2025</title>
       
     
     
@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#project-title" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -102,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              20210364
+              🚀 Project Title
             
           </span>
         </div>
@@ -1417,6 +1422,88 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗂️ Project Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-problem-what-problem-are-you-solving" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 🧩 Problem: What Problem Are You Solving?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-solution-your-proposed-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 💡 Solution: Your Proposed Approach
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-why-blockchain-and-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 🔗 Why Blockchain (and Token)?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-mvp-or-prototype" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 🛠️ MVP or Prototype
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-submission-to-hackathons-or-grant-programs" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 📬 Submission to Hackathons or Grant Programs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-reflection-future-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 🤔 Reflection &amp; Future Work
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 📚 References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1432,9 +1519,109 @@
 
 
 
-  <h1>20210364</h1>
-
-
+<h1 id="project-title">🚀 Project Title<a class="headerlink" href="#project-title" title="Permanent link">&para;</a></h1>
+<h2 id="project-overview">🗂️ Project Overview<a class="headerlink" href="#project-overview" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Student ID: 20210364</strong>  </li>
+<li><strong>Name: Yang Seungmin</strong>  </li>
+<li><strong>Project Title: Onchain Quest — Daily Micro-Rewards</strong>  </li>
+<li><strong>Summary (3–4 sentences):</strong><br />
+  Onchain Quest is a prototype P2E service that converts short daily quizzes into on-chain micro-rewards. Users complete a one-minute off-chain quiz, obtain an EIP-712 signed claim ticket, and submit that ticket via a relayer (meta-transaction) to receive ERC-20 tokens or occasional ERC-721 NFTs — all with minimal gas friction. AI assists with personalized quiz generation and fraud detection, while blockchain provides transparent, auditable reward settlement.</li>
+</ul>
+<hr />
+<h2 id="1-problem-what-problem-are-you-solving">1. 🧩 Problem: What Problem Are You Solving?<a class="headerlink" href="#1-problem-what-problem-are-you-solving" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Clearly describe the real-world or technical problem you are addressing.<ul>
+<li>Many reward or learning apps want to convert lightweight user actions (micro-tasks) into verified on-chain events, but onboarding friction (wallet setup, gas fees) and UX complexity keep non-crypto users away. Even when users complete off-chain tasks, they often skip on-chain claims because of gas cost or confusion.</li>
+</ul>
+</li>
+<li>What are the limitations or inefficiencies of existing solutions?<ul>
+<li>Existing P2E or micro-reward systems either force users to hold native tokens (gas) or rely on custodial off-chain accounting that lacks transparency. Solutions that subsidize gas are costly and hard to scale without careful economics. Many projects also lack automated anti-abuse mechanisms tailored to low-value, high-frequency tasks.</li>
+</ul>
+</li>
+<li>Why is this problem worth solving?<ul>
+<li>Reducing onboarding friction and reliably converting lightweight engagement into on-chain activity unlocks broader adoption of blockchain UX, enables transparent incentive systems for education / micro-learning / community tasks, and provides verifiable proof-of-participation for DAOs, research, or loyalty programs.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="2-solution-your-proposed-approach">2. 💡 Solution: Your Proposed Approach<a class="headerlink" href="#2-solution-your-proposed-approach" title="Permanent link">&para;</a></h2>
+<ul>
+<li>What is your proposed solution, and how does it work?<ul>
+<li>Onchain Quest combines a minimal UX with a meta-transaction flow: users complete a short off-chain quiz → the backend issues an EIP-712 claim ticket → the user signs the ticket (or receives a server-issued signed ticket) → the ticket is submitted to a relayer which pays gas and calls claimReward(...) on the smart contract. The contract verifies the signature and claimId to prevent replay and transfers the reward.</li>
+</ul>
+</li>
+<li>How are AI &amp; Blockchain combined in your approach?<ul>
+<li><strong>AI for content &amp; personalization</strong>: a light AI module generates daily quiz items, tailors difficulty per user, and rotates content to maintain engagement.</li>
+<li><strong>AI for fraud detection</strong>: a lightweight model scores suspicious activity patterns (fast repeated completes, identical answers, abnormal timing) so the relayer or backend can flag or throttle claims.</li>
+<li><strong>Blockchain for settlement &amp; audit</strong>: final reward distribution is settled on-chain (ERC-20 / ERC-721), which provides immutable proof of reward allocation and prevents disputes.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="3-why-blockchain-and-token">3. 🔗 Why Blockchain (and Token)?<a class="headerlink" href="#3-why-blockchain-and-token" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Why is blockchain necessary in your solution?<ul>
+<li>Blockchain provides transparent, tamper-proof settlement of rewards. This is important for verifiability (proof of participation), for enabling trustless distribution of scarce NFT rewards, and for future interoperability with DAOs or on-chain reputation systems.</li>
+</ul>
+</li>
+<li>What problem does blockchain specifically solve in your context?<ul>
+<li>It removes ambiguity about who received rewards, allows external parties to validate participation, and enables composability (e.g., turning earned tokens into governance weight or NFT access).</li>
+</ul>
+</li>
+<li>If you designed a token, what is its purpose (e.g., incentive, governance, reputation)?<ul>
+<li>Optional token design: An ERC-20 utility token used for small rewards and a limited ERC-721 series for special achievements. Tokens serve as immediate incentives; future work may add token staking for governance or premium features. (In the current prototype we focus on reward distribution; governance is out of scope.)</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="4-mvp-or-prototype">4. 🛠️ MVP or Prototype<a class="headerlink" href="#4-mvp-or-prototype" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Current status:<br />
+☑ Idea only ☐ Prototype ☐ Working MVP  </li>
+<li>Key features you implemented (1–2 short paragraphs)<ul>
+<li><strong>Claim flow &amp; contract spec</strong>: QuestRewardManager pseudocode implementing EIP-712 verification, claimId replay protection, and ERC-20 transfers / ERC-721 mint hooks.</li>
+<li><strong>Simulation harness</strong>: 1,000 virtual users over 7 days to model DAU, quest completions, claim rates and gas usage; produced CSV and PDF reports.</li>
+<li><strong>AI placeholders</strong>: prototype modules described for quiz generation and bot detection (mocked in simulation).</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="5-submission-to-hackathons-or-grant-programs">5. 📬 Submission to Hackathons or Grant Programs<a class="headerlink" href="#5-submission-to-hackathons-or-grant-programs" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Name of the program you submitted to: Onchain Summer Awards  </li>
+<li>Screenshot of the submission confirmation or page
+<img alt="Submission" src="https://hackmd.io/_uploads/H1p37__ulx.png" /></li>
+</ul>
+<hr />
+<h2 id="6-reflection-future-work">6. 🤔 Reflection &amp; Future Work<a class="headerlink" href="#6-reflection-future-work" title="Permanent link">&para;</a></h2>
+<ul>
+<li>What did you learn during this project?<ul>
+<li>Removing gas friction meaningfully increases claim conversion in simulation. The meta-tx design is promising for non-crypto users, but operational and economic constraints (relayer cost, fraud mitigation) are central to real deployability.</li>
+</ul>
+</li>
+<li>What were the biggest challenges?<ul>
+<li>Designing a secure but low-friction signature flow (EIP-712 nuance).</li>
+<li>Balancing believable simulation assumptions against real user variability.</li>
+<li>Planning sustainable relayer economics without enabling abuse.</li>
+</ul>
+</li>
+<li>What would you improve or build next if you had more time?<ul>
+<li>Build an actual Sepolia pilot with a small real user group to validate assumptions.</li>
+<li>Implement a production relayer with budget controls and throttling.</li>
+<li>Integrate a lightweight ML model (server side) for live bot detection and AB testing for reward sizing.</li>
+<li>Conduct a security audit and refine token economics (if tokens are to be persistent).</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="7-references">7. 📚 References<a class="headerlink" href="#7-references" title="Permanent link">&para;</a></h2>
+<ul>
+<li>EIP-712 (Typed structured data hashing and signing) — signature standard used for claim tickets.</li>
+<li>EIP-2771 (Meta-transactions / Trusted Forwarder) — meta-tx pattern reference.</li>
+<li>OpenZeppelin ERC-20 / ERC-721 libraries — standard contract implementations.</li>
+</ul>
+<p><a href="https://docs.google.com/document/d/1IjrV92bRT4kTUVEdrNlTnpI9oK-QCT5a/edit?usp=sharing&amp;ouid=107996653650312743072&amp;rtpof=true&amp;sd=true">File</a></p>
 
 
 
