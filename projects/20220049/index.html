@@ -18,7 +18,7 @@
     
     
       
-        <title>20220049 - Blockchain meets AI: The Trust Engine - Web3@KAIST 2025</title>
+        <title>🚀 Moodiary: Mood-Based Playlist & NFT Diary - Blockchain meets AI: The Trust Engine - Web3@KAIST 2025</title>
       
     
     
@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#moodiary-mood-based-playlist-nft-diary" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -102,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              20220049
+              🚀 Moodiary: Mood-Based Playlist &amp; NFT Diary
             
           </span>
         </div>
@@ -1417,6 +1422,88 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗂️ Project Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-problem-what-problem-are-you-solving" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 🧩 Problem: What Problem Are You Solving?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-solution-your-proposed-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 💡 Solution: Your Proposed Approach
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-why-blockchain-and-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 🔗 Why Blockchain (and Token)?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-mvp-or-prototype" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 🛠️ MVP or Prototype
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-submission-to-hackathons-or-grant-programs" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 📬 Submission to Hackathons or Grant Programs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-reflection-future-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 🤔 Reflection &amp; Future Work
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 📚 References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1432,9 +1519,74 @@
 
 
 
-  <h1>20220049</h1>
-
-
+<h1 id="moodiary-mood-based-playlist-nft-diary">🚀 Moodiary: Mood-Based Playlist &amp; NFT Diary<a class="headerlink" href="#moodiary-mood-based-playlist-nft-diary" title="Permanent link">&para;</a></h1>
+<h2 id="project-overview">🗂️ Project Overview<a class="headerlink" href="#project-overview" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Student ID: 20220049</strong></li>
+<li><strong>Name: 기채운 (Chaewoon Ki)</strong>  </li>
+<li><strong>Project Title: Moodiary: Mood-Based Playlist &amp; NFT Diary</strong>  </li>
+<li><strong>Summary:</strong><br />
+Moodiary analyzes a user’s diary entry with AI to generate emotion tags and scores, recommends a music playlist that matches those emotions, saves and downloads the result as a digital card (JSON), and finally mints it as an NFT on the Solana blockchain. The project strictly protects privacy by never storing the original text and keeping only its SHA-256 hash. By using AI to refine and classify personal emotions and blockchain to store them permanently in a tamper-proof format, it transforms emotional records into unique digital assets.  </li>
+</ul>
+<hr />
+<h2 id="1-problem-what-problem-are-you-solving">1. 🧩 Problem: What Problem Are You Solving?<a class="headerlink" href="#1-problem-what-problem-are-you-solving" title="Permanent link">&para;</a></h2>
+<p>While diary writing has become increasingly convenient in the digital age, it rarely connects personal records to emotional analysis or personalized content recommendations. Existing music recommendation services and mood-tracking apps face the following limitations:  </p>
+<ol>
+<li><strong>Lack of Automated Emotion Analysis</strong>: Users must manually select their mood, or systems rely on simple keyword matching, resulting in low accuracy.  </li>
+<li><strong>Privacy Concerns</strong>: Original diary text is stored on servers, posing a risk of personal data exposure.  </li>
+<li><strong>Lack of Creative Output</strong>: Emotion analysis results often end with basic statistics, without expanding into NFTs or other creative digital assets.  </li>
+</ol>
+<p>This problem is worth solving in a context where demand is growing for services that combine digital emotion analysis with personalized experiences. A platform that protects the original text while turning emotions into creative outputs—such as music playlists or NFTs—can address key limitations in the current market.  </p>
+<hr />
+<h2 id="2-solution-your-proposed-approach">2. 💡 Solution: Your Proposed Approach<a class="headerlink" href="#2-solution-your-proposed-approach" title="Permanent link">&para;</a></h2>
+<p>This project combines <strong>AI-based emotion analysis</strong> with <strong>blockchain-based NFT minting</strong> to securely analyze user-written diaries and transform them into creative digital assets.<br />
+1. <strong>Diary Writing &amp; Privacy Protection</strong>: When a user writes a diary entry, the original text is never stored; only its SHA-256 hash and timestamp are saved, minimizing the risk of personal data leakage.<br />
+2. <strong>AI-Powered Mood Analysis</strong>: Firebase Functions call the OpenAI API (gpt-4o-mini) to return up to three emotion tags and their scores in JSON format, with a keyword-matching local analysis as a fallback if the model call fails.<br />
+3. <strong>Personalized Playlist Generation</strong>: For each extracted mood tag, the system randomly selects songs from a predefined music catalog, creating a playlist of up to 10 tracks.<br />
+4. <strong>Digital Card (JSON) Creation</strong>: Generates a downloadable JSON file containing mood, playlist, and provenance information.<br />
+5. <strong>NFT Minting</strong>: Mints NFTs via the Phantom wallet on the Solana devnet or mainnet, with the current absence of a metadata program meaning NFTs may not be automatically recognized in some environments.<br />
+6. <strong>AI &amp; Blockchain Integration</strong>: AI analysis results (tags and scores) form the metadata for NFTs, turning a user’s emotions into unique digital assets, while the no-original-text storage design ensures privacy and blockchain provides permanent, verifiable records.  </p>
+<hr />
+<h2 id="3-why-blockchain-and-token">3. 🔗 Why Blockchain (and Token)?<a class="headerlink" href="#3-why-blockchain-and-token" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Why Blockchain is Needed</strong>: When issuing emotion-based digital cards, they must remain <strong>permanent and tamper-proof</strong>. In a centralized server, records can disappear if the service shuts down or data is lost, but an NFT recorded on the blockchain can always be verified and owned as long as the network exists.  </li>
+<li><strong>Problem Blockchain Solves</strong>: The biggest advantage is <strong>privacy protection</strong>. In the past, a diary app in Korea leaked user data and used personal entries for commercial purposes. In this project, the original text is never stored on a central server. Even when minting an NFT, only the SHA-256 hash and creation timestamp are recorded, meaning no third party can view the contents. Users can safely and fully own their emotional records.  </li>
+<li><strong>Token Design and Purpose</strong>: NFT creation uses <strong>SOL</strong> to pay network fees and account creation costs, and a new Mint account issues an <strong>SPL token</strong> with 0 decimals and a supply of 1. Technically, this is a token, but due to its uniqueness and scarcity, it is treated as an NFT. While no project-specific token is currently issued, in the future it could be designed for purposes such as rewarding activity, running community governance, and enabling the exchange of creative works based on emotional data.  </li>
+</ol>
+<hr />
+<h2 id="4-mvp-or-prototype">4. 🛠️ MVP or Prototype<a class="headerlink" href="#4-mvp-or-prototype" title="Permanent link">&para;</a></h2>
+<p><strong>Current Status</strong>: Working MVP<br />
+This project is fully implemented to allow a user to write a diary entry, analyze emotions via AI, generate a matching playlist, save and download it as a digital card (JSON), and finally mint it as an NFT on the Solana blockchain. Emotion analysis is handled by Firebase Functions calling the OpenAI API, and the results are used to generate a personalized playlist from a predefined music catalog. The minting process connects to the Phantom wallet, uses SOL to pay for network fees and account creation, and stores minted NFT information in the Firebase Realtime Database.<br />
+<strong>Key Features</strong>: 
+(1) Privacy protection by storing only SHA-256 hashes without original text 
+(2) AI-based emotion analysis with keyword matching fallback 
+(3) Mood tag–based personalized playlist generation 
+(4) Digital card (JSON) creation and download 
+(5) Phantom wallet–based NFT minting and result storage<br />
+<strong>Code Repository</strong>: <a href="https://github.com/71c1nw00n/BlockchainAI">GitHub Link</a><br />
+<strong>Demo</strong>: <a href="https://blockchain-ai-one.vercel.app/">(Demo Link)  </a></p>
+<hr />
+<h2 id="5-submission-to-hackathons-or-grant-programs">5. 📬 Submission to Hackathons or Grant Programs<a class="headerlink" href="#5-submission-to-hackathons-or-grant-programs" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Name of the Program Submitted To</strong>: QuSat Group Hackathon 2025</li>
+<li><strong>Submission Link</strong>: https://devpost.com/software/moodiary-mood-based-playlist-nft-diary#updates  </li>
+<li><strong>Short Summary of Submitted Description</strong>: Moodiary is a service that analyzes a user’s diary entry with AI to produce emotion tags and scores, generates a playlist matching those moods, saves and downloads it as a digital card (JSON), and finally mints it as an NFT on the Solana blockchain. The original text is never stored; only its SHA-256 hash is kept to ensure privacy. By combining AI and blockchain, it turns personal emotional records into permanent digital assets.  </li>
+</ul>
+<hr />
+<h2 id="6-reflection-future-work">6. 🤔 Reflection &amp; Future Work<a class="headerlink" href="#6-reflection-future-work" title="Permanent link">&para;</a></h2>
+<p><strong>What I Learned</strong>: I gained a deep understanding that NFTs on the blockchain are technically SPL tokens, along with their issuance structure and ownership management. I also learned the importance of prompt design and exception handling for stable AI API calls, as well as how to design a system that uses meaningful data without storing the original text.</p>
+<p><strong>Biggest Challenges</strong>: Using localStorage UUID instead of Firebase Auth made it tricky to set up security rules, and implementing network switching and fee handling for Solana minting took considerable time. Handling cases where the OpenAI API did not follow the expected JSON format required additional exception logic.</p>
+<p><strong>Future Improvements</strong>: Refine the emotion classification system and connect each emotion to playlist recommendations through an LLM, replacing the current hardcoded mapping with dynamic generation. Additionally, add functionality to apply or trade the issued tokens, increasing the utility and real-world applicability of the NFTs.</p>
+<hr />
+<h2 id="7-references">7. 📚 References<a class="headerlink" href="#7-references" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Solana Docs – SPL Token Program</strong>: https://spl.solana.com/token  </li>
+<li><strong>Phantom Wallet Documentation</strong>: https://docs.phantom.app/  </li>
+<li><strong>Firebase Documentation</strong>: https://firebase.google.com/docs  </li>
+<li><strong>OpenAI API Reference</strong>: https://platform.openai.com/docs/api-reference  </li>
+<li><strong>SHA-256 Web Crypto API – MDN Docs</strong>: https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/digest  </li>
+<li>Related Projects: <a href="https://github.com/solana-labs/solana/tree/master/examples">Solana NFT Mint Example</a>, <a href="https://github.com/openai/openai-cookbook">Firebase Functions with OpenAI Example</a>  </li>
+</ul>
 
 
 
