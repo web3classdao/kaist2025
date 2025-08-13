@@ -71,6 +71,7 @@ nav:
     - Intro: course/index.md
     - Report guide: course/report_guide.md
     - Markdown & HackMD: course/report_markdown.md
+    - Wrapup (Letter to students): course/wrapup.md
 
 # ✅ 마크다운 확장 기능
 markdown_extensions:
