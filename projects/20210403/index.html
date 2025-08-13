@@ -1575,10 +1575,10 @@
 <li><strong>Name:</strong>   Jihyun Yoo</li>
 <li><strong>Project Title:</strong> On-Chain Election Promise Verification Platform  </li>
 <li><strong>Summary (3–4 sentences):</strong><br />
-  This platform transforms election promises into <strong>structured claims</strong>, collects <strong>evidence</strong> from news articles, press releases, and public datasets, and uses AI to automatically match and evaluate <strong>status</strong> and <strong>progress</strong>.<br />
-  The core results (status, progress, confidence, version hash) and <strong>evidence bundle hash (IPFS/Arweave)</strong> are stored on the blockchain (EVM) to ensure <strong>immutability</strong> and <strong>auditability</strong>.<br />
-  Anyone can view a dashboard showing candidate, party, or policy-specific progress, and disputes are handled transparently through <strong>DAO governance (Snapshot)</strong>.<br />
-  The goal is to create a <strong>fact-based, auditable record</strong> of election promise fulfillment, free from political bias.</li>
+  This platform transforms election promises into structured claims, collects evidence from news articles, press releases, and public datasets, and uses AI to automatically match and evaluate status and progress.<br />
+  The core results (status, progress, confidence, version hash) and evidence bundle hash (IPFS/Arweave) are stored on the blockchain (EVM) to ensure immutability and auditability.<br />
+  Anyone can view a dashboard showing candidate, party, or policy-specific progress, and disputes are handled transparently through DAO governance (Snapshot).<br />
+  The goal is to create a fact-based, auditable record of election promise fulfillment, free from political bias.</li>
 </ul>
 <hr />
 <h2 id="1-problem-what-problem-are-you-solving">1. 🧩 Problem: What Problem Are You Solving?<a class="headerlink" href="#1-problem-what-problem-are-you-solving" title="Permanent link">&para;</a></h2>
@@ -1588,25 +1588,25 @@
   After elections, the progress of campaign promises is scattered across fragmented news and government announcements, with a high risk of bias or misrepresentation.<br />
   Voters lack an easy, consolidated view, while journalists and NGOs struggle to maintain consistent, evidence-linked evaluations.</li>
 <li><strong>Limitations of existing solutions:</strong>  </li>
-<li>PR-focused performance reports often lack <strong>traceability</strong>  </li>
-<li>Spreadsheet or document-based tracking lacks <strong>version control</strong> and <strong>auditability</strong>  </li>
-<li>Existing fact-checking platforms rarely integrate <strong>on-chain immutability</strong> and <strong>governance-based corrections</strong></li>
-<li><strong>Why it matters:</strong><br />
-  Standardizing promise tracking with <strong>evidence-based, tamper-proof records</strong> allows the public, media, and researchers to debate from the same dataset, enhancing democratic accountability.</li>
+<li>PR-focused performance reports often lack traceability  </li>
+<li>Spreadsheet or document-based tracking lacks version control and auditability  </li>
+<li>Existing fact-checking platforms rarely integrate on-chain immutability and governance-based corrections</li>
+<li>Why it matters:<br />
+  Standardizing promise tracking with evidence-based, tamper-proof records allows the public, media, and researchers to debate from the same dataset, enhancing democratic accountability.</li>
 </ul>
 <hr />
 <h2 id="2-solution-your-proposed-approach">2. 💡 Solution: Your Proposed Approach<a class="headerlink" href="#2-solution-your-proposed-approach" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Core idea:</strong><br />
-  1) Extract structured claims (action, target, KPI, deadline) from campaign promises using <strong>Claim Extraction</strong>.<br />
+  1) Extract structured claims (action, target, KPI, deadline) from campaign promises using Claim Extraction.<br />
   2) Collect and normalize evidence from news, press releases, and government datasets, scoring trustworthiness (C2PA signatures, publisher credibility, source diversity).<br />
-  3) Calculate <strong>progress</strong> (based on KPI achievement rates) and <strong>confidence</strong> (based on source credibility, consistency, freshness).<br />
-  4) Store the evidence bundle on IPFS/Arweave, and commit the <strong>root hash (Merkle/DAG)</strong> and summary (status, progress, confidence, model version) <strong>on-chain</strong>.<br />
-  5) Handle disputes via <strong>DAO governance (Snapshot)</strong> with transparent challenge and update flows.</li>
-<li><strong>AI &amp; Blockchain integration:</strong>  </li>
-<li><strong>AI:</strong> NLP-based claim extraction, entity linking, event detection, evidence scoring with hybrid rule+LLM methods  </li>
-<li><strong>Blockchain:</strong> Immutable storage of result summaries and evidence hashes, governance records for dispute resolution</li>
-<li><strong>Architecture Diagram (ASCII):</strong></li>
+  3) Calculate progress (based on KPI achievement rates) and <strong>confidence</strong> (based on source credibility, consistency, freshness).<br />
+  4) Store the evidence bundle on IPFS/Arweave, and commit the root hash (Merkle/DAG) and summary (status, progress, confidence, model version) on-chain.<br />
+  5) Handle disputes via DAO governance (Snapshot) with transparent challenge and update flows.</li>
+<li>AI &amp; Blockchain integration:  </li>
+<li>AI: NLP-based claim extraction, entity linking, event detection, evidence scoring with hybrid rule+LLM methods  </li>
+<li>Blockchain: Immutable storage of result summaries and evidence hashes, governance records for dispute resolution</li>
+<li>Architecture Diagram (ASCII):</li>
 </ul>
 <hr />
 <h2 id="3-why-blockchain-and-token">3. 🔗 Why Blockchain (and Token)?<a class="headerlink" href="#3-why-blockchain-and-token" title="Permanent link">&para;</a></h2>
@@ -1618,8 +1618,8 @@
 <li><strong>Problem blockchain solves:</strong><br />
   Removes reliance on a single trusted operator and guarantees permanent traceability of evaluation history.</li>
 <li><strong>Token design (optional):</strong>  </li>
-<li><strong>Initial phase:</strong> No token, governance via Snapshot + <strong>Reputation (Soulbound)</strong> system  </li>
-<li><strong>Extended phase:</strong> Introduce small <strong>stake &amp; slash</strong> mechanism for fact-checkers, and governance/reputation token if needed  </li>
+<li><strong>Initial phase:</strong> No token, governance via Snapshot + Reputation (Soulbound) system  </li>
+<li><strong>Extended phase:</strong> Introduce small stake &amp; slash mechanism for fact-checkers, and governance/reputation token if needed  </li>
 <li><strong>Why optional:</strong> For early-stage public/academic prototypes, blockchain can serve its purpose without a native token</li>
 </ul>
 <hr />
@@ -1654,7 +1654,8 @@
 <h2 id="6-reflection-future-work">6. 🤔 Reflection &amp; Future Work<a class="headerlink" href="#6-reflection-future-work" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>What I learned:</strong>  </li>
-<li>Political/policy text often contains <strong>ambiguity</strong>, to make it reliable -&gt; deliberate design choices </li>
+<li>gas fee matters!</li>
+<li>Political/policy text often contains ambiguity and this is very high-stakes domain, to make it reliable -&gt; deliberate design choices </li>
 </ul>
 <p>Future Work
 - If possible, Implement with Korean sample political sources and publish public.</p>
