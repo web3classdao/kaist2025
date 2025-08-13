@@ -18,7 +18,7 @@
     
     
       
-        <title>20240310 - Blockchain meets AI: The Trust Engine - Web3@KAIST 2025</title>
+        <title>🚀 HyperX — Web3 Medical Image Labeling with Transparent Rewards - Blockchain meets AI: The Trust Engine - Web3@KAIST 2025</title>
       
     
     
@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#hyperx-web3-medical-image-labeling-with-transparent-rewards" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -102,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              20240310
+              🚀 HyperX — Web3 Medical Image Labeling with Transparent Rewards
             
           </span>
         </div>
@@ -1417,6 +1422,88 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗂️ Project Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-problem-what-problem-are-you-solving" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 🧩 Problem: What Problem Are You Solving?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-solution-your-proposed-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 💡 Solution: Your Proposed Approach
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-why-blockchain-and-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 🔗 Why Blockchain (and Token)?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-mvp-or-prototype" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 🛠️ MVP or Prototype
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-submission-to-hackathons-or-grant-programs" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 📬 Submission to Hackathons or Grant Programs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-reflection-future-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 🤔 Reflection &amp; Future Work
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 📚 References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1432,9 +1519,124 @@
 
 
 
-  <h1>20240310</h1>
-
-
+<h1 id="hyperx-web3-medical-image-labeling-with-transparent-rewards">🚀 HyperX — Web3 Medical Image Labeling with Transparent Rewards<a class="headerlink" href="#hyperx-web3-medical-image-labeling-with-transparent-rewards" title="Permanent link">&para;</a></h1>
+<h2 id="project-overview">🗂️ Project Overview<a class="headerlink" href="#project-overview" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Student ID:</strong> 20240310</li>
+<li><strong>Name:</strong> <a href="https://www.linkedin.com/in/지민-박-984931301">Jimin Park</a></li>
+<li><strong>Project Title:</strong> HyperX — Web3 Medical Image Labeling with Transparent Rewards</li>
+<li><strong>Summary (3–4 sentences):</strong> 
+  HyperX is a Web3 platform where medical experts label ultrasound/CT/MRI images and receive transparent, algorithmic rewards. We combine a tier system with base pay, performance pay, and contribution bonuses; add meta-review for disagreements; and use verification items, consistency checks, and invisible watermarks for trust and safety. Users log in with a wallet and see staking, rewards, and pool share on a dashboard. A Zero-Cost mode lets anyone experience the full flow without gas, while Anvil mode runs the same dApp on a local chain.</li>
+</ul>
+<hr />
+<h2 id="1-problem-what-problem-are-you-solving">1. 🧩 Problem: What Problem Are You Solving?<a class="headerlink" href="#1-problem-what-problem-are-you-solving" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Quality medical labels are scarce and slow to produce; traditional outsourcing has opaque quality, timelines, and incentives.</li>
+<li>There’s no standardized, auditable way to translate expert effort and difficulty into fair rewards.</li>
+<li>Enterprises need provable trust (QC, audit trails) and strong data-leak safeguards.</li>
+</ul>
+<hr />
+<h2 id="2-solution-your-proposed-approach">2. 💡 Solution: Your Proposed Approach<a class="headerlink" href="#2-solution-your-proposed-approach" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Core design<ul>
+<li>Reward mechanics: Base pay (tier &amp; volume brackets) + performance pay (correctness × tier weight) + contribution bonus for “hard” items (accuracy-rate inverse × base). Final payouts come proportionally from a Reward Pool.</li>
+<li>Trust stack: Verification items (easy, repeatable), consistency scoring, meta-review when agreement &lt; 90%, stake/escrow to deter careless work, and invisible watermarking to prevent leaks.</li>
+<li>Task routing: Rules/cluster-based recommendations (later RL/bandits) to match experts to tasks by skill and history.</li>
+</ul>
+</li>
+<li>UX<ul>
+<li>Wallet login → How it works explainer → Label tasks (public demo images) → Consensus/meta-review → Claim → Dashboard shows rewards, stake, and pool share.</li>
+</ul>
+</li>
+<li>(Optional) Include a diagram to show the system architecture or workflow.
+<img alt="CleanShot_2025-07-24_at_11.09.062x" src="https://hackmd.io/_uploads/Hk60PUFulx.png" />
+<img alt="CleanShot_2025-07-24_at_11.16.212x 1" src="https://hackmd.io/_uploads/BkI1uLYugl.png" /></li>
+</ul>
+<hr />
+<h2 id="3-why-blockchain-and-token">3. 🔗 Why Blockchain (and Token)?<a class="headerlink" href="#3-why-blockchain-and-token" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Transparent settlement</strong>: Immutable, queryable records for submissions, agreement, and payouts.</li>
+<li><strong>Aligned incentives</strong>: On-chain reward pool, staking/escrow, and tiered economics minimize ambiguity and disputes.</li>
+<li><strong>Token (future)</strong>:<ul>
+<li>Utility/reward token for payouts &amp; staking.</li>
+<li>Governance token for voting on rules (tiers, thresholds, pool splits).</li>
+</ul>
+</li>
+<li><strong>Cost control today: Zero-Cost simulation</strong> (off-chain) for demos; Anvil mode for local on-chain testing.</li>
+</ul>
+<hr />
+<h2 id="4-mvp-or-prototype">4. 🛠️ MVP or Prototype<a class="headerlink" href="#4-mvp-or-prototype" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Current status: ☑ Working MVP (Zero-Cost &amp; Anvil modes)
+  ☐ Idea only ☐ Prototype ☐ Working MVP  </li>
+<li>Key features you implemented (1–2 short paragraphs)<ul>
+<li>Solidity contracts: LabelingHub (register/stake/consensus/meta-review/claim), MockUSDC (test token), Reward Pool split (base/performance/contribution).</li>
+<li>Frontend (Next.js + wagmi/viem): Wallet login, How it works page, task labeling with web-fetched demo images, dashboard for rewards/stake/share, Faucet and Claim.</li>
+<li>Zero-Cost mode: Full off-chain simulation, identical UX with no gas.</li>
+<li>Testing: Foundry unit/property tests for economics; Playwright E2E for wallet-mock → label → claim.</li>
+</ul>
+</li>
+<li><strong>Code repository:</strong> <a href="https://github.com/xistoh162108/BlockChainProject.git">Github</a>  </li>
+<li><strong>Screenshots or demo images:</strong><br />
+<em>(Attach 2–3 images if available)</em>
+  <img alt="CleanShot 2025-08-13 at 09.05.59@2x" src="https://hackmd.io/_uploads/Hk2GD8Y_lg.png" />
+  <img alt="CleanShot 2025-08-13 at 09.06.08@2x" src="https://hackmd.io/_uploads/ByzQDUKdel.png" />
+  <img alt="CleanShot 2025-08-13 at 09.06.13@2x" src="https://hackmd.io/_uploads/SyjXvLYdeg.png" />
+  <img alt="CleanShot 2025-08-13 at 09.06.21@2x" src="https://hackmd.io/_uploads/BJDMP8FOxe.png" /></li>
+</ul>
+<hr />
+<h2 id="5-submission-to-hackathons-or-grant-programs">5. 📬 Submission to Hackathons or Grant Programs<a class="headerlink" href="#5-submission-to-hackathons-or-grant-programs" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Name of the program you submitted to: CoinFabric</li>
+<li>Submission link: <a href="https://www.coinfabrik.com/web3-grants/">CoinFabric</a>  </li>
+<li>Short summary of your submitted description: A Web3 labeling MVP that encodes trust and fair rewards in code, with Zero-Cost demo flow and local on-chain mode. </li>
+<li>(Optional) Screenshot of the submission confirmation or page
+  <img alt="CleanShot 2025-08-13 at 08.53.57@2x" src="https://hackmd.io/_uploads/S1_Dw8Fuee.png" />
+  <img alt="CleanShot 2025-08-13 at 08.54.29@2x" src="https://hackmd.io/_uploads/rkyHvLF_xl.png" /></li>
+<li>Name of the program you submitted to: ICISTS GRAFFITI 2025(only idea) </li>
+<li>Short summary of your submitted description: Submitted Idea on ICISTS GRAFFITI 2025(4-days ideathon)</li>
+<li>(Optional) Screenshot of the submission confirmation or page
+  <img alt="CleanShot 2025-08-13 at 09.14.31@2x" src="https://hackmd.io/_uploads/r15gtItuxe.png" />
+  You can see more details on <a href="https://www.canva.com/design/DAGuDtPSEgc/g0_oiGk2HAP_C7gwcKEP7A/edit?utm_content=DAGuDtPSEgc&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=sharebutton">Presentation File</a></li>
+</ul>
+<hr />
+<h2 id="6-reflection-future-work">6. 🤔 Reflection &amp; Future Work<a class="headerlink" href="#6-reflection-future-work" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>What did you learn during this project?</p>
+<ul>
+<li>How to encode incentive design (base pay, performance pay, contribution bonus, staking) directly in smart contracts and reflect it cleanly in the UI.</li>
+<li>Practical Web3 product lessons: wallet UX friction, the value of a Zero-Cost simulation mode, and keeping sensitive data off-chain while settling rewards on-chain.</li>
+<li>Using Foundry + Anvil for rapid Solidity iteration and wagmi/viem for a reliable wallet + contract front end.</li>
+<li>How consensus, meta-review, and verification items can turn ambiguous medical labels into auditable outcomes.</li>
+<li><strong>Broader understanding of the Web3 ecosystem—trade-offs around cost, transparency, governance, and compliance considerations.</strong></li>
+</ul>
+</li>
+<li>
+<p>What were the biggest challenges?</p>
+<ul>
+<li>Designing incentives so labelers work diligently and enterprises still find pricing/payouts economically reasonable.</li>
+<li>Ensuring label quality at scale (consistency checks, verification items, and meta-review thresholds) without creating a heavy UX.</li>
+<li>Balancing transparency with privacy/security (watermarking, access control, de-identification).</li>
+<li>Keeping the stack cohesive (contracts ↔ frontend ↔ tests) and maintaining reproducible local runs</li>
+</ul>
+</li>
+<li>What would you improve or build next if you had more time?<ul>
+<li>Web2 backend for enterprises: traditional login, DB, and an upload portal so clients can securely submit image sets; full audit logs and access control.</li>
+<li>A stronger on/off-chain bridge: queue jobs off-chain, commit results/proofs on-chain, and batch settlements to cut costs.</li>
+<li>Smarter task routing (RL/bandits), richer reviewer tools, and better analytics for label quality and contributor reputation.</li>
+<li>Privacy hardening: stricter de-identification checks, invisible watermark tuning, and role-based redaction.</li>
+<li>Gas &amp; UX polish: AA/paymasters, further Zero-Cost simulations, and more E2E tests for wallet flows and claims.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="7-references">7. 📚 References<a class="headerlink" href="#7-references" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Foundry (Forge/Cast/Anvil), OpenZeppelin, Next.js, wagmi/viem, Playwright</li>
+<li>Internal docs: docs/PLAN.md, docs/RUNBOOK.md, CLAUDE.md</li>
+<li>Market notes: Datavant / Doctorworks / MediLabel summaries</li>
+</ul>
 
 
 
