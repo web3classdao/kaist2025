@@ -12,10 +12,10 @@ This page is a collection of students' term projects. To pass the class, each st
 | [20230904](./20230904/) | RepuCard - AI-Powered Wallet Reputation Cards | Exempted |
 | [20210364](./20210364/) | Onchain Quest — Daily Micro-Rewards | [Onchain Summer](https://devfolio.co/projects/onchain-quest-daily-microrewards-8353) |
 | [20210403](./20210403/) | On-Chain Election Promise Verification Platform | [QuSat Group Hackathon 2025](https://devpost.com/software/promisechains) |
-| [20250516](./20250516/) | ScalperGuard – AI and Blockchain-Based Ticket Scalping Detection and Prevention System | [Onchain Summer](https://devfolio.co/projects/scalperguard-5bbb) |
+| [20250516](./20250516/) |  |  |
 | [20210456](./20210456/) | MCV(Mnemonic Chain Vault) | Exempted |
 | [20240562](./20240562/) | ChainShield | Exempted |
-| [20200561](./20200561/) |  |  |
+| [20200561](./20200561/) | ScalperGuard – AI and Blockchain-Based Ticket Scalping Detection and Prevention System | [Onchain Summer](https://devfolio.co/projects/scalperguard-5bbb) |
 | [20180603](./20180603/) | Bill the Accountant: Decentralized Bill Splitting Agent | Exempted |
 | [20230712](./20230712/) | On-chain AI Code Audit & Provenance Stamp | [Onchain Summer](https://devfolio.co/projects/projectab-c4f8) |
 | [20220686](./20220686/) | Coin X Coin | [Onchain Summer](https://devfolio.co/projects/coin-x-coin-ffce) |
