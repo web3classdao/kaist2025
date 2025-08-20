@@ -58,10 +58,10 @@ Each student (or team) will choose one real-world AI+Blockchain project from a c
 Your report will be used to present in class (around 10-20 minutes), and should:
 
 - Be ~3–4 pages long
-- Use the [📄 Report Template](./reports/template.md)
+- Use the [📄 Report Template](../reports/template/)
 - Focus on core ideas, tech analysis, and your personal hands-on experience
 
-👉 View the full list here: [📂 30+ Curated Case Studies](../)
+👉 View the full list here: [📂 30+ Curated Case Studies](../reports/)
 
 
 ## 6. Term Project
