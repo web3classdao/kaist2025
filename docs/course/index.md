@@ -42,9 +42,9 @@ The final goal: **submit your project to a hackathon or grant program** — not 
 
 | Week | Date | Topic |
 |------|------|-------|
-| 1 | June 25 | 🧱 Blockchain & Crypto Basics |
-| 2 | July 2 | ⚙️ Blockchain Dev Basics |
-| 3 | July 9 | 🔧 Crypto SDK & Chain Support for AI |
+| 1 | June 25 | 🧱 [Blockchain & Crypto Basics](./week1/) |
+| 2 | July 2 | ⚙️ [Blockchain Dev Basics](./week2/) |
+| 3 | July 9 | 🔧 [Crypto SDK & Chain Support for AI](../reports/#crypto-sdk-chain-support-for-ai) |
 | 4 | July 16 | 🧠 Decentralized AI Infrastructure (DePIN) |
 | 5 | July 23 | 💸 Stablecoins & Payment Rails for AI Agents |
 | 6 | July 30 | 🛂 Identity & Proof of Personhood for AI |
