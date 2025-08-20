@@ -69,9 +69,11 @@ nav:
     - 📝 Project Template: projects/project_template.md
   - Course:
     - Intro: course/index.md
+    - Course Overview: course/week0.md
     - Week1 Blockchain 101: course/week1.md
     - Week2 Blockchain dev: course/week2.md
-    - Report guide: course/report_guide.md
+    - Week3-7 Case Study Guide: course/week3-7_guide.md
+    - Report Writing Guide: course/report_guide.md
     - Markdown & HackMD: course/report_markdown.md
     - Wrapup (Letter to students): course/wrapup.md
 
