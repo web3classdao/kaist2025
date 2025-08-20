@@ -14,10 +14,10 @@ AI and blockchain technologies have their own strengths and there are many areas
 
 | Project | Author | Report (EN) | Report (KR) |
 |---------|--------|-------------|-------------|
-| [GOAT SDK](https://github.com/goat-sdk/goat) |  | [📄](./goat/) | [📄](./goat_kr/) |
-| [Coinbase AgentKit](https://www.coinbase.com/developer-platform/products/agentkit) |  | [📄](./coinbase_agentkit/) | [📄](./coinbase_agentkit_kr/) |
-| [Solana Agent Kit](https://github.com/sendaifun/solana-agent-kit) |  | [📄](./solana_agentkit/) | [📄](./solana_agentkit_kr/) |
-| [GOAT Gaming](https://goatgaming.com/) |  | [📄](./goat_gaming/) | [📄](./goat_gaming_kr/) |
+| [GOAT SDK](https://github.com/goat-sdk/goat) | Olesia Bilyk | [📄](/reports/goat/) | [📄](./goat_kr/) |
+| [Coinbase AgentKit](https://www.coinbase.com/developer-platform/products/agentkit) | Jaeyoung Shin | [📄](./reports/coinbase_agentkit/) | [📄](./coinbase_agentkit_kr/) |
+| [Solana Agent Kit](https://github.com/sendaifun/solana-agent-kit) | Joohyeun Kim | [📄](./solana_agentkit/) | [📄](./solana_agentkit_kr/) |
+| [GOAT Gaming](https://goatgaming.com/) | Kim Kihwan | [📄](./goat_gaming/) | [📄](./goat_gaming_kr/) |
 
 ---
 
@@ -25,11 +25,11 @@ AI and blockchain technologies have their own strengths and there are many areas
 
 | Project | Author | Report (EN) | Report (KR) |
 |---------|--------|-------------|-------------|
-| [Sahara AI](https://saharaai.com/) |  | [📄](./saharaai/) | [📄](./saharaai_kr/) |
+| [Sahara AI](https://saharaai.com/) |Moonjung Kim  | [📄](./saharaai/) | [📄](./saharaai_kr/) |
 | [Grass ($GRASS)](https://www.grass.io/) | [Jason Han](https://www.linkedin.com/in/jaesunhan/) | [📄](./grass/) | [📄](./grass_kr/) |
-| [Bittensor ($TAO)](https://docs.bittensor.com/) |  | [📄](./bittensor/) | [📄](./bittensor_kr/) |
-| [NATIX ($NATIX)](https://www.natix.network/) |  | [📄](./natix/) | [📄](./natix_kr/) |
-| [Render Network ($RENDER)](https://renderfoundation.com/whitepaper) |  | [📄](./render/) | [📄](./render_kr/) |
+| [Bittensor ($TAO)](https://docs.bittensor.com/) | Lee Sangbum | [📄](./bittensor/) | [📄](./bittensor_kr/) |
+| [NATIX ($NATIX)](https://www.natix.network/) | [Jason Han](https://www.linkedin.com/in/jaesunhan/) | [📄](./natix/) | [📄](./natix_kr/) |
+| [Render Network ($RENDER)](https://renderfoundation.com/whitepaper) | Lee Minkun | [📄](./render/) | [📄](./render_kr/) |
 
 
 ---
@@ -38,10 +38,10 @@ AI and blockchain technologies have their own strengths and there are many areas
 
 | Project | Author | Report (EN) | Report (KR) |
 |---------|--------|-------------|-------------|
-| [Halliday](https://halliday.xyz/) |  | [📄](./halliday/) | [📄](./halliday_kr/) |
-| [Nevermined](https://docs.nevermined.app/) |  | [📄](./nevermined/) | [📄](./nevermined_kr/) |
-| [Agent Commerce Kit (ACK) by Catena](https://www.agentcommercekit.com/overview/introduction) |  | [📄](./ack_catena/) | [📄](./ack_catena_kr/) |
-| [Coinbase x402](https://www.x402.org/) |  | [📄](./x402/) | [📄](./x402_kr/) |
+| [Halliday](https://halliday.xyz/) | Seungmin Yang | [📄](./halliday/) | [📄](./halliday_kr/) |
+| [Nevermined](https://docs.nevermined.app/) | Belay Zeleke | [📄](./nevermined/) | [📄](./nevermined_kr/) |
+| [Agent Commerce Kit (ACK) by Catena](https://www.agentcommercekit.com/overview/introduction) | Minjun Choe | [📄](./ack_catena/) | [📄](./ack_catena_kr/) |
+| [Coinbase x402](https://www.x402.org/) | Seungjae Chung | [📄](./x402/) | [📄](./x402_kr/) |
 
 ---
 
@@ -49,10 +49,10 @@ AI and blockchain technologies have their own strengths and there are many areas
 
 | Project | Author | Report (EN) | Report (KR) |
 |---------|--------|-------------|-------------|
-| [World ID](https://world.org/world-id) |  | [📄](./worldid/) | [📄](./worldid_kr/) |
-| [Human Passport](https://passport.human.tech/) |  | [📄](./human_passport/) | [📄](./human_passport_kr/) |
-| [Humanity Protocol](https://www.humanity.org/) |  | [📄](./humanity_protocol/) | [📄](./humanity_protocol_kr/) |
-| [BrightID](https://www.brightid.org/) |  | [📄](./brightid/) | [📄](./brightid_kr/) |
+| [World ID](https://world.org/world-id) | Chaewoon Ki | [📄](./worldid/) | [📄](./worldid_kr/) |
+| [Human Passport](https://passport.human.tech/) | Jaewhan Kang | [📄](./human_passport/) | [📄](./human_passport_kr/) |
+| [Humanity Protocol](https://www.humanity.org/) | Cho Youngjoon | [📄](./humanity_protocol/) | [📄](./humanity_protocol_kr/) |
+| [BrightID](https://www.brightid.org/) | Junhyeong Jeon | [📄](./brightid/) | [📄](./brightid_kr/) |
 
 
 ---
@@ -61,10 +61,10 @@ AI and blockchain technologies have their own strengths and there are many areas
 
 | Project | Author | Report (EN) | Report (KR) |
 |---------|--------|-------------|-------------|
-| [Virtuals Protocol (VIRTUAL)](https://virtuals.io/) |  | [📄](./virtuals/) | [📄](./virtuals_kr/) |
-| [ElizaOS](https://www.elizaos.ai/) |  | [📄](./elizaos/) | [📄](./elizaos_kr/) |
-| [Kaito](https://kaito.ai/) |  | [📄](./kaito/) | [📄](./kaito_kr/) |
-| [Phala Network](https://phala.network/ai) |  | [📄](./phala/) | [📄](./phala_kr/) |
+| [Virtuals Protocol (VIRTUAL)](https://virtuals.io/) | Jihyun Yoo | [📄](./virtuals/) | [📄](./virtuals_kr/) |
+| [ElizaOS](https://www.elizaos.ai/) | Joonseok Lee | [📄](./elizaos/) | [📄](./elizaos_kr/) |
+| [Kaito](https://kaito.ai/) | Jimin Park | [📄](./kaito/) | [📄](./kaito_kr/) |
+| [Phala Network](https://phala.network/ai) | Kim Jinhwan | [📄](./phala/) | [📄](./phala_kr/) |
 
 
 ---
