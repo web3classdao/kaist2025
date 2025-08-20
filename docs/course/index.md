@@ -45,11 +45,11 @@ The final goal: **submit your project to a hackathon or grant program** — not 
 | 1 | June 25 | 🧱 [Blockchain & Crypto Basics](./week1/) |
 | 2 | July 2 | ⚙️ [Blockchain Dev Basics](./week2/) |
 | 3 | July 9 | 🔧 [Crypto SDK & Chain Support for AI](../reports/#crypto-sdk-chain-support-for-ai) |
-| 4 | July 16 | 🧠 Decentralized AI Infrastructure (DePIN) |
-| 5 | July 23 | 💸 Stablecoins & Payment Rails for AI Agents |
-| 6 | July 30 | 🛂 Identity & Proof of Personhood for AI |
-| 7 | August 6 | 🤖 AI Agent Co-ownership & Decentralized AI |
-| 8 | August 13 | 🎯 Final Project Presentations |
+| 4 | July 16 | 🧠 [Decentralized AI Infrastructure (DePIN)](../reports/#decentralized-ai-infrastructure-modeldata-gpu-sharing) |
+| 5 | July 23 | 💸 [Stablecoins & Payment Rails for AI Agents](../reports/#stablecoins-payment-rails-for-ai-agents) |
+| 6 | July 30 | 🛂 [Identity & Proof of Personhood for AI](../reports/#proof-of-personhood-identity-rails-for-ai) |
+| 7 | August 6 | 🤖 [AI Agent Co-ownership & Decentralized AI](../reports/#ai-agent-co-ownership-and-decentralized-ai) |
+| 8 | August 13 | 🎯 [Final Project Presentations](../projects/) |
 
 
 ## 5. Case Study Assignment
@@ -110,8 +110,11 @@ The selection will be made by a blockchain governance vote between the professor
 
 ### 2) Proposing class policies
 A professor and students can make new suggestions for policies related to their classes. Anyone with 100 or more governance tokens can raise new proposals. Proposals can be about anything from classes to assessment methods.
+
+## 9. Recommending main chains
+When you develop a prototype or MVP for your term project, you can choose one of recommeded chains, Solana, Base, and Kaia. They wrote [a guide material](https://docs.google.com/document/d/1ag5KKfLs_NOBQqim5OJsfvV4Ij3tRlOKX4Fdgdf3qVU/edit?usp=sharing) on the chain.
  
 
-## 9. Past classes
+## 10. Past classes
 - [2023 Web3@KAIST: Building Web3 & Blockchain Applications](https://web3classdao.github.io/kaist2023/)
 - [2024 Web3@KAIST: Web3 Programming & Business](https://docs.google.com/document/d/192_BMgmagLnRwhSBA_bfqzmmsmCi_vMB-wCvLZWfLFU/edit?usp=sharing)
