@@ -7,12 +7,10 @@ This page is a collection of students' term projects. To pass the class, each st
 | [20190065](./20190065/) | Immortal Gaming | [Onchain Summer](https://devfolio.co/projects/immortal-gaming-0d7d) |
 | [20220093](./20220093/) | AuctionDash | [QuSat Group Hackathon 2025](https://devpost.com/software/auctiondash) |
 | [20220162](./20220162/) | LabLog | [Onchain Summer](https://devfolio.co/projects/lablog-99cf) |
-| [20200167](./20200167/) |  |  |
 | [20240310](./20240310/) | HyperX — Web3 Medical Image Labeling with Transparent Rewards | [CoinFabric](https://www.coinfabrik.com/web3-grants/) |
 | [20230904](./20230904/) | RepuCard - AI-Powered Wallet Reputation Cards | Exempted |
 | [20210364](./20210364/) | Onchain Quest — Daily Micro-Rewards | [Onchain Summer](https://devfolio.co/projects/onchain-quest-daily-microrewards-8353) |
 | [20210403](./20210403/) | On-Chain Election Promise Verification Platform | [QuSat Group Hackathon 2025](https://devpost.com/software/promisechains) |
-| [20250516](./20250516/) |  |  |
 | [20210456](./20210456/) | MCV(Mnemonic Chain Vault) | Exempted |
 | [20240562](./20240562/) | ChainShield | Exempted |
 | [20200561](./20200561/) | ScalperGuard – AI and Blockchain-Based Ticket Scalping Detection and Prevention System | [Onchain Summer](https://devfolio.co/projects/scalperguard-5bbb) |
